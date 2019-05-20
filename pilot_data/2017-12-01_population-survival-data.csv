@@ -1,0 +1,2647 @@
+strain,id,day,antibiotic,concentration,OD
+BW25113,1,1,none,0,1.475
+BW25113,2,1,none,0,1.46
+BW25113,3,1,none,0,1.476
+BW25113,4,1,none,0,1.434
+BW25113,5,1,none,0,1.481
+BW25113,6,1,none,0,1.482
+BW25113,7,1,none,0,1.5
+BW25113,8,1,none,0,1.462
+BW25113,9,1,none,0,1.477
+BW25113,10,1,none,0,1.494
+BW25113,11,1,none,0,1.507
+BW25113,12,1,none,0,1.482
+BW25113,13,1,none,0,1.526
+BW25113,14,1,none,0,1.526
+BW25113,15,1,none,0,1.514
+BW25113,1,2,none,0.0625,1.442
+BW25113,2,2,none,0.0625,1.441
+BW25113,3,2,none,0.0625,1.456
+BW25113,4,2,none,0.0625,1.436
+BW25113,5,2,none,0.0625,1.417
+BW25113,6,2,none,0.0625,1.45
+BW25113,7,2,none,0.0625,1.431
+BW25113,8,2,none,0.0625,1.367
+BW25113,9,2,none,0.0625,1.355
+BW25113,10,2,none,0.0625,1.391
+BW25113,11,2,none,0.0625,1.508
+BW25113,12,2,none,0.0625,1.475
+BW25113,13,2,none,0.0625,1.485
+BW25113,14,2,none,0.0625,1.518
+BW25113,15,2,none,0.0625,1.441
+BW25113,1,3,none,0.125,1.517
+BW25113,2,3,none,0.125,1.57
+BW25113,3,3,none,0.125,1.611
+BW25113,4,3,none,0.125,1.612
+BW25113,5,3,none,0.125,1.668
+BW25113,6,3,none,0.125,1.625
+BW25113,7,3,none,0.125,1.495
+BW25113,8,3,none,0.125,1.605
+BW25113,9,3,none,0.125,1.698
+BW25113,10,3,none,0.125,1.664
+BW25113,11,3,none,0.125,1.746
+BW25113,12,3,none,0.125,1.79
+BW25113,13,3,none,0.125,1.858
+BW25113,14,3,none,0.125,1.736
+BW25113,15,3,none,0.125,1.651
+BW25113,1,4,none,0.25,1.456
+BW25113,2,4,none,0.25,1.52
+BW25113,3,4,none,0.25,1.438
+BW25113,4,4,none,0.25,1.429
+BW25113,5,4,none,0.25,1.544
+BW25113,6,4,none,0.25,1.512
+BW25113,7,4,none,0.25,1.478
+BW25113,8,4,none,0.25,1.518
+BW25113,9,4,none,0.25,1.544
+BW25113,10,4,none,0.25,1.445
+BW25113,11,4,none,0.25,1.555
+BW25113,12,4,none,0.25,1.534
+BW25113,13,4,none,0.25,1.514
+BW25113,14,4,none,0.25,1.588
+BW25113,15,4,none,0.25,1.395
+BW25113,1,5,none,0.5,1.544
+BW25113,2,5,none,0.5,1.533
+BW25113,3,5,none,0.5,1.556
+BW25113,4,5,none,0.5,1.571
+BW25113,5,5,none,0.5,1.546
+BW25113,6,5,none,0.5,1.631
+BW25113,7,5,none,0.5,1.614
+BW25113,8,5,none,0.5,1.532
+BW25113,9,5,none,0.5,1.662
+BW25113,10,5,none,0.5,1.591
+BW25113,11,5,none,0.5,1.79
+BW25113,12,5,none,0.5,1.702
+BW25113,13,5,none,0.5,1.726
+BW25113,14,5,none,0.5,1.719
+BW25113,15,5,none,0.5,1.643
+BW25113,1,6,none,1,1.505
+BW25113,2,6,none,1,1.595
+BW25113,3,6,none,1,1.601
+BW25113,4,6,none,1,1.502
+BW25113,5,6,none,1,1.513
+BW25113,6,6,none,1,1.541
+BW25113,7,6,none,1,1.563
+BW25113,8,6,none,1,1.55
+BW25113,9,6,none,1,1.542
+BW25113,10,6,none,1,1.487
+BW25113,11,6,none,1,1.617
+BW25113,12,6,none,1,1.62
+BW25113,13,6,none,1,1.59
+BW25113,14,6,none,1,1.589
+BW25113,15,6,none,1,1.521
+BW25113,1,7,none,2,1.581
+BW25113,2,7,none,2,1.594
+BW25113,3,7,none,2,1.57
+BW25113,4,7,none,2,1.542
+BW25113,5,7,none,2,1.562
+BW25113,6,7,none,2,1.627
+BW25113,7,7,none,2,1.603
+BW25113,8,7,none,2,1.593
+BW25113,9,7,none,2,1.638
+BW25113,10,7,none,2,1.666
+BW25113,11,7,none,2,1.629
+BW25113,12,7,none,2,1.576
+BW25113,13,7,none,2,1.573
+BW25113,14,7,none,2,1.542
+BW25113,15,7,none,2,1.549
+BW25113,16,1,none,0,1.393
+BW25113,17,1,none,0,1.429
+BW25113,18,1,none,0,1.455
+BW25113,19,1,none,0,1.432
+BW25113,20,1,none,0,1.461
+BW25113,21,1,none,0,1.481
+BW25113,22,1,none,0,1.496
+BW25113,23,1,none,0,1.458
+BW25113,24,1,none,0,1.447
+BW25113,25,1,none,0,1.497
+BW25113,26,1,none,0,1.493
+BW25113,27,1,none,0,1.482
+BW25113,28,1,none,0,1.484
+BW25113,29,1,none,0,1.465
+BW25113,30,1,none,0,1.462
+BW25113,16,2,none,0.0625,1.437
+BW25113,17,2,none,0.0625,1.449
+BW25113,18,2,none,0.0625,1.412
+BW25113,19,2,none,0.0625,1.455
+BW25113,20,2,none,0.0625,1.413
+BW25113,21,2,none,0.0625,1.434
+BW25113,22,2,none,0.0625,1.426
+BW25113,23,2,none,0.0625,1.404
+BW25113,24,2,none,0.0625,1.473
+BW25113,25,2,none,0.0625,1.471
+BW25113,26,2,none,0.0625,1.532
+BW25113,27,2,none,0.0625,1.532
+BW25113,28,2,none,0.0625,1.569
+BW25113,29,2,none,0.0625,1.534
+BW25113,30,2,none,0.0625,1.534
+BW25113,16,3,none,0.125,1.57
+BW25113,17,3,none,0.125,1.588
+BW25113,18,3,none,0.125,1.662
+BW25113,19,3,none,0.125,1.647
+BW25113,20,3,none,0.125,1.701
+BW25113,21,3,none,0.125,1.696
+BW25113,22,3,none,0.125,1.688
+BW25113,23,3,none,0.125,1.697
+BW25113,24,3,none,0.125,1.694
+BW25113,25,3,none,0.125,1.735
+BW25113,26,3,none,0.125,1.739
+BW25113,27,3,none,0.125,1.814
+BW25113,28,3,none,0.125,1.794
+BW25113,29,3,none,0.125,1.783
+BW25113,30,3,none,0.125,1.725
+BW25113,16,4,none,0.25,1.475
+BW25113,17,4,none,0.25,1.467
+BW25113,18,4,none,0.25,1.464
+BW25113,19,4,none,0.25,1.471
+BW25113,20,4,none,0.25,1.531
+BW25113,21,4,none,0.25,1.49
+BW25113,22,4,none,0.25,1.494
+BW25113,23,4,none,0.25,1.417
+BW25113,24,4,none,0.25,1.431
+BW25113,25,4,none,0.25,1.505
+BW25113,26,4,none,0.25,1.599
+BW25113,27,4,none,0.25,1.611
+BW25113,28,4,none,0.25,1.533
+BW25113,29,4,none,0.25,1.621
+BW25113,30,4,none,0.25,1.47
+BW25113,16,5,none,0.5,1.492
+BW25113,17,5,none,0.5,1.519
+BW25113,18,5,none,0.5,1.443
+BW25113,19,5,none,0.5,1.575
+BW25113,20,5,none,0.5,1.468
+BW25113,21,5,none,0.5,1.564
+BW25113,22,5,none,0.5,1.558
+BW25113,23,5,none,0.5,1.511
+BW25113,24,5,none,0.5,1.609
+BW25113,25,5,none,0.5,1.659
+BW25113,26,5,none,0.5,1.614
+BW25113,27,5,none,0.5,1.577
+BW25113,28,5,none,0.5,1.579
+BW25113,29,5,none,0.5,1.655
+BW25113,30,5,none,0.5,1.601
+BW25113,16,6,none,1,1.587
+BW25113,17,6,none,1,1.587
+BW25113,18,6,none,1,1.588
+BW25113,19,6,none,1,1.601
+BW25113,20,6,none,1,1.59
+BW25113,21,6,none,1,1.574
+BW25113,22,6,none,1,1.568
+BW25113,23,6,none,1,1.575
+BW25113,24,6,none,1,1.577
+BW25113,25,6,none,1,1.622
+BW25113,26,6,none,1,1.726
+BW25113,27,6,none,1,1.727
+BW25113,28,6,none,1,1.665
+BW25113,29,6,none,1,1.718
+BW25113,30,6,none,1,1.766
+BW25113,16,7,none,2,1.479
+BW25113,17,7,none,2,1.519
+BW25113,18,7,none,2,1.476
+BW25113,19,7,none,2,1.617
+BW25113,20,7,none,2,1.517
+BW25113,21,7,none,2,1.48
+BW25113,22,7,none,2,1.478
+BW25113,23,7,none,2,1.46
+BW25113,24,7,none,2,1.47
+BW25113,25,7,none,2,1.496
+BW25113,26,7,none,2,1.537
+BW25113,27,7,none,2,1.539
+BW25113,28,7,none,2,1.566
+BW25113,29,7,none,2,1.539
+BW25113,30,7,none,2,1.492
+BW25113,31,1,none,0,1.503
+BW25113,32,1,none,0,1.479
+BW25113,33,1,none,0,1.494
+BW25113,34,1,none,0,1.471
+BW25113,35,1,none,0,1.506
+BW25113,36,1,none,0,1.534
+BW25113,37,1,none,0,1.517
+BW25113,38,1,none,0,1.466
+BW25113,39,1,none,0,1.478
+BW25113,40,1,none,0,1.533
+BW25113,41,1,none,0,1.557
+BW25113,42,1,none,0,1.502
+BW25113,43,1,none,0,1.513
+BW25113,44,1,none,0,1.498
+BW25113,45,1,none,0,1.509
+BW25113,31,2,none,0.0625,1.264
+BW25113,32,2,none,0.0625,1.329
+BW25113,33,2,none,0.0625,1.407
+BW25113,34,2,none,0.0625,1.376
+BW25113,35,2,none,0.0625,1.202
+BW25113,36,2,none,0.0625,1.355
+BW25113,37,2,none,0.0625,1.443
+BW25113,38,2,none,0.0625,1.418
+BW25113,39,2,none,0.0625,1.524
+BW25113,40,2,none,0.0625,1.43
+BW25113,41,2,none,0.0625,1.412
+BW25113,42,2,none,0.0625,1.47
+BW25113,43,2,none,0.0625,1.435
+BW25113,44,2,none,0.0625,1.609
+BW25113,45,2,none,0.0625,1.636
+BW25113,31,3,none,0.125,1.488
+BW25113,32,3,none,0.125,1.556
+BW25113,33,3,none,0.125,1.553
+BW25113,34,3,none,0.125,1.587
+BW25113,35,3,none,0.125,1.592
+BW25113,36,3,none,0.125,1.672
+BW25113,37,3,none,0.125,1.646
+BW25113,38,3,none,0.125,1.564
+BW25113,39,3,none,0.125,1.669
+BW25113,40,3,none,0.125,1.686
+BW25113,41,3,none,0.125,1.678
+BW25113,42,3,none,0.125,1.722
+BW25113,43,3,none,0.125,1.751
+BW25113,44,3,none,0.125,1.783
+BW25113,45,3,none,0.125,1.732
+BW25113,31,4,none,0.25,1.502
+BW25113,32,4,none,0.25,1.463
+BW25113,33,4,none,0.25,1.512
+BW25113,34,4,none,0.25,1.458
+BW25113,35,4,none,0.25,1.502
+BW25113,36,4,none,0.25,1.39
+BW25113,37,4,none,0.25,1.45
+BW25113,38,4,none,0.25,1.364
+BW25113,39,4,none,0.25,1.514
+BW25113,40,4,none,0.25,1.464
+BW25113,41,4,none,0.25,1.521
+BW25113,42,4,none,0.25,1.51
+BW25113,43,4,none,0.25,1.544
+BW25113,44,4,none,0.25,1.564
+BW25113,45,4,none,0.25,1.456
+BW25113,31,5,none,0.5,1.535
+BW25113,32,5,none,0.5,1.571
+BW25113,33,5,none,0.5,1.554
+BW25113,34,5,none,0.5,1.51
+BW25113,35,5,none,0.5,1.449
+BW25113,36,5,none,0.5,1.478
+BW25113,37,5,none,0.5,1.452
+BW25113,38,5,none,0.5,1.4
+BW25113,39,5,none,0.5,1.486
+BW25113,40,5,none,0.5,1.531
+BW25113,41,5,none,0.5,1.633
+BW25113,42,5,none,0.5,1.607
+BW25113,43,5,none,0.5,1.618
+BW25113,44,5,none,0.5,1.593
+BW25113,45,5,none,0.5,1.563
+BW25113,31,6,none,1,1.434
+BW25113,32,6,none,1,1.572
+BW25113,33,6,none,1,1.496
+BW25113,34,6,none,1,1.528
+BW25113,35,6,none,1,1.533
+BW25113,36,6,none,1,1.525
+BW25113,37,6,none,1,1.627
+BW25113,38,6,none,1,1.588
+BW25113,39,6,none,1,1.597
+BW25113,40,6,none,1,1.602
+BW25113,41,6,none,1,1.639
+BW25113,42,6,none,1,1.681
+BW25113,43,6,none,1,1.649
+BW25113,44,6,none,1,1.677
+BW25113,45,6,none,1,1.69
+BW25113,31,7,none,2,1.512
+BW25113,32,7,none,2,1.597
+BW25113,33,7,none,2,1.574
+BW25113,34,7,none,2,1.604
+BW25113,35,7,none,2,1.673
+BW25113,36,7,none,2,1.575
+BW25113,37,7,none,2,1.591
+BW25113,38,7,none,2,1.594
+BW25113,39,7,none,2,1.584
+BW25113,40,7,none,2,1.527
+BW25113,41,7,none,2,1.561
+BW25113,42,7,none,2,1.585
+BW25113,43,7,none,2,1.585
+BW25113,44,7,none,2,1.575
+BW25113,45,7,none,2,1.638
+ΔmutS,1,1,none,0,1.496
+ΔmutS,2,1,none,0,1.357
+ΔmutS,3,1,none,0,1.449
+ΔmutS,4,1,none,0,1.469
+ΔmutS,5,1,none,0,1.42
+ΔmutS,6,1,none,0,1.444
+ΔmutS,7,1,none,0,1.408
+ΔmutS,8,1,none,0,1.427
+ΔmutS,9,1,none,0,1.438
+ΔmutS,10,1,none,0,1.437
+ΔmutS,11,1,none,0,1.427
+ΔmutS,12,1,none,0,1.436
+ΔmutS,13,1,none,0,1.442
+ΔmutS,14,1,none,0,1.473
+ΔmutS,15,1,none,0,1.46
+ΔmutS,1,2,none,0.0625,1.512
+ΔmutS,2,2,none,0.0625,1.415
+ΔmutS,3,2,none,0.0625,1.536
+ΔmutS,4,2,none,0.0625,1.548
+ΔmutS,5,2,none,0.0625,1.552
+ΔmutS,6,2,none,0.0625,1.525
+ΔmutS,7,2,none,0.0625,1.508
+ΔmutS,8,2,none,0.0625,1.264
+ΔmutS,9,2,none,0.0625,1.481
+ΔmutS,10,2,none,0.0625,1.473
+ΔmutS,11,2,none,0.0625,1.445
+ΔmutS,12,2,none,0.0625,1.442
+ΔmutS,13,2,none,0.0625,1.521
+ΔmutS,14,2,none,0.0625,1.492
+ΔmutS,15,2,none,0.0625,1.495
+ΔmutS,1,3,none,0.125,1.502
+ΔmutS,2,3,none,0.125,1.353
+ΔmutS,3,3,none,0.125,1.561
+ΔmutS,4,3,none,0.125,1.617
+ΔmutS,5,3,none,0.125,1.542
+ΔmutS,6,3,none,0.125,1.613
+ΔmutS,7,3,none,0.125,1.588
+ΔmutS,8,3,none,0.125,1.523
+ΔmutS,9,3,none,0.125,1.573
+ΔmutS,10,3,none,0.125,1.533
+ΔmutS,11,3,none,0.125,1.599
+ΔmutS,12,3,none,0.125,1.584
+ΔmutS,13,3,none,0.125,1.573
+ΔmutS,14,3,none,0.125,1.649
+ΔmutS,15,3,none,0.125,1.5
+ΔmutS,1,4,none,0.25,1.515
+ΔmutS,2,4,none,0.25,1.517
+ΔmutS,3,4,none,0.25,1.52
+ΔmutS,4,4,none,0.25,1.534
+ΔmutS,5,4,none,0.25,1.554
+ΔmutS,6,4,none,0.25,1.532
+ΔmutS,7,4,none,0.25,1.496
+ΔmutS,8,4,none,0.25,1.472
+ΔmutS,9,4,none,0.25,1.438
+ΔmutS,10,4,none,0.25,1.452
+ΔmutS,11,4,none,0.25,1.585
+ΔmutS,12,4,none,0.25,1.481
+ΔmutS,13,4,none,0.25,1.524
+ΔmutS,14,4,none,0.25,1.523
+ΔmutS,15,4,none,0.25,1.541
+ΔmutS,1,5,none,0.5,1.515
+ΔmutS,2,5,none,0.5,1.551
+ΔmutS,3,5,none,0.5,1.517
+ΔmutS,4,5,none,0.5,1.504
+ΔmutS,5,5,none,0.5,1.474
+ΔmutS,6,5,none,0.5,1.578
+ΔmutS,7,5,none,0.5,1.538
+ΔmutS,8,5,none,0.5,1.532
+ΔmutS,9,5,none,0.5,1.577
+ΔmutS,10,5,none,0.5,1.546
+ΔmutS,11,5,none,0.5,1.565
+ΔmutS,12,5,none,0.5,1.571
+ΔmutS,13,5,none,0.5,1.576
+ΔmutS,14,5,none,0.5,1.547
+ΔmutS,15,5,none,0.5,1.483
+ΔmutS,1,6,none,1,1.426
+ΔmutS,2,6,none,1,1.482
+ΔmutS,3,6,none,1,1.444
+ΔmutS,4,6,none,1,1.46
+ΔmutS,5,6,none,1,1.508
+ΔmutS,6,6,none,1,1.432
+ΔmutS,7,6,none,1,1.421
+ΔmutS,8,6,none,1,1.436
+ΔmutS,9,6,none,1,1.387
+ΔmutS,10,6,none,1,1.349
+ΔmutS,11,6,none,1,1.489
+ΔmutS,12,6,none,1,1.432
+ΔmutS,13,6,none,1,1.464
+ΔmutS,14,6,none,1,1.465
+ΔmutS,15,6,none,1,1.406
+ΔmutS,1,7,none,2,1.355
+ΔmutS,2,7,none,2,1.403
+ΔmutS,3,7,none,2,1.369
+ΔmutS,4,7,none,2,1.353
+ΔmutS,5,7,none,2,1.372
+ΔmutS,6,7,none,2,1.4
+ΔmutS,7,7,none,2,1.354
+ΔmutS,8,7,none,2,1.34
+ΔmutS,9,7,none,2,1.326
+ΔmutS,10,7,none,2,1.289
+ΔmutS,11,7,none,2,1.448
+ΔmutS,12,7,none,2,1.443
+ΔmutS,13,7,none,2,1.438
+ΔmutS,14,7,none,2,1.455
+ΔmutS,15,7,none,2,1.419
+ΔmutS,16,1,none,0,1.495
+ΔmutS,17,1,none,0,1.374
+ΔmutS,18,1,none,0,1.442
+ΔmutS,19,1,none,0,1.539
+ΔmutS,20,1,none,0,1.489
+ΔmutS,21,1,none,0,1.463
+ΔmutS,22,1,none,0,1.352
+ΔmutS,23,1,none,0,1.363
+ΔmutS,24,1,none,0,1.414
+ΔmutS,25,1,none,0,1.458
+ΔmutS,26,1,none,0,1.427
+ΔmutS,27,1,none,0,1.475
+ΔmutS,28,1,none,0,1.453
+ΔmutS,29,1,none,0,1.521
+ΔmutS,30,1,none,0,1.41
+ΔmutS,16,2,none,0.0625,1.488
+ΔmutS,17,2,none,0.0625,1.365
+ΔmutS,18,2,none,0.0625,1.456
+ΔmutS,19,2,none,0.0625,1.398
+ΔmutS,20,2,none,0.0625,1.372
+ΔmutS,21,2,none,0.0625,1.337
+ΔmutS,22,2,none,0.0625,1.421
+ΔmutS,23,2,none,0.0625,1.356
+ΔmutS,24,2,none,0.0625,1.473
+ΔmutS,25,2,none,0.0625,1.368
+ΔmutS,26,2,none,0.0625,1.379
+ΔmutS,27,2,none,0.0625,1.323
+ΔmutS,28,2,none,0.0625,1.347
+ΔmutS,29,2,none,0.0625,1.465
+ΔmutS,30,2,none,0.0625,1.377
+ΔmutS,16,3,none,0.125,1.454
+ΔmutS,17,3,none,0.125,1.628
+ΔmutS,18,3,none,0.125,1.605
+ΔmutS,19,3,none,0.125,1.672
+ΔmutS,20,3,none,0.125,1.617
+ΔmutS,21,3,none,0.125,1.619
+ΔmutS,22,3,none,0.125,1.617
+ΔmutS,23,3,none,0.125,1.555
+ΔmutS,24,3,none,0.125,1.631
+ΔmutS,25,3,none,0.125,1.532
+ΔmutS,26,3,none,0.125,1.629
+ΔmutS,27,3,none,0.125,1.579
+ΔmutS,28,3,none,0.125,1.604
+ΔmutS,29,3,none,0.125,1.634
+ΔmutS,30,3,none,0.125,1.524
+ΔmutS,16,4,none,0.25,1.5
+ΔmutS,17,4,none,0.25,1.52
+ΔmutS,18,4,none,0.25,1.52
+ΔmutS,19,4,none,0.25,1.573
+ΔmutS,20,4,none,0.25,1.501
+ΔmutS,21,4,none,0.25,1.536
+ΔmutS,22,4,none,0.25,1.515
+ΔmutS,23,4,none,0.25,1.478
+ΔmutS,24,4,none,0.25,1.524
+ΔmutS,25,4,none,0.25,1.593
+ΔmutS,26,4,none,0.25,1.601
+ΔmutS,27,4,none,0.25,1.559
+ΔmutS,28,4,none,0.25,1.563
+ΔmutS,29,4,none,0.25,1.604
+ΔmutS,30,4,none,0.25,1.55
+ΔmutS,16,5,none,0.5,1.548
+ΔmutS,17,5,none,0.5,1.571
+ΔmutS,18,5,none,0.5,1.533
+ΔmutS,19,5,none,0.5,1.542
+ΔmutS,20,5,none,0.5,1.497
+ΔmutS,21,5,none,0.5,1.566
+ΔmutS,22,5,none,0.5,1.545
+ΔmutS,23,5,none,0.5,1.577
+ΔmutS,24,5,none,0.5,1.599
+ΔmutS,25,5,none,0.5,1.622
+ΔmutS,26,5,none,0.5,1.489
+ΔmutS,27,5,none,0.5,1.509
+ΔmutS,28,5,none,0.5,1.498
+ΔmutS,29,5,none,0.5,1.489
+ΔmutS,30,5,none,0.5,1.503
+ΔmutS,16,6,none,1,1.46
+ΔmutS,17,6,none,1,1.612
+ΔmutS,18,6,none,1,1.522
+ΔmutS,19,6,none,1,1.551
+ΔmutS,20,6,none,1,1.447
+ΔmutS,21,6,none,1,1.468
+ΔmutS,22,6,none,1,1.5
+ΔmutS,23,6,none,1,1.518
+ΔmutS,24,6,none,1,1.484
+ΔmutS,25,6,none,1,1.504
+ΔmutS,26,6,none,1,1.534
+ΔmutS,27,6,none,1,1.582
+ΔmutS,28,6,none,1,1.559
+ΔmutS,29,6,none,1,1.563
+ΔmutS,30,6,none,1,1.482
+ΔmutS,16,7,none,2,1.648
+ΔmutS,17,7,none,2,1.623
+ΔmutS,18,7,none,2,1.578
+ΔmutS,19,7,none,2,1.584
+ΔmutS,20,7,none,2,1.527
+ΔmutS,21,7,none,2,1.544
+ΔmutS,22,7,none,2,1.505
+ΔmutS,23,7,none,2,1.487
+ΔmutS,24,7,none,2,1.501
+ΔmutS,25,7,none,2,1.429
+ΔmutS,26,7,none,2,1.616
+ΔmutS,27,7,none,2,1.527
+ΔmutS,28,7,none,2,1.52
+ΔmutS,29,7,none,2,1.508
+ΔmutS,30,7,none,2,1.438
+ΔmutS,31,1,none,0,1.469
+ΔmutS,32,1,none,0,1.371
+ΔmutS,33,1,none,0,1.424
+ΔmutS,34,1,none,0,1.422
+ΔmutS,35,1,none,0,1.456
+ΔmutS,36,1,none,0,1.429
+ΔmutS,37,1,none,0,1.415
+ΔmutS,38,1,none,0,1.493
+ΔmutS,39,1,none,0,1.387
+ΔmutS,40,1,none,0,1.433
+ΔmutS,41,1,none,0,1.423
+ΔmutS,42,1,none,0,1.408
+ΔmutS,43,1,none,0,1.409
+ΔmutS,44,1,none,0,1.373
+ΔmutS,45,1,none,0,1.383
+ΔmutS,31,2,none,0.0625,1.503
+ΔmutS,32,2,none,0.0625,1.527
+ΔmutS,33,2,none,0.0625,1.544
+ΔmutS,34,2,none,0.0625,1.513
+ΔmutS,35,2,none,0.0625,1.562
+ΔmutS,36,2,none,0.0625,1.412
+ΔmutS,37,2,none,0.0625,1.457
+ΔmutS,38,2,none,0.0625,1.314
+ΔmutS,39,2,none,0.0625,1.395
+ΔmutS,40,2,none,0.0625,1.471
+ΔmutS,41,2,none,0.0625,1.441
+ΔmutS,42,2,none,0.0625,1.613
+ΔmutS,43,2,none,0.0625,1.595
+ΔmutS,44,2,none,0.0625,1.642
+ΔmutS,45,2,none,0.0625,1.464
+ΔmutS,31,3,none,0.125,1.537
+ΔmutS,32,3,none,0.125,1.557
+ΔmutS,33,3,none,0.125,1.547
+ΔmutS,34,3,none,0.125,1.55
+ΔmutS,35,3,none,0.125,1.528
+ΔmutS,36,3,none,0.125,1.457
+ΔmutS,37,3,none,0.125,1.511
+ΔmutS,38,3,none,0.125,1.444
+ΔmutS,39,3,none,0.125,1.423
+ΔmutS,40,3,none,0.125,1.396
+ΔmutS,41,3,none,0.125,1.454
+ΔmutS,42,3,none,0.125,1.482
+ΔmutS,43,3,none,0.125,1.453
+ΔmutS,44,3,none,0.125,1.478
+ΔmutS,45,3,none,0.125,1.485
+ΔmutS,31,4,none,0.25,1.487
+ΔmutS,32,4,none,0.25,1.599
+ΔmutS,33,4,none,0.25,1.547
+ΔmutS,34,4,none,0.25,1.541
+ΔmutS,35,4,none,0.25,1.554
+ΔmutS,36,4,none,0.25,1.479
+ΔmutS,37,4,none,0.25,1.499
+ΔmutS,38,4,none,0.25,1.476
+ΔmutS,39,4,none,0.25,1.467
+ΔmutS,40,4,none,0.25,1.53
+ΔmutS,41,4,none,0.25,1.576
+ΔmutS,42,4,none,0.25,1.578
+ΔmutS,43,4,none,0.25,1.526
+ΔmutS,44,4,none,0.25,1.563
+ΔmutS,45,4,none,0.25,1.521
+ΔmutS,31,5,none,0.5,1.328
+ΔmutS,32,5,none,0.5,1.462
+ΔmutS,33,5,none,0.5,1.475
+ΔmutS,34,5,none,0.5,1.521
+ΔmutS,35,5,none,0.5,1.47
+ΔmutS,36,5,none,0.5,1.372
+ΔmutS,37,5,none,0.5,1.498
+ΔmutS,38,5,none,0.5,1.504
+ΔmutS,39,5,none,0.5,1.459
+ΔmutS,40,5,none,0.5,1.458
+ΔmutS,41,5,none,0.5,1.401
+ΔmutS,42,5,none,0.5,1.416
+ΔmutS,43,5,none,0.5,1.47
+ΔmutS,44,5,none,0.5,1.516
+ΔmutS,45,5,none,0.5,1.499
+ΔmutS,31,6,none,1,1.492
+ΔmutS,32,6,none,1,1.498
+ΔmutS,33,6,none,1,1.468
+ΔmutS,34,6,none,1,1.564
+ΔmutS,35,6,none,1,1.515
+ΔmutS,36,6,none,1,1.463
+ΔmutS,37,6,none,1,1.405
+ΔmutS,38,6,none,1,1.477
+ΔmutS,39,6,none,1,1.407
+ΔmutS,40,6,none,1,1.472
+ΔmutS,41,6,none,1,1.569
+ΔmutS,42,6,none,1,1.498
+ΔmutS,43,6,none,1,1.505
+ΔmutS,44,6,none,1,1.489
+ΔmutS,45,6,none,1,1.435
+ΔmutS,31,7,none,2,1.589
+ΔmutS,32,7,none,2,1.653
+ΔmutS,33,7,none,2,1.564
+ΔmutS,34,7,none,2,1.647
+ΔmutS,35,7,none,2,1.589
+ΔmutS,36,7,none,2,1.527
+ΔmutS,37,7,none,2,1.527
+ΔmutS,38,7,none,2,1.525
+ΔmutS,39,7,none,2,1.546
+ΔmutS,40,7,none,2,1.562
+ΔmutS,41,7,none,2,1.605
+ΔmutS,42,7,none,2,1.562
+ΔmutS,43,7,none,2,1.576
+ΔmutS,44,7,none,2,1.586
+ΔmutS,45,7,none,2,1.558
+BW25113,1,1,nalidixic acid,0,1.542
+BW25113,2,1,nalidixic acid,0,1.51
+BW25113,3,1,nalidixic acid,0,1.525
+BW25113,4,1,nalidixic acid,0,1.536
+BW25113,5,1,nalidixic acid,0,1.534
+BW25113,6,1,nalidixic acid,0,1.5
+BW25113,7,1,nalidixic acid,0,1.485
+BW25113,8,1,nalidixic acid,0,1.516
+BW25113,9,1,nalidixic acid,0,1.488
+BW25113,10,1,nalidixic acid,0,1.549
+BW25113,11,1,nalidixic acid,0,1.557
+BW25113,12,1,nalidixic acid,0,1.562
+BW25113,13,1,nalidixic acid,0,1.498
+BW25113,14,1,nalidixic acid,0,1.499
+BW25113,15,1,nalidixic acid,0,1.508
+BW25113,1,2,nalidixic acid,0.0625,1.615
+BW25113,2,2,nalidixic acid,0.0625,1.645
+BW25113,3,2,nalidixic acid,0.0625,1.586
+BW25113,4,2,nalidixic acid,0.0625,1.582
+BW25113,5,2,nalidixic acid,0.0625,1.602
+BW25113,6,2,nalidixic acid,0.0625,1.542
+BW25113,7,2,nalidixic acid,0.0625,1.47
+BW25113,8,2,nalidixic acid,0.0625,1.49
+BW25113,9,2,nalidixic acid,0.0625,1.558
+BW25113,10,2,nalidixic acid,0.0625,1.478
+BW25113,11,2,nalidixic acid,0.0625,1.57
+BW25113,12,2,nalidixic acid,0.0625,1.629
+BW25113,13,2,nalidixic acid,0.0625,1.45
+BW25113,14,2,nalidixic acid,0.0625,1.506
+BW25113,15,2,nalidixic acid,0.0625,1.622
+BW25113,1,3,nalidixic acid,0.125,1.038
+BW25113,2,3,nalidixic acid,0.125,0.132
+BW25113,3,3,nalidixic acid,0.125,0.103
+BW25113,4,3,nalidixic acid,0.125,0.566
+BW25113,5,3,nalidixic acid,0.125,0.036
+BW25113,6,3,nalidixic acid,0.125,1.701
+BW25113,7,3,nalidixic acid,0.125,0.32
+BW25113,8,3,nalidixic acid,0.125,1.282
+BW25113,9,3,nalidixic acid,0.125,0.227
+BW25113,10,3,nalidixic acid,0.125,0.252
+BW25113,11,3,nalidixic acid,0.125,1.774
+BW25113,12,3,nalidixic acid,0.125,0.733
+BW25113,13,3,nalidixic acid,0.125,1.707
+BW25113,14,3,nalidixic acid,0.125,1.327
+BW25113,15,3,nalidixic acid,0.125,1.562
+BW25113,1,4,nalidixic acid,0.25,0.219
+BW25113,2,4,nalidixic acid,0.25,0.029
+BW25113,3,4,nalidixic acid,0.25,0.027
+BW25113,4,4,nalidixic acid,0.25,0.029
+BW25113,5,4,nalidixic acid,0.25,0.028
+BW25113,6,4,nalidixic acid,0.25,1.356
+BW25113,7,4,nalidixic acid,0.25,0.058
+BW25113,8,4,nalidixic acid,0.25,1.078
+BW25113,9,4,nalidixic acid,0.25,0.032
+BW25113,10,4,nalidixic acid,0.25,0.028
+BW25113,11,4,nalidixic acid,0.25,1.311
+BW25113,12,4,nalidixic acid,0.25,0.099
+BW25113,13,4,nalidixic acid,0.25,0.848
+BW25113,14,4,nalidixic acid,0.25,1.163
+BW25113,15,4,nalidixic acid,0.25,1.052
+BW25113,1,5,nalidixic acid,0.5,0.034
+BW25113,2,5,nalidixic acid,0.5,0.031
+BW25113,3,5,nalidixic acid,0.5,0.03
+BW25113,4,5,nalidixic acid,0.5,0.03
+BW25113,5,5,nalidixic acid,0.5,0.03
+BW25113,6,5,nalidixic acid,0.5,0.443
+BW25113,7,5,nalidixic acid,0.5,0.121
+BW25113,8,5,nalidixic acid,0.5,0.124
+BW25113,9,5,nalidixic acid,0.5,0.088
+BW25113,10,5,nalidixic acid,0.5,0.074
+BW25113,11,5,nalidixic acid,0.5,0.993
+BW25113,12,5,nalidixic acid,0.5,0.167
+BW25113,13,5,nalidixic acid,0.5,0.594
+BW25113,14,5,nalidixic acid,0.5,0.531
+BW25113,15,5,nalidixic acid,0.5,0.162
+BW25113,1,6,nalidixic acid,1,0.032
+BW25113,2,6,nalidixic acid,1,0.03
+BW25113,3,6,nalidixic acid,1,0.036
+BW25113,4,6,nalidixic acid,1,0.028
+BW25113,5,6,nalidixic acid,1,0.031
+BW25113,6,6,nalidixic acid,1,0.029
+BW25113,7,6,nalidixic acid,1,0.029
+BW25113,8,6,nalidixic acid,1,0.028
+BW25113,9,6,nalidixic acid,1,0.029
+BW25113,10,6,nalidixic acid,1,0.028
+BW25113,11,6,nalidixic acid,1,0.058
+BW25113,12,6,nalidixic acid,1,0.045
+BW25113,13,6,nalidixic acid,1,0.04
+BW25113,14,6,nalidixic acid,1,0.031
+BW25113,15,6,nalidixic acid,1,0.028
+BW25113,1,7,nalidixic acid,2,0.031
+BW25113,2,7,nalidixic acid,2,0.032
+BW25113,3,7,nalidixic acid,2,0.031
+BW25113,4,7,nalidixic acid,2,0.031
+BW25113,5,7,nalidixic acid,2,0.028
+BW25113,6,7,nalidixic acid,2,0.08
+BW25113,7,7,nalidixic acid,2,0.065
+BW25113,8,7,nalidixic acid,2,0.053
+BW25113,9,7,nalidixic acid,2,0.035
+BW25113,10,7,nalidixic acid,2,0.032
+BW25113,11,7,nalidixic acid,2,0.109
+BW25113,12,7,nalidixic acid,2,0.107
+BW25113,13,7,nalidixic acid,2,0.104
+BW25113,14,7,nalidixic acid,2,0.106
+BW25113,15,7,nalidixic acid,2,0.101
+BW25113,16,1,nalidixic acid,0,1.57
+BW25113,17,1,nalidixic acid,0,1.561
+BW25113,18,1,nalidixic acid,0,1.537
+BW25113,19,1,nalidixic acid,0,1.53
+BW25113,20,1,nalidixic acid,0,1.546
+BW25113,21,1,nalidixic acid,0,1.469
+BW25113,22,1,nalidixic acid,0,1.45
+BW25113,23,1,nalidixic acid,0,1.514
+BW25113,24,1,nalidixic acid,0,1.462
+BW25113,25,1,nalidixic acid,0,1.469
+BW25113,26,1,nalidixic acid,0,1.492
+BW25113,27,1,nalidixic acid,0,1.487
+BW25113,28,1,nalidixic acid,0,1.456
+BW25113,29,1,nalidixic acid,0,1.481
+BW25113,30,1,nalidixic acid,0,1.543
+BW25113,16,2,nalidixic acid,0.0625,1.643
+BW25113,17,2,nalidixic acid,0.0625,1.636
+BW25113,18,2,nalidixic acid,0.0625,1.636
+BW25113,19,2,nalidixic acid,0.0625,1.621
+BW25113,20,2,nalidixic acid,0.0625,1.63
+BW25113,21,2,nalidixic acid,0.0625,1.577
+BW25113,22,2,nalidixic acid,0.0625,1.599
+BW25113,23,2,nalidixic acid,0.0625,1.611
+BW25113,24,2,nalidixic acid,0.0625,1.615
+BW25113,25,2,nalidixic acid,0.0625,1.585
+BW25113,26,2,nalidixic acid,0.0625,1.479
+BW25113,27,2,nalidixic acid,0.0625,1.478
+BW25113,28,2,nalidixic acid,0.0625,1.482
+BW25113,29,2,nalidixic acid,0.0625,1.532
+BW25113,30,2,nalidixic acid,0.0625,1.471
+BW25113,16,3,nalidixic acid,0.125,0.768
+BW25113,17,3,nalidixic acid,0.125,0.995
+BW25113,18,3,nalidixic acid,0.125,1.405
+BW25113,19,3,nalidixic acid,0.125,1.136
+BW25113,20,3,nalidixic acid,0.125,0.919
+BW25113,21,3,nalidixic acid,0.125,1.76
+BW25113,22,3,nalidixic acid,0.125,1.766
+BW25113,23,3,nalidixic acid,0.125,1.636
+BW25113,24,3,nalidixic acid,0.125,0.353
+BW25113,25,3,nalidixic acid,0.125,0.688
+BW25113,26,3,nalidixic acid,0.125,0.91
+BW25113,27,3,nalidixic acid,0.125,0.386
+BW25113,28,3,nalidixic acid,0.125,1.755
+BW25113,29,3,nalidixic acid,0.125,0.518
+BW25113,30,3,nalidixic acid,0.125,1.678
+BW25113,16,4,nalidixic acid,0.25,1.155
+BW25113,17,4,nalidixic acid,0.25,1.526
+BW25113,18,4,nalidixic acid,0.25,1.046
+BW25113,19,4,nalidixic acid,0.25,0.56
+BW25113,20,4,nalidixic acid,0.25,0.972
+BW25113,21,4,nalidixic acid,0.25,1.128
+BW25113,22,4,nalidixic acid,0.25,1.546
+BW25113,23,4,nalidixic acid,0.25,0.994
+BW25113,24,4,nalidixic acid,0.25,0.025
+BW25113,25,4,nalidixic acid,0.25,0.624
+BW25113,26,4,nalidixic acid,0.25,0.458
+BW25113,27,4,nalidixic acid,0.25,0.027
+BW25113,28,4,nalidixic acid,0.25,1.2
+BW25113,29,4,nalidixic acid,0.25,0.026
+BW25113,30,4,nalidixic acid,0.25,1.072
+BW25113,16,5,nalidixic acid,0.5,0.033
+BW25113,17,5,nalidixic acid,0.5,0.572
+BW25113,18,5,nalidixic acid,0.5,0.875
+BW25113,19,5,nalidixic acid,0.5,0.049
+BW25113,20,5,nalidixic acid,0.5,0.918
+BW25113,21,5,nalidixic acid,0.5,0.697
+BW25113,22,5,nalidixic acid,0.5,0.864
+BW25113,23,5,nalidixic acid,0.5,0.063
+BW25113,24,5,nalidixic acid,0.5,0.035
+BW25113,25,5,nalidixic acid,0.5,0.117
+BW25113,26,5,nalidixic acid,0.5,0.113
+BW25113,27,5,nalidixic acid,0.5,0.102
+BW25113,28,5,nalidixic acid,0.5,0.802
+BW25113,29,5,nalidixic acid,0.5,0.096
+BW25113,30,5,nalidixic acid,0.5,0.222
+BW25113,16,6,nalidixic acid,1,0.033
+BW25113,17,6,nalidixic acid,1,0.105
+BW25113,18,6,nalidixic acid,1,0.08
+BW25113,19,6,nalidixic acid,1,0.035
+BW25113,20,6,nalidixic acid,1,0.033
+BW25113,21,6,nalidixic acid,1,0.142
+BW25113,22,6,nalidixic acid,1,0.109
+BW25113,23,6,nalidixic acid,1,0.097
+BW25113,24,6,nalidixic acid,1,0.077
+BW25113,25,6,nalidixic acid,1,0.058
+BW25113,26,6,nalidixic acid,1,0.184
+BW25113,27,6,nalidixic acid,1,0.179
+BW25113,28,6,nalidixic acid,1,0.171
+BW25113,29,6,nalidixic acid,1,0.165
+BW25113,30,6,nalidixic acid,1,0.161
+BW25113,16,7,nalidixic acid,2,0.029
+BW25113,17,7,nalidixic acid,2,0.028
+BW25113,18,7,nalidixic acid,2,0.028
+BW25113,19,7,nalidixic acid,2,0.028
+BW25113,20,7,nalidixic acid,2,0.028
+BW25113,21,7,nalidixic acid,2,0.055
+BW25113,22,7,nalidixic acid,2,0.045
+BW25113,23,7,nalidixic acid,2,0.037
+BW25113,24,7,nalidixic acid,2,0.034
+BW25113,25,7,nalidixic acid,2,0.033
+BW25113,26,7,nalidixic acid,2,0.031
+BW25113,27,7,nalidixic acid,2,0.03
+BW25113,28,7,nalidixic acid,2,0.033
+BW25113,29,7,nalidixic acid,2,0.037
+BW25113,30,7,nalidixic acid,2,0.043
+BW25113,31,1,nalidixic acid,0,1.546
+BW25113,32,1,nalidixic acid,0,1.566
+BW25113,33,1,nalidixic acid,0,1.573
+BW25113,34,1,nalidixic acid,0,1.544
+BW25113,35,1,nalidixic acid,0,1.564
+BW25113,36,1,nalidixic acid,0,1.538
+BW25113,37,1,nalidixic acid,0,1.482
+BW25113,38,1,nalidixic acid,0,1.47
+BW25113,39,1,nalidixic acid,0,1.501
+BW25113,40,1,nalidixic acid,0,1.501
+BW25113,41,1,nalidixic acid,0,1.484
+BW25113,42,1,nalidixic acid,0,1.502
+BW25113,43,1,nalidixic acid,0,1.486
+BW25113,44,1,nalidixic acid,0,1.506
+BW25113,45,1,nalidixic acid,0,1.504
+BW25113,31,2,nalidixic acid,0.0625,1.595
+BW25113,32,2,nalidixic acid,0.0625,1.481
+BW25113,33,2,nalidixic acid,0.0625,1.481
+BW25113,34,2,nalidixic acid,0.0625,1.521
+BW25113,35,2,nalidixic acid,0.0625,1.097
+BW25113,36,2,nalidixic acid,0.0625,1.553
+BW25113,37,2,nalidixic acid,0.0625,1.493
+BW25113,38,2,nalidixic acid,0.0625,1.567
+BW25113,39,2,nalidixic acid,0.0625,1.495
+BW25113,40,2,nalidixic acid,0.0625,1.315
+BW25113,41,2,nalidixic acid,0.0625,1.377
+BW25113,42,2,nalidixic acid,0.0625,1.544
+BW25113,43,2,nalidixic acid,0.0625,1.562
+BW25113,44,2,nalidixic acid,0.0625,1.547
+BW25113,45,2,nalidixic acid,0.0625,1.555
+BW25113,31,3,nalidixic acid,0.125,1.56
+BW25113,32,3,nalidixic acid,0.125,0.121
+BW25113,33,3,nalidixic acid,0.125,0.134
+BW25113,34,3,nalidixic acid,0.125,0.972
+BW25113,35,3,nalidixic acid,0.125,1.643
+BW25113,36,3,nalidixic acid,0.125,1.597
+BW25113,37,3,nalidixic acid,0.125,1.461
+BW25113,38,3,nalidixic acid,0.125,1.376
+BW25113,39,3,nalidixic acid,0.125,1.238
+BW25113,40,3,nalidixic acid,0.125,1.78
+BW25113,41,3,nalidixic acid,0.125,0.296
+BW25113,42,3,nalidixic acid,0.125,0.865
+BW25113,43,3,nalidixic acid,0.125,0.833
+BW25113,44,3,nalidixic acid,0.125,1.244
+BW25113,45,3,nalidixic acid,0.125,1.591
+BW25113,31,4,nalidixic acid,0.25,1.482
+BW25113,32,4,nalidixic acid,0.25,0.117
+BW25113,33,4,nalidixic acid,0.25,0.03
+BW25113,34,4,nalidixic acid,0.25,0.749
+BW25113,35,4,nalidixic acid,0.25,1.449
+BW25113,36,4,nalidixic acid,0.25,0.838
+BW25113,37,4,nalidixic acid,0.25,0.328
+BW25113,38,4,nalidixic acid,0.25,0.649
+BW25113,39,4,nalidixic acid,0.25,0.083
+BW25113,40,4,nalidixic acid,0.25,1.264
+BW25113,41,4,nalidixic acid,0.25,0.033
+BW25113,42,4,nalidixic acid,0.25,1.115
+BW25113,43,4,nalidixic acid,0.25,0.035
+BW25113,44,4,nalidixic acid,0.25,0.175
+BW25113,45,4,nalidixic acid,0.25,1.309
+BW25113,31,5,nalidixic acid,0.5,0.397
+BW25113,32,5,nalidixic acid,0.5,0.031
+BW25113,33,5,nalidixic acid,0.5,0.031
+BW25113,34,5,nalidixic acid,0.5,0.224
+BW25113,35,5,nalidixic acid,0.5,1.273
+BW25113,36,5,nalidixic acid,0.5,0.181
+BW25113,37,5,nalidixic acid,0.5,0.235
+BW25113,38,5,nalidixic acid,0.5,0.239
+BW25113,39,5,nalidixic acid,0.5,0.035
+BW25113,40,5,nalidixic acid,0.5,0.3
+BW25113,41,5,nalidixic acid,0.5,0.031
+BW25113,42,5,nalidixic acid,0.5,0.116
+BW25113,43,5,nalidixic acid,0.5,0.03
+BW25113,44,5,nalidixic acid,0.5,0.03
+BW25113,45,5,nalidixic acid,0.5,1.388
+BW25113,31,6,nalidixic acid,1,0.035
+BW25113,32,6,nalidixic acid,1,0.03
+BW25113,33,6,nalidixic acid,1,0.03
+BW25113,34,6,nalidixic acid,1,0.029
+BW25113,35,6,nalidixic acid,1,0.031
+BW25113,36,6,nalidixic acid,1,0.133
+BW25113,37,6,nalidixic acid,1,0.123
+BW25113,38,6,nalidixic acid,1,0.111
+BW25113,39,6,nalidixic acid,1,0.097
+BW25113,40,6,nalidixic acid,1,0.081
+BW25113,41,6,nalidixic acid,1,0.182
+BW25113,42,6,nalidixic acid,1,0.178
+BW25113,43,6,nalidixic acid,1,0.174
+BW25113,44,6,nalidixic acid,1,0.169
+BW25113,45,6,nalidixic acid,1,1.387
+BW25113,31,7,nalidixic acid,2,0.03
+BW25113,32,7,nalidixic acid,2,0.029
+BW25113,33,7,nalidixic acid,2,0.03
+BW25113,34,7,nalidixic acid,2,0.033
+BW25113,35,7,nalidixic acid,2,0.031
+BW25113,36,7,nalidixic acid,2,0.031
+BW25113,37,7,nalidixic acid,2,0.029
+BW25113,38,7,nalidixic acid,2,0.029
+BW25113,39,7,nalidixic acid,2,0.031
+BW25113,40,7,nalidixic acid,2,0.03
+BW25113,41,7,nalidixic acid,2,0.033
+BW25113,42,7,nalidixic acid,2,0.03
+BW25113,43,7,nalidixic acid,2,0.031
+BW25113,44,7,nalidixic acid,2,0.032
+BW25113,45,7,nalidixic acid,2,1.171
+ΔmutS,1,1,nalidixic acid,0,1.62
+ΔmutS,2,1,nalidixic acid,0,1.647
+ΔmutS,3,1,nalidixic acid,0,1.62
+ΔmutS,4,1,nalidixic acid,0,1.652
+ΔmutS,5,1,nalidixic acid,0,1.553
+ΔmutS,6,1,nalidixic acid,0,1.573
+ΔmutS,7,1,nalidixic acid,0,1.603
+ΔmutS,8,1,nalidixic acid,0,1.574
+ΔmutS,9,1,nalidixic acid,0,1.584
+ΔmutS,10,1,nalidixic acid,0,1.58
+ΔmutS,11,1,nalidixic acid,0,1.494
+ΔmutS,12,1,nalidixic acid,0,1.546
+ΔmutS,13,1,nalidixic acid,0,1.522
+ΔmutS,14,1,nalidixic acid,0,1.581
+ΔmutS,15,1,nalidixic acid,0,1.482
+ΔmutS,1,2,nalidixic acid,0.0625,1.607
+ΔmutS,2,2,nalidixic acid,0.0625,1.586
+ΔmutS,3,2,nalidixic acid,0.0625,1.53
+ΔmutS,4,2,nalidixic acid,0.0625,1.675
+ΔmutS,5,2,nalidixic acid,0.0625,1.575
+ΔmutS,6,2,nalidixic acid,0.0625,1.492
+ΔmutS,7,2,nalidixic acid,0.0625,1.661
+ΔmutS,8,2,nalidixic acid,0.0625,1.642
+ΔmutS,9,2,nalidixic acid,0.0625,1.708
+ΔmutS,10,2,nalidixic acid,0.0625,1.508
+ΔmutS,11,2,nalidixic acid,0.0625,1.204
+ΔmutS,12,2,nalidixic acid,0.0625,1.228
+ΔmutS,13,2,nalidixic acid,0.0625,1.318
+ΔmutS,14,2,nalidixic acid,0.0625,1.532
+ΔmutS,15,2,nalidixic acid,0.0625,1.464
+ΔmutS,1,3,nalidixic acid,0.125,1.49
+ΔmutS,2,3,nalidixic acid,0.125,1.543
+ΔmutS,3,3,nalidixic acid,0.125,1.512
+ΔmutS,4,3,nalidixic acid,0.125,1.565
+ΔmutS,5,3,nalidixic acid,0.125,1.535
+ΔmutS,6,3,nalidixic acid,0.125,1.548
+ΔmutS,7,3,nalidixic acid,0.125,1.487
+ΔmutS,8,3,nalidixic acid,0.125,1.547
+ΔmutS,9,3,nalidixic acid,0.125,1.45
+ΔmutS,10,3,nalidixic acid,0.125,1.607
+ΔmutS,11,3,nalidixic acid,0.125,1.582
+ΔmutS,12,3,nalidixic acid,0.125,1.495
+ΔmutS,13,3,nalidixic acid,0.125,1.373
+ΔmutS,14,3,nalidixic acid,0.125,1.604
+ΔmutS,15,3,nalidixic acid,0.125,1.675
+ΔmutS,1,4,nalidixic acid,0.25,1.525
+ΔmutS,2,4,nalidixic acid,0.25,1.523
+ΔmutS,3,4,nalidixic acid,0.25,1.515
+ΔmutS,4,4,nalidixic acid,0.25,1.459
+ΔmutS,5,4,nalidixic acid,0.25,1.491
+ΔmutS,6,4,nalidixic acid,0.25,1.451
+ΔmutS,7,4,nalidixic acid,0.25,1.483
+ΔmutS,8,4,nalidixic acid,0.25,1.488
+ΔmutS,9,4,nalidixic acid,0.25,1.489
+ΔmutS,10,4,nalidixic acid,0.25,1.405
+ΔmutS,11,4,nalidixic acid,0.25,1.482
+ΔmutS,12,4,nalidixic acid,0.25,1.236
+ΔmutS,13,4,nalidixic acid,0.25,1.334
+ΔmutS,14,4,nalidixic acid,0.25,1.445
+ΔmutS,15,4,nalidixic acid,0.25,1.381
+ΔmutS,1,5,nalidixic acid,0.5,1.575
+ΔmutS,2,5,nalidixic acid,0.5,1.44
+ΔmutS,3,5,nalidixic acid,0.5,1.514
+ΔmutS,4,5,nalidixic acid,0.5,1.382
+ΔmutS,5,5,nalidixic acid,0.5,1.393
+ΔmutS,6,5,nalidixic acid,0.5,1.665
+ΔmutS,7,5,nalidixic acid,0.5,1.585
+ΔmutS,8,5,nalidixic acid,0.5,1.615
+ΔmutS,9,5,nalidixic acid,0.5,1.541
+ΔmutS,10,5,nalidixic acid,0.5,1.431
+ΔmutS,11,5,nalidixic acid,0.5,1.546
+ΔmutS,12,5,nalidixic acid,0.5,1.282
+ΔmutS,13,5,nalidixic acid,0.5,1.113
+ΔmutS,14,5,nalidixic acid,0.5,1.496
+ΔmutS,15,5,nalidixic acid,0.5,1.554
+ΔmutS,1,6,nalidixic acid,1,1.459
+ΔmutS,2,6,nalidixic acid,1,1.581
+ΔmutS,3,6,nalidixic acid,1,1.372
+ΔmutS,4,6,nalidixic acid,1,1.416
+ΔmutS,5,6,nalidixic acid,1,1.385
+ΔmutS,6,6,nalidixic acid,1,1.41
+ΔmutS,7,6,nalidixic acid,1,1.384
+ΔmutS,8,6,nalidixic acid,1,1.528
+ΔmutS,9,6,nalidixic acid,1,1.503
+ΔmutS,10,6,nalidixic acid,1,1.252
+ΔmutS,11,6,nalidixic acid,1,1.425
+ΔmutS,12,6,nalidixic acid,1,1.399
+ΔmutS,13,6,nalidixic acid,1,1.335
+ΔmutS,14,6,nalidixic acid,1,1.422
+ΔmutS,15,6,nalidixic acid,1,1.379
+ΔmutS,1,7,nalidixic acid,2,1.499
+ΔmutS,2,7,nalidixic acid,2,1.47
+ΔmutS,3,7,nalidixic acid,2,1.496
+ΔmutS,4,7,nalidixic acid,2,1.495
+ΔmutS,5,7,nalidixic acid,2,1.23
+ΔmutS,6,7,nalidixic acid,2,1.532
+ΔmutS,7,7,nalidixic acid,2,1.342
+ΔmutS,8,7,nalidixic acid,2,1.369
+ΔmutS,9,7,nalidixic acid,2,1.706
+ΔmutS,10,7,nalidixic acid,2,1.186
+ΔmutS,11,7,nalidixic acid,2,1.188
+ΔmutS,12,7,nalidixic acid,2,1.28
+ΔmutS,13,7,nalidixic acid,2,1.281
+ΔmutS,14,7,nalidixic acid,2,1.231
+ΔmutS,15,7,nalidixic acid,2,1.441
+ΔmutS,16,1,nalidixic acid,0,1.559
+ΔmutS,17,1,nalidixic acid,0,1.62
+ΔmutS,18,1,nalidixic acid,0,1.503
+ΔmutS,19,1,nalidixic acid,0,1.64
+ΔmutS,20,1,nalidixic acid,0,1.597
+ΔmutS,21,1,nalidixic acid,0,1.383
+ΔmutS,22,1,nalidixic acid,0,1.438
+ΔmutS,23,1,nalidixic acid,0,1.543
+ΔmutS,24,1,nalidixic acid,0,1.452
+ΔmutS,25,1,nalidixic acid,0,1.613
+ΔmutS,26,1,nalidixic acid,0,1.426
+ΔmutS,27,1,nalidixic acid,0,1.403
+ΔmutS,28,1,nalidixic acid,0,1.48
+ΔmutS,29,1,nalidixic acid,0,1.499
+ΔmutS,30,1,nalidixic acid,0,1.388
+ΔmutS,16,2,nalidixic acid,0.0625,1.559
+ΔmutS,17,2,nalidixic acid,0.0625,1.534
+ΔmutS,18,2,nalidixic acid,0.0625,1.486
+ΔmutS,19,2,nalidixic acid,0.0625,1.472
+ΔmutS,20,2,nalidixic acid,0.0625,1.507
+ΔmutS,21,2,nalidixic acid,0.0625,1.396
+ΔmutS,22,2,nalidixic acid,0.0625,1.507
+ΔmutS,23,2,nalidixic acid,0.0625,1.568
+ΔmutS,24,2,nalidixic acid,0.0625,1.548
+ΔmutS,25,2,nalidixic acid,0.0625,1.466
+ΔmutS,26,2,nalidixic acid,0.0625,1.622
+ΔmutS,27,2,nalidixic acid,0.0625,1.374
+ΔmutS,28,2,nalidixic acid,0.0625,1.353
+ΔmutS,29,2,nalidixic acid,0.0625,1.43
+ΔmutS,30,2,nalidixic acid,0.0625,1.416
+ΔmutS,16,3,nalidixic acid,0.125,1.515
+ΔmutS,17,3,nalidixic acid,0.125,1.607
+ΔmutS,18,3,nalidixic acid,0.125,1.432
+ΔmutS,19,3,nalidixic acid,0.125,1.562
+ΔmutS,20,3,nalidixic acid,0.125,1.453
+ΔmutS,21,3,nalidixic acid,0.125,1.543
+ΔmutS,22,3,nalidixic acid,0.125,1.596
+ΔmutS,23,3,nalidixic acid,0.125,1.607
+ΔmutS,24,3,nalidixic acid,0.125,1.504
+ΔmutS,25,3,nalidixic acid,0.125,1.464
+ΔmutS,26,3,nalidixic acid,0.125,1.603
+ΔmutS,27,3,nalidixic acid,0.125,1.576
+ΔmutS,28,3,nalidixic acid,0.125,1.547
+ΔmutS,29,3,nalidixic acid,0.125,1.614
+ΔmutS,30,3,nalidixic acid,0.125,1.402
+ΔmutS,16,4,nalidixic acid,0.25,1.447
+ΔmutS,17,4,nalidixic acid,0.25,1.526
+ΔmutS,18,4,nalidixic acid,0.25,1.427
+ΔmutS,19,4,nalidixic acid,0.25,1.384
+ΔmutS,20,4,nalidixic acid,0.25,1.44
+ΔmutS,21,4,nalidixic acid,0.25,1.48
+ΔmutS,22,4,nalidixic acid,0.25,1.222
+ΔmutS,23,4,nalidixic acid,0.25,1.446
+ΔmutS,24,4,nalidixic acid,0.25,1.449
+ΔmutS,25,4,nalidixic acid,0.25,1.441
+ΔmutS,26,4,nalidixic acid,0.25,1.382
+ΔmutS,27,4,nalidixic acid,0.25,1.433
+ΔmutS,28,4,nalidixic acid,0.25,1.434
+ΔmutS,29,4,nalidixic acid,0.25,1.399
+ΔmutS,30,4,nalidixic acid,0.25,1.294
+ΔmutS,16,5,nalidixic acid,0.5,1.342
+ΔmutS,17,5,nalidixic acid,0.5,1.375
+ΔmutS,18,5,nalidixic acid,0.5,1.401
+ΔmutS,19,5,nalidixic acid,0.5,1.53
+ΔmutS,20,5,nalidixic acid,0.5,1.579
+ΔmutS,21,5,nalidixic acid,0.5,1.423
+ΔmutS,22,5,nalidixic acid,0.5,1.141
+ΔmutS,23,5,nalidixic acid,0.5,1.357
+ΔmutS,24,5,nalidixic acid,0.5,1.571
+ΔmutS,25,5,nalidixic acid,0.5,1.553
+ΔmutS,26,5,nalidixic acid,0.5,1.388
+ΔmutS,27,5,nalidixic acid,0.5,1.534
+ΔmutS,28,5,nalidixic acid,0.5,1.429
+ΔmutS,29,5,nalidixic acid,0.5,1.549
+ΔmutS,30,5,nalidixic acid,0.5,1.439
+ΔmutS,16,6,nalidixic acid,1,1.618
+ΔmutS,17,6,nalidixic acid,1,1.456
+ΔmutS,18,6,nalidixic acid,1,1.561
+ΔmutS,19,6,nalidixic acid,1,1.471
+ΔmutS,20,6,nalidixic acid,1,1.356
+ΔmutS,21,6,nalidixic acid,1,1.559
+ΔmutS,22,6,nalidixic acid,1,1.326
+ΔmutS,23,6,nalidixic acid,1,1.333
+ΔmutS,24,6,nalidixic acid,1,1.374
+ΔmutS,25,6,nalidixic acid,1,1.432
+ΔmutS,26,6,nalidixic acid,1,1.547
+ΔmutS,27,6,nalidixic acid,1,1.505
+ΔmutS,28,6,nalidixic acid,1,1.284
+ΔmutS,29,6,nalidixic acid,1,1.445
+ΔmutS,30,6,nalidixic acid,1,1.425
+ΔmutS,16,7,nalidixic acid,2,1.649
+ΔmutS,17,7,nalidixic acid,2,1.466
+ΔmutS,18,7,nalidixic acid,2,1.407
+ΔmutS,19,7,nalidixic acid,2,1.402
+ΔmutS,20,7,nalidixic acid,2,1.283
+ΔmutS,21,7,nalidixic acid,2,1.612
+ΔmutS,22,7,nalidixic acid,2,1.297
+ΔmutS,23,7,nalidixic acid,2,1.515
+ΔmutS,24,7,nalidixic acid,2,1.586
+ΔmutS,25,7,nalidixic acid,2,1.258
+ΔmutS,26,7,nalidixic acid,2,1.422
+ΔmutS,27,7,nalidixic acid,2,1.337
+ΔmutS,28,7,nalidixic acid,2,1.378
+ΔmutS,29,7,nalidixic acid,2,1.415
+ΔmutS,30,7,nalidixic acid,2,1.55
+ΔmutS,31,1,nalidixic acid,0,1.62
+ΔmutS,32,1,nalidixic acid,0,1.58
+ΔmutS,33,1,nalidixic acid,0,1.433
+ΔmutS,34,1,nalidixic acid,0,1.654
+ΔmutS,35,1,nalidixic acid,0,1.617
+ΔmutS,36,1,nalidixic acid,0,1.478
+ΔmutS,37,1,nalidixic acid,0,1.507
+ΔmutS,38,1,nalidixic acid,0,1.538
+ΔmutS,39,1,nalidixic acid,0,1.554
+ΔmutS,40,1,nalidixic acid,0,1.581
+ΔmutS,41,1,nalidixic acid,0,1.297
+ΔmutS,42,1,nalidixic acid,0,1.524
+ΔmutS,43,1,nalidixic acid,0,1.542
+ΔmutS,44,1,nalidixic acid,0,1.487
+ΔmutS,45,1,nalidixic acid,0,1.535
+ΔmutS,31,2,nalidixic acid,0.0625,1.641
+ΔmutS,32,2,nalidixic acid,0.0625,1.561
+ΔmutS,33,2,nalidixic acid,0.0625,1.547
+ΔmutS,34,2,nalidixic acid,0.0625,1.628
+ΔmutS,35,2,nalidixic acid,0.0625,1.512
+ΔmutS,36,2,nalidixic acid,0.0625,1.602
+ΔmutS,37,2,nalidixic acid,0.0625,1.61
+ΔmutS,38,2,nalidixic acid,0.0625,1.448
+ΔmutS,39,2,nalidixic acid,0.0625,1.519
+ΔmutS,40,2,nalidixic acid,0.0625,1.455
+ΔmutS,41,2,nalidixic acid,0.0625,1.205
+ΔmutS,42,2,nalidixic acid,0.0625,1.486
+ΔmutS,43,2,nalidixic acid,0.0625,1.372
+ΔmutS,44,2,nalidixic acid,0.0625,1.469
+ΔmutS,45,2,nalidixic acid,0.0625,1.541
+ΔmutS,31,3,nalidixic acid,0.125,1.469
+ΔmutS,32,3,nalidixic acid,0.125,1.603
+ΔmutS,33,3,nalidixic acid,0.125,1.518
+ΔmutS,34,3,nalidixic acid,0.125,1.534
+ΔmutS,35,3,nalidixic acid,0.125,1.567
+ΔmutS,36,3,nalidixic acid,0.125,1.397
+ΔmutS,37,3,nalidixic acid,0.125,1.443
+ΔmutS,38,3,nalidixic acid,0.125,1.491
+ΔmutS,39,3,nalidixic acid,0.125,1.581
+ΔmutS,40,3,nalidixic acid,0.125,1.554
+ΔmutS,41,3,nalidixic acid,0.125,1.233
+ΔmutS,42,3,nalidixic acid,0.125,1.466
+ΔmutS,43,3,nalidixic acid,0.125,1.364
+ΔmutS,44,3,nalidixic acid,0.125,1.513
+ΔmutS,45,3,nalidixic acid,0.125,1.461
+ΔmutS,31,4,nalidixic acid,0.25,1.565
+ΔmutS,32,4,nalidixic acid,0.25,1.646
+ΔmutS,33,4,nalidixic acid,0.25,1.469
+ΔmutS,34,4,nalidixic acid,0.25,1.539
+ΔmutS,35,4,nalidixic acid,0.25,1.386
+ΔmutS,36,4,nalidixic acid,0.25,1.385
+ΔmutS,37,4,nalidixic acid,0.25,1.395
+ΔmutS,38,4,nalidixic acid,0.25,1.525
+ΔmutS,39,4,nalidixic acid,0.25,1.507
+ΔmutS,40,4,nalidixic acid,0.25,1.455
+ΔmutS,41,4,nalidixic acid,0.25,1.376
+ΔmutS,42,4,nalidixic acid,0.25,1.42
+ΔmutS,43,4,nalidixic acid,0.25,1.387
+ΔmutS,44,4,nalidixic acid,0.25,1.428
+ΔmutS,45,4,nalidixic acid,0.25,1.157
+ΔmutS,31,5,nalidixic acid,0.5,1.256
+ΔmutS,32,5,nalidixic acid,0.5,1.5
+ΔmutS,33,5,nalidixic acid,0.5,1.511
+ΔmutS,34,5,nalidixic acid,0.5,1.565
+ΔmutS,35,5,nalidixic acid,0.5,1.463
+ΔmutS,36,5,nalidixic acid,0.5,1.487
+ΔmutS,37,5,nalidixic acid,0.5,1.185
+ΔmutS,38,5,nalidixic acid,0.5,1.595
+ΔmutS,39,5,nalidixic acid,0.5,1.693
+ΔmutS,40,5,nalidixic acid,0.5,1.63
+ΔmutS,41,5,nalidixic acid,0.5,1.421
+ΔmutS,42,5,nalidixic acid,0.5,1.324
+ΔmutS,43,5,nalidixic acid,0.5,1.41
+ΔmutS,44,5,nalidixic acid,0.5,1.546
+ΔmutS,45,5,nalidixic acid,0.5,1.534
+ΔmutS,31,6,nalidixic acid,1,1.289
+ΔmutS,32,6,nalidixic acid,1,1.541
+ΔmutS,33,6,nalidixic acid,1,1.525
+ΔmutS,34,6,nalidixic acid,1,1.452
+ΔmutS,35,6,nalidixic acid,1,1.203
+ΔmutS,36,6,nalidixic acid,1,1.46
+ΔmutS,37,6,nalidixic acid,1,1.471
+ΔmutS,38,6,nalidixic acid,1,1.615
+ΔmutS,39,6,nalidixic acid,1,1.464
+ΔmutS,40,6,nalidixic acid,1,1.38
+ΔmutS,41,6,nalidixic acid,1,1.461
+ΔmutS,42,6,nalidixic acid,1,1.433
+ΔmutS,43,6,nalidixic acid,1,1.279
+ΔmutS,44,6,nalidixic acid,1,1.37
+ΔmutS,45,6,nalidixic acid,1,1.413
+ΔmutS,31,7,nalidixic acid,2,1.613
+ΔmutS,32,7,nalidixic acid,2,1.504
+ΔmutS,33,7,nalidixic acid,2,1.464
+ΔmutS,34,7,nalidixic acid,2,1.44
+ΔmutS,35,7,nalidixic acid,2,1.385
+ΔmutS,36,7,nalidixic acid,2,1.546
+ΔmutS,37,7,nalidixic acid,2,1.204
+ΔmutS,38,7,nalidixic acid,2,1.546
+ΔmutS,39,7,nalidixic acid,2,1.537
+ΔmutS,40,7,nalidixic acid,2,1.349
+ΔmutS,41,7,nalidixic acid,2,1.547
+ΔmutS,42,7,nalidixic acid,2,1.333
+ΔmutS,43,7,nalidixic acid,2,1.358
+ΔmutS,44,7,nalidixic acid,2,1.28
+ΔmutS,45,7,nalidixic acid,2,1.284
+BW25113,1,1,rifampicin,0,1.548
+BW25113,2,1,rifampicin,0,1.552
+BW25113,3,1,rifampicin,0,1.522
+BW25113,4,1,rifampicin,0,1.548
+BW25113,5,1,rifampicin,0,1.538
+BW25113,6,1,rifampicin,0,1.448
+BW25113,7,1,rifampicin,0,1.441
+BW25113,8,1,rifampicin,0,1.46
+BW25113,9,1,rifampicin,0,1.52
+BW25113,10,1,rifampicin,0,1.492
+BW25113,11,1,rifampicin,0,1.538
+BW25113,12,1,rifampicin,0,1.516
+BW25113,13,1,rifampicin,0,1.477
+BW25113,14,1,rifampicin,0,1.481
+BW25113,15,1,rifampicin,0,1.47
+BW25113,1,2,rifampicin,0.0625,1.178
+BW25113,2,2,rifampicin,0.0625,1.165
+BW25113,3,2,rifampicin,0.0625,1.012
+BW25113,4,2,rifampicin,0.0625,1.048
+BW25113,5,2,rifampicin,0.0625,0.906
+BW25113,6,2,rifampicin,0.0625,1.098
+BW25113,7,2,rifampicin,0.0625,1.065
+BW25113,8,2,rifampicin,0.0625,1.021
+BW25113,9,2,rifampicin,0.0625,0.97
+BW25113,10,2,rifampicin,0.0625,0.96
+BW25113,11,2,rifampicin,0.0625,1.109
+BW25113,12,2,rifampicin,0.0625,1.028
+BW25113,13,2,rifampicin,0.0625,0.907
+BW25113,14,2,rifampicin,0.0625,0.952
+BW25113,15,2,rifampicin,0.0625,1.003
+BW25113,1,3,rifampicin,0.125,0.496
+BW25113,2,3,rifampicin,0.125,1.624
+BW25113,3,3,rifampicin,0.125,1.515
+BW25113,4,3,rifampicin,0.125,0.986
+BW25113,5,3,rifampicin,0.125,0.963
+BW25113,6,3,rifampicin,0.125,1.098
+BW25113,7,3,rifampicin,0.125,0.238
+BW25113,8,3,rifampicin,0.125,1.086
+BW25113,9,3,rifampicin,0.125,0.619
+BW25113,10,3,rifampicin,0.125,1.133
+BW25113,11,3,rifampicin,0.125,0.875
+BW25113,12,3,rifampicin,0.125,0.892
+BW25113,13,3,rifampicin,0.125,0.78
+BW25113,14,3,rifampicin,0.125,0.891
+BW25113,15,3,rifampicin,0.125,0.913
+BW25113,1,4,rifampicin,0.25,0.04
+BW25113,2,4,rifampicin,0.25,1.327
+BW25113,3,4,rifampicin,0.25,1.455
+BW25113,4,4,rifampicin,0.25,0.191
+BW25113,5,4,rifampicin,0.25,0.348
+BW25113,6,4,rifampicin,0.25,0.665
+BW25113,7,4,rifampicin,0.25,0.075
+BW25113,8,4,rifampicin,0.25,0.166
+BW25113,9,4,rifampicin,0.25,0.853
+BW25113,10,4,rifampicin,0.25,0.215
+BW25113,11,4,rifampicin,0.25,0.874
+BW25113,12,4,rifampicin,0.25,0.231
+BW25113,13,4,rifampicin,0.25,0.864
+BW25113,14,4,rifampicin,0.25,0.164
+BW25113,15,4,rifampicin,0.25,0.195
+BW25113,1,5,rifampicin,0.5,0.047
+BW25113,2,5,rifampicin,0.5,1.511
+BW25113,3,5,rifampicin,0.5,1.412
+BW25113,4,5,rifampicin,0.5,0.048
+BW25113,5,5,rifampicin,0.5,0.05
+BW25113,6,5,rifampicin,0.5,0.593
+BW25113,7,5,rifampicin,0.5,0.15
+BW25113,8,5,rifampicin,0.5,0.162
+BW25113,9,5,rifampicin,0.5,0.16
+BW25113,10,5,rifampicin,0.5,0.103
+BW25113,11,5,rifampicin,0.5,1.668
+BW25113,12,5,rifampicin,0.5,0.194
+BW25113,13,5,rifampicin,0.5,1.572
+BW25113,14,5,rifampicin,0.5,0.187
+BW25113,15,5,rifampicin,0.5,0.18
+BW25113,1,6,rifampicin,1,0.057
+BW25113,2,6,rifampicin,1,1.683
+BW25113,3,6,rifampicin,1,1.319
+BW25113,4,6,rifampicin,1,0.056
+BW25113,5,6,rifampicin,1,0.055
+BW25113,6,6,rifampicin,1,0.062
+BW25113,7,6,rifampicin,1,0.065
+BW25113,8,6,rifampicin,1,0.066
+BW25113,9,6,rifampicin,1,0.064
+BW25113,10,6,rifampicin,1,0.063
+BW25113,11,6,rifampicin,1,1.488
+BW25113,12,6,rifampicin,1,0.088
+BW25113,13,6,rifampicin,1,1.514
+BW25113,14,6,rifampicin,1,0.07
+BW25113,15,6,rifampicin,1,0.061
+BW25113,1,7,rifampicin,2,0.065
+BW25113,2,7,rifampicin,2,1.546
+BW25113,3,7,rifampicin,2,1.145
+BW25113,4,7,rifampicin,2,0.068
+BW25113,5,7,rifampicin,2,0.065
+BW25113,6,7,rifampicin,2,0.124
+BW25113,7,7,rifampicin,2,0.128
+BW25113,8,7,rifampicin,2,0.109
+BW25113,9,7,rifampicin,2,0.092
+BW25113,10,7,rifampicin,2,0.078
+BW25113,11,7,rifampicin,2,1.622
+BW25113,12,7,rifampicin,2,0.164
+BW25113,13,7,rifampicin,2,1.722
+BW25113,14,7,rifampicin,2,0.158
+BW25113,15,7,rifampicin,2,0.149
+BW25113,16,1,rifampicin,0,1.498
+BW25113,17,1,rifampicin,0,1.612
+BW25113,18,1,rifampicin,0,1.574
+BW25113,19,1,rifampicin,0,1.586
+BW25113,20,1,rifampicin,0,1.619
+BW25113,21,1,rifampicin,0,1.59
+BW25113,22,1,rifampicin,0,1.509
+BW25113,23,1,rifampicin,0,1.534
+BW25113,24,1,rifampicin,0,1.55
+BW25113,25,1,rifampicin,0,1.449
+BW25113,26,1,rifampicin,0,1.575
+BW25113,27,1,rifampicin,0,1.511
+BW25113,28,1,rifampicin,0,1.509
+BW25113,29,1,rifampicin,0,1.491
+BW25113,30,1,rifampicin,0,1.569
+BW25113,16,2,rifampicin,0.0625,1.183
+BW25113,17,2,rifampicin,0.0625,1.141
+BW25113,18,2,rifampicin,0.0625,1.177
+BW25113,19,2,rifampicin,0.0625,1.118
+BW25113,20,2,rifampicin,0.0625,1.065
+BW25113,21,2,rifampicin,0.0625,1.061
+BW25113,22,2,rifampicin,0.0625,1.07
+BW25113,23,2,rifampicin,0.0625,1.026
+BW25113,24,2,rifampicin,0.0625,1.028
+BW25113,25,2,rifampicin,0.0625,1.084
+BW25113,26,2,rifampicin,0.0625,1.027
+BW25113,27,2,rifampicin,0.0625,1.067
+BW25113,28,2,rifampicin,0.0625,0.936
+BW25113,29,2,rifampicin,0.0625,0.986
+BW25113,30,2,rifampicin,0.0625,0.938
+BW25113,16,3,rifampicin,0.125,1.102
+BW25113,17,3,rifampicin,0.125,1.532
+BW25113,18,3,rifampicin,0.125,1.033
+BW25113,19,3,rifampicin,0.125,0.922
+BW25113,20,3,rifampicin,0.125,1.56
+BW25113,21,3,rifampicin,0.125,0.654
+BW25113,22,3,rifampicin,0.125,0.49
+BW25113,23,3,rifampicin,0.125,1.134
+BW25113,24,3,rifampicin,0.125,1.054
+BW25113,25,3,rifampicin,0.125,1.191
+BW25113,26,3,rifampicin,0.125,1.13
+BW25113,27,3,rifampicin,0.125,1.041
+BW25113,28,3,rifampicin,0.125,1.172
+BW25113,29,3,rifampicin,0.125,1.709
+BW25113,30,3,rifampicin,0.125,1.216
+BW25113,16,4,rifampicin,0.25,1.441
+BW25113,17,4,rifampicin,0.25,1.517
+BW25113,18,4,rifampicin,0.25,0.734
+BW25113,19,4,rifampicin,0.25,0.287
+BW25113,20,4,rifampicin,0.25,1.36
+BW25113,21,4,rifampicin,0.25,1.412
+BW25113,22,4,rifampicin,0.25,0.736
+BW25113,23,4,rifampicin,0.25,0.128
+BW25113,24,4,rifampicin,0.25,1.434
+BW25113,25,4,rifampicin,0.25,1.442
+BW25113,26,4,rifampicin,0.25,0.101
+BW25113,27,4,rifampicin,0.25,0.363
+BW25113,28,4,rifampicin,0.25,0.134
+BW25113,29,4,rifampicin,0.25,1.419
+BW25113,30,4,rifampicin,0.25,1.345
+BW25113,16,5,rifampicin,0.5,1.423
+BW25113,17,5,rifampicin,0.5,1.452
+BW25113,18,5,rifampicin,0.5,0.065
+BW25113,19,5,rifampicin,0.5,0.175
+BW25113,20,5,rifampicin,0.5,1.435
+BW25113,21,5,rifampicin,0.5,1.413
+BW25113,22,5,rifampicin,0.5,1.195
+BW25113,23,5,rifampicin,0.5,0.077
+BW25113,24,5,rifampicin,0.5,1.415
+BW25113,25,5,rifampicin,0.5,1.401
+BW25113,26,5,rifampicin,0.5,0.124
+BW25113,27,5,rifampicin,0.5,0.127
+BW25113,28,5,rifampicin,0.5,0.126
+BW25113,29,5,rifampicin,0.5,1.498
+BW25113,30,5,rifampicin,0.5,1.381
+BW25113,16,6,rifampicin,1,1.486
+BW25113,17,6,rifampicin,1,1.314
+BW25113,18,6,rifampicin,1,0.059
+BW25113,19,6,rifampicin,1,0.053
+BW25113,20,6,rifampicin,1,1.58
+BW25113,21,6,rifampicin,1,1.491
+BW25113,22,6,rifampicin,1,1.137
+BW25113,23,6,rifampicin,1,0.131
+BW25113,24,6,rifampicin,1,1.439
+BW25113,25,6,rifampicin,1,1.362
+BW25113,26,6,rifampicin,1,0.209
+BW25113,27,6,rifampicin,1,0.211
+BW25113,28,6,rifampicin,1,0.206
+BW25113,29,6,rifampicin,1,1.659
+BW25113,30,6,rifampicin,1,1.504
+BW25113,16,7,rifampicin,2,1.527
+BW25113,17,7,rifampicin,2,0.573
+BW25113,18,7,rifampicin,2,0.065
+BW25113,19,7,rifampicin,2,0.068
+BW25113,20,7,rifampicin,2,1.585
+BW25113,21,7,rifampicin,2,1.337
+BW25113,22,7,rifampicin,2,0.971
+BW25113,23,7,rifampicin,2,0.092
+BW25113,24,7,rifampicin,2,1.439
+BW25113,25,7,rifampicin,2,1.45
+BW25113,26,7,rifampicin,2,0.065
+BW25113,27,7,rifampicin,2,0.075
+BW25113,28,7,rifampicin,2,0.084
+BW25113,29,7,rifampicin,2,1.383
+BW25113,30,7,rifampicin,2,1.511
+BW25113,31,1,rifampicin,0,1.659
+BW25113,32,1,rifampicin,0,1.662
+BW25113,33,1,rifampicin,0,1.669
+BW25113,34,1,rifampicin,0,1.663
+BW25113,35,1,rifampicin,0,1.65
+BW25113,36,1,rifampicin,0,1.657
+BW25113,37,1,rifampicin,0,1.631
+BW25113,38,1,rifampicin,0,1.514
+BW25113,39,1,rifampicin,0,1.588
+BW25113,40,1,rifampicin,0,1.587
+BW25113,41,1,rifampicin,0,1.533
+BW25113,42,1,rifampicin,0,1.502
+BW25113,43,1,rifampicin,0,1.482
+BW25113,44,1,rifampicin,0,1.472
+BW25113,45,1,rifampicin,0,1.523
+BW25113,31,2,rifampicin,0.0625,0.94
+BW25113,32,2,rifampicin,0.0625,0.991
+BW25113,33,2,rifampicin,0.0625,0.943
+BW25113,34,2,rifampicin,0.0625,1.027
+BW25113,35,2,rifampicin,0.0625,0.91
+BW25113,36,2,rifampicin,0.0625,1.016
+BW25113,37,2,rifampicin,0.0625,0.908
+BW25113,38,2,rifampicin,0.0625,1.005
+BW25113,39,2,rifampicin,0.0625,1.076
+BW25113,40,2,rifampicin,0.0625,0.984
+BW25113,41,2,rifampicin,0.0625,0.968
+BW25113,42,2,rifampicin,0.0625,1.045
+BW25113,43,2,rifampicin,0.0625,0.929
+BW25113,44,2,rifampicin,0.0625,1
+BW25113,45,2,rifampicin,0.0625,0.891
+BW25113,31,3,rifampicin,0.125,1.106
+BW25113,32,3,rifampicin,0.125,1.568
+BW25113,33,3,rifampicin,0.125,0.992
+BW25113,34,3,rifampicin,0.125,0.974
+BW25113,35,3,rifampicin,0.125,1.072
+BW25113,36,3,rifampicin,0.125,1.532
+BW25113,37,3,rifampicin,0.125,0.545
+BW25113,38,3,rifampicin,0.125,1.569
+BW25113,39,3,rifampicin,0.125,1.139
+BW25113,40,3,rifampicin,0.125,1.622
+BW25113,41,3,rifampicin,0.125,1.1
+BW25113,42,3,rifampicin,0.125,0.842
+BW25113,43,3,rifampicin,0.125,1.628
+BW25113,44,3,rifampicin,0.125,1.612
+BW25113,45,3,rifampicin,0.125,1.048
+BW25113,31,4,rifampicin,0.25,1.314
+BW25113,32,4,rifampicin,0.25,1.405
+BW25113,33,4,rifampicin,0.25,0.083
+BW25113,34,4,rifampicin,0.25,0.595
+BW25113,35,4,rifampicin,0.25,1.423
+BW25113,36,4,rifampicin,0.25,1.53
+BW25113,37,4,rifampicin,0.25,0.057
+BW25113,38,4,rifampicin,0.25,1.46
+BW25113,39,4,rifampicin,0.25,1.334
+BW25113,40,4,rifampicin,0.25,1.487
+BW25113,41,4,rifampicin,0.25,0.111
+BW25113,42,4,rifampicin,0.25,0.194
+BW25113,43,4,rifampicin,0.25,1.481
+BW25113,44,4,rifampicin,0.25,1.501
+BW25113,45,4,rifampicin,0.25,0.092
+BW25113,31,5,rifampicin,0.5,1.398
+BW25113,32,5,rifampicin,0.5,1.579
+BW25113,33,5,rifampicin,0.5,0.059
+BW25113,34,5,rifampicin,0.5,0.871
+BW25113,35,5,rifampicin,0.5,1.429
+BW25113,36,5,rifampicin,0.5,1.451
+BW25113,37,5,rifampicin,0.5,0.058
+BW25113,38,5,rifampicin,0.5,1.346
+BW25113,39,5,rifampicin,0.5,1.471
+BW25113,40,5,rifampicin,0.5,1.449
+BW25113,41,5,rifampicin,0.5,0.053
+BW25113,42,5,rifampicin,0.5,0.059
+BW25113,43,5,rifampicin,0.5,1.372
+BW25113,44,5,rifampicin,0.5,1.563
+BW25113,45,5,rifampicin,0.5,0.061
+BW25113,31,6,rifampicin,1,1.267
+BW25113,32,6,rifampicin,1,1.613
+BW25113,33,6,rifampicin,1,0.055
+BW25113,34,6,rifampicin,1,0.808
+BW25113,35,6,rifampicin,1,1.336
+BW25113,36,6,rifampicin,1,1.33
+BW25113,37,6,rifampicin,1,0.159
+BW25113,38,6,rifampicin,1,1.241
+BW25113,39,6,rifampicin,1,1.539
+BW25113,40,6,rifampicin,1,1.415
+BW25113,41,6,rifampicin,1,0.204
+BW25113,42,6,rifampicin,1,0.209
+BW25113,43,6,rifampicin,1,1.312
+BW25113,44,6,rifampicin,1,1.233
+BW25113,45,6,rifampicin,1,0.201
+BW25113,31,7,rifampicin,2,1.444
+BW25113,32,7,rifampicin,2,1.586
+BW25113,33,7,rifampicin,2,0.059
+BW25113,34,7,rifampicin,2,0.842
+BW25113,35,7,rifampicin,2,1.545
+BW25113,36,7,rifampicin,2,1.343
+BW25113,37,7,rifampicin,2,0.065
+BW25113,38,7,rifampicin,2,0.805
+BW25113,39,7,rifampicin,2,1.464
+BW25113,40,7,rifampicin,2,1.198
+BW25113,41,7,rifampicin,2,0.062
+BW25113,42,7,rifampicin,2,0.066
+BW25113,43,7,rifampicin,2,0.918
+BW25113,44,7,rifampicin,2,0.995
+BW25113,45,7,rifampicin,2,0.069
+ΔmutS,1,1,rifampicin,0,1.663
+ΔmutS,2,1,rifampicin,0,1.65
+ΔmutS,3,1,rifampicin,0,1.634
+ΔmutS,4,1,rifampicin,0,1.643
+ΔmutS,5,1,rifampicin,0,1.66
+ΔmutS,6,1,rifampicin,0,1.588
+ΔmutS,7,1,rifampicin,0,1.555
+ΔmutS,8,1,rifampicin,0,1.605
+ΔmutS,9,1,rifampicin,0,1.625
+ΔmutS,10,1,rifampicin,0,1.633
+ΔmutS,11,1,rifampicin,0,1.64
+ΔmutS,12,1,rifampicin,0,1.56
+ΔmutS,13,1,rifampicin,0,1.573
+ΔmutS,14,1,rifampicin,0,1.559
+ΔmutS,15,1,rifampicin,0,1.636
+ΔmutS,1,2,rifampicin,0.0625,1.394
+ΔmutS,2,2,rifampicin,0.0625,1.445
+ΔmutS,3,2,rifampicin,0.0625,1.405
+ΔmutS,4,2,rifampicin,0.0625,1.376
+ΔmutS,5,2,rifampicin,0.0625,1.37
+ΔmutS,6,2,rifampicin,0.0625,1.201
+ΔmutS,7,2,rifampicin,0.0625,1.342
+ΔmutS,8,2,rifampicin,0.0625,1.286
+ΔmutS,9,2,rifampicin,0.0625,1.357
+ΔmutS,10,2,rifampicin,0.0625,1.419
+ΔmutS,11,2,rifampicin,0.0625,1.068
+ΔmutS,12,2,rifampicin,0.0625,1.169
+ΔmutS,13,2,rifampicin,0.0625,1.033
+ΔmutS,14,2,rifampicin,0.0625,1.309
+ΔmutS,15,2,rifampicin,0.0625,1.069
+ΔmutS,1,3,rifampicin,0.125,1.098
+ΔmutS,2,3,rifampicin,0.125,1.026
+ΔmutS,3,3,rifampicin,0.125,1.536
+ΔmutS,4,3,rifampicin,0.125,1.096
+ΔmutS,5,3,rifampicin,0.125,1.152
+ΔmutS,6,3,rifampicin,0.125,1.077
+ΔmutS,7,3,rifampicin,0.125,1.151
+ΔmutS,8,3,rifampicin,0.125,1.563
+ΔmutS,9,3,rifampicin,0.125,1.076
+ΔmutS,10,3,rifampicin,0.125,1.421
+ΔmutS,11,3,rifampicin,0.125,0.971
+ΔmutS,12,3,rifampicin,0.125,1.091
+ΔmutS,13,3,rifampicin,0.125,1.038
+ΔmutS,14,3,rifampicin,0.125,1.191
+ΔmutS,15,3,rifampicin,0.125,1.083
+ΔmutS,1,4,rifampicin,0.25,1.578
+ΔmutS,2,4,rifampicin,0.25,1.485
+ΔmutS,3,4,rifampicin,0.25,1.552
+ΔmutS,4,4,rifampicin,0.25,1.268
+ΔmutS,5,4,rifampicin,0.25,1.418
+ΔmutS,6,4,rifampicin,0.25,1.626
+ΔmutS,7,4,rifampicin,0.25,1.53
+ΔmutS,8,4,rifampicin,0.25,1.554
+ΔmutS,9,4,rifampicin,0.25,1.489
+ΔmutS,10,4,rifampicin,0.25,1.595
+ΔmutS,11,4,rifampicin,0.25,1.4
+ΔmutS,12,4,rifampicin,0.25,1.333
+ΔmutS,13,4,rifampicin,0.25,1.456
+ΔmutS,14,4,rifampicin,0.25,1.472
+ΔmutS,15,4,rifampicin,0.25,1.435
+ΔmutS,1,5,rifampicin,0.5,1.601
+ΔmutS,2,5,rifampicin,0.5,1.525
+ΔmutS,3,5,rifampicin,0.5,1.532
+ΔmutS,4,5,rifampicin,0.5,1.546
+ΔmutS,5,5,rifampicin,0.5,1.468
+ΔmutS,6,5,rifampicin,0.5,1.447
+ΔmutS,7,5,rifampicin,0.5,1.502
+ΔmutS,8,5,rifampicin,0.5,1.613
+ΔmutS,9,5,rifampicin,0.5,1.59
+ΔmutS,10,5,rifampicin,0.5,1.601
+ΔmutS,11,5,rifampicin,0.5,1.641
+ΔmutS,12,5,rifampicin,0.5,1.519
+ΔmutS,13,5,rifampicin,0.5,1.516
+ΔmutS,14,5,rifampicin,0.5,1.478
+ΔmutS,15,5,rifampicin,0.5,1.615
+ΔmutS,1,6,rifampicin,1,1.452
+ΔmutS,2,6,rifampicin,1,1.415
+ΔmutS,3,6,rifampicin,1,1.445
+ΔmutS,4,6,rifampicin,1,1.305
+ΔmutS,5,6,rifampicin,1,1.403
+ΔmutS,6,6,rifampicin,1,1.505
+ΔmutS,7,6,rifampicin,1,1.403
+ΔmutS,8,6,rifampicin,1,1.482
+ΔmutS,9,6,rifampicin,1,1.403
+ΔmutS,10,6,rifampicin,1,1.499
+ΔmutS,11,6,rifampicin,1,1.556
+ΔmutS,12,6,rifampicin,1,1.459
+ΔmutS,13,6,rifampicin,1,1.415
+ΔmutS,14,6,rifampicin,1,1.431
+ΔmutS,15,6,rifampicin,1,1.365
+ΔmutS,1,7,rifampicin,2,1.373
+ΔmutS,2,7,rifampicin,2,1.41
+ΔmutS,3,7,rifampicin,2,1.373
+ΔmutS,4,7,rifampicin,2,1.376
+ΔmutS,5,7,rifampicin,2,1.481
+ΔmutS,6,7,rifampicin,2,1.489
+ΔmutS,7,7,rifampicin,2,1.383
+ΔmutS,8,7,rifampicin,2,1.436
+ΔmutS,9,7,rifampicin,2,1.368
+ΔmutS,10,7,rifampicin,2,1.341
+ΔmutS,11,7,rifampicin,2,1.421
+ΔmutS,12,7,rifampicin,2,1.343
+ΔmutS,13,7,rifampicin,2,1.348
+ΔmutS,14,7,rifampicin,2,1.363
+ΔmutS,15,7,rifampicin,2,1.351
+ΔmutS,16,1,rifampicin,0,1.545
+ΔmutS,17,1,rifampicin,0,1.615
+ΔmutS,18,1,rifampicin,0,1.667
+ΔmutS,19,1,rifampicin,0,1.62
+ΔmutS,20,1,rifampicin,0,1.629
+ΔmutS,21,1,rifampicin,0,1.57
+ΔmutS,22,1,rifampicin,0,1.54
+ΔmutS,23,1,rifampicin,0,1.524
+ΔmutS,24,1,rifampicin,0,1.601
+ΔmutS,25,1,rifampicin,0,1.613
+ΔmutS,26,1,rifampicin,0,1.406
+ΔmutS,27,1,rifampicin,0,1.567
+ΔmutS,28,1,rifampicin,0,1.626
+ΔmutS,29,1,rifampicin,0,1.563
+ΔmutS,30,1,rifampicin,0,1.549
+ΔmutS,16,2,rifampicin,0.0625,1.227
+ΔmutS,17,2,rifampicin,0.0625,1.372
+ΔmutS,18,2,rifampicin,0.0625,1.205
+ΔmutS,19,2,rifampicin,0.0625,1.451
+ΔmutS,20,2,rifampicin,0.0625,1.384
+ΔmutS,21,2,rifampicin,0.0625,1.32
+ΔmutS,22,2,rifampicin,0.0625,1.319
+ΔmutS,23,2,rifampicin,0.0625,1.197
+ΔmutS,24,2,rifampicin,0.0625,1.38
+ΔmutS,25,2,rifampicin,0.0625,1.286
+ΔmutS,26,2,rifampicin,0.0625,1.147
+ΔmutS,27,2,rifampicin,0.0625,1.305
+ΔmutS,28,2,rifampicin,0.0625,1.208
+ΔmutS,29,2,rifampicin,0.0625,1.314
+ΔmutS,30,2,rifampicin,0.0625,1.253
+ΔmutS,16,3,rifampicin,0.125,1.235
+ΔmutS,17,3,rifampicin,0.125,1.325
+ΔmutS,18,3,rifampicin,0.125,1.491
+ΔmutS,19,3,rifampicin,0.125,1.126
+ΔmutS,20,3,rifampicin,0.125,1.149
+ΔmutS,21,3,rifampicin,0.125,1.225
+ΔmutS,22,3,rifampicin,0.125,1.156
+ΔmutS,23,3,rifampicin,0.125,1.211
+ΔmutS,24,3,rifampicin,0.125,1.233
+ΔmutS,25,3,rifampicin,0.125,1.15
+ΔmutS,26,3,rifampicin,0.125,1.078
+ΔmutS,27,3,rifampicin,0.125,1.28
+ΔmutS,28,3,rifampicin,0.125,1.115
+ΔmutS,29,3,rifampicin,0.125,1.2
+ΔmutS,30,3,rifampicin,0.125,1.301
+ΔmutS,16,4,rifampicin,0.25,1.395
+ΔmutS,17,4,rifampicin,0.25,0.988
+ΔmutS,18,4,rifampicin,0.25,1.398
+ΔmutS,19,4,rifampicin,0.25,1.331
+ΔmutS,20,4,rifampicin,0.25,1.537
+ΔmutS,21,4,rifampicin,0.25,1.333
+ΔmutS,22,4,rifampicin,0.25,1.482
+ΔmutS,23,4,rifampicin,0.25,1.393
+ΔmutS,24,4,rifampicin,0.25,1.438
+ΔmutS,25,4,rifampicin,0.25,1.324
+ΔmutS,26,4,rifampicin,0.25,1.494
+ΔmutS,27,4,rifampicin,0.25,1.212
+ΔmutS,28,4,rifampicin,0.25,1.24
+ΔmutS,29,4,rifampicin,0.25,1.393
+ΔmutS,30,4,rifampicin,0.25,1.425
+ΔmutS,16,5,rifampicin,0.5,1.592
+ΔmutS,17,5,rifampicin,0.5,1.587
+ΔmutS,18,5,rifampicin,0.5,1.526
+ΔmutS,19,5,rifampicin,0.5,1.648
+ΔmutS,20,5,rifampicin,0.5,1.453
+ΔmutS,21,5,rifampicin,0.5,1.597
+ΔmutS,22,5,rifampicin,0.5,1.655
+ΔmutS,23,5,rifampicin,0.5,1.592
+ΔmutS,24,5,rifampicin,0.5,1.496
+ΔmutS,25,5,rifampicin,0.5,1.575
+ΔmutS,26,5,rifampicin,0.5,1.654
+ΔmutS,27,5,rifampicin,0.5,1.506
+ΔmutS,28,5,rifampicin,0.5,1.508
+ΔmutS,29,5,rifampicin,0.5,1.459
+ΔmutS,30,5,rifampicin,0.5,1.55
+ΔmutS,16,6,rifampicin,1,1.392
+ΔmutS,17,6,rifampicin,1,1.363
+ΔmutS,18,6,rifampicin,1,1.5
+ΔmutS,19,6,rifampicin,1,1.405
+ΔmutS,20,6,rifampicin,1,1.488
+ΔmutS,21,6,rifampicin,1,1.475
+ΔmutS,22,6,rifampicin,1,1.663
+ΔmutS,23,6,rifampicin,1,1.589
+ΔmutS,24,6,rifampicin,1,1.477
+ΔmutS,25,6,rifampicin,1,1.504
+ΔmutS,26,6,rifampicin,1,1.531
+ΔmutS,27,6,rifampicin,1,1.531
+ΔmutS,28,6,rifampicin,1,1.55
+ΔmutS,29,6,rifampicin,1,1.529
+ΔmutS,30,6,rifampicin,1,1.454
+ΔmutS,16,7,rifampicin,2,1.636
+ΔmutS,17,7,rifampicin,2,1.585
+ΔmutS,18,7,rifampicin,2,1.547
+ΔmutS,19,7,rifampicin,2,1.599
+ΔmutS,20,7,rifampicin,2,1.487
+ΔmutS,21,7,rifampicin,2,1.59
+ΔmutS,22,7,rifampicin,2,1.684
+ΔmutS,23,7,rifampicin,2,1.572
+ΔmutS,24,7,rifampicin,2,1.535
+ΔmutS,25,7,rifampicin,2,1.54
+ΔmutS,26,7,rifampicin,2,1.598
+ΔmutS,27,7,rifampicin,2,1.504
+ΔmutS,28,7,rifampicin,2,1.467
+ΔmutS,29,7,rifampicin,2,1.516
+ΔmutS,30,7,rifampicin,2,1.487
+ΔmutS,31,1,rifampicin,0,1.691
+ΔmutS,32,1,rifampicin,0,1.662
+ΔmutS,33,1,rifampicin,0,1.65
+ΔmutS,34,1,rifampicin,0,1.653
+ΔmutS,35,1,rifampicin,0,1.565
+ΔmutS,36,1,rifampicin,0,1.533
+ΔmutS,37,1,rifampicin,0,1.562
+ΔmutS,38,1,rifampicin,0,1.508
+ΔmutS,39,1,rifampicin,0,1.613
+ΔmutS,40,1,rifampicin,0,1.576
+ΔmutS,41,1,rifampicin,0,1.515
+ΔmutS,42,1,rifampicin,0,1.524
+ΔmutS,43,1,rifampicin,0,1.441
+ΔmutS,44,1,rifampicin,0,1.508
+ΔmutS,45,1,rifampicin,0,1.536
+ΔmutS,31,2,rifampicin,0.0625,1.307
+ΔmutS,32,2,rifampicin,0.0625,1.279
+ΔmutS,33,2,rifampicin,0.0625,1.223
+ΔmutS,34,2,rifampicin,0.0625,1.389
+ΔmutS,35,2,rifampicin,0.0625,1.385
+ΔmutS,36,2,rifampicin,0.0625,1.265
+ΔmutS,37,2,rifampicin,0.0625,1.216
+ΔmutS,38,2,rifampicin,0.0625,1.314
+ΔmutS,39,2,rifampicin,0.0625,1.21
+ΔmutS,40,2,rifampicin,0.0625,1.282
+ΔmutS,41,2,rifampicin,0.0625,1.101
+ΔmutS,42,2,rifampicin,0.0625,1.194
+ΔmutS,43,2,rifampicin,0.0625,1.136
+ΔmutS,44,2,rifampicin,0.0625,1.202
+ΔmutS,45,2,rifampicin,0.0625,1.261
+ΔmutS,31,3,rifampicin,0.125,1.185
+ΔmutS,32,3,rifampicin,0.125,1.185
+ΔmutS,33,3,rifampicin,0.125,1.179
+ΔmutS,34,3,rifampicin,0.125,1.309
+ΔmutS,35,3,rifampicin,0.125,1.223
+ΔmutS,36,3,rifampicin,0.125,0.9
+ΔmutS,37,3,rifampicin,0.125,1.107
+ΔmutS,38,3,rifampicin,0.125,1.107
+ΔmutS,39,3,rifampicin,0.125,1.144
+ΔmutS,40,3,rifampicin,0.125,1.196
+ΔmutS,41,3,rifampicin,0.125,0.794
+ΔmutS,42,3,rifampicin,0.125,0.877
+ΔmutS,43,3,rifampicin,0.125,0.944
+ΔmutS,44,3,rifampicin,0.125,0.763
+ΔmutS,45,3,rifampicin,0.125,0.985
+ΔmutS,31,4,rifampicin,0.25,1.456
+ΔmutS,32,4,rifampicin,0.25,1.224
+ΔmutS,33,4,rifampicin,0.25,1.551
+ΔmutS,34,4,rifampicin,0.25,1.628
+ΔmutS,35,4,rifampicin,0.25,1.492
+ΔmutS,36,4,rifampicin,0.25,1.405
+ΔmutS,37,4,rifampicin,0.25,1.475
+ΔmutS,38,4,rifampicin,0.25,1.383
+ΔmutS,39,4,rifampicin,0.25,1.479
+ΔmutS,40,4,rifampicin,0.25,1.493
+ΔmutS,41,4,rifampicin,0.25,1.542
+ΔmutS,42,4,rifampicin,0.25,1.432
+ΔmutS,43,4,rifampicin,0.25,1.307
+ΔmutS,44,4,rifampicin,0.25,1.399
+ΔmutS,45,4,rifampicin,0.25,1.457
+ΔmutS,31,5,rifampicin,0.5,1.55
+ΔmutS,32,5,rifampicin,0.5,1.46
+ΔmutS,33,5,rifampicin,0.5,1.456
+ΔmutS,34,5,rifampicin,0.5,1.534
+ΔmutS,35,5,rifampicin,0.5,1.395
+ΔmutS,36,5,rifampicin,0.5,1.372
+ΔmutS,37,5,rifampicin,0.5,1.41
+ΔmutS,38,5,rifampicin,0.5,1.411
+ΔmutS,39,5,rifampicin,0.5,1.57
+ΔmutS,40,5,rifampicin,0.5,1.47
+ΔmutS,41,5,rifampicin,0.5,1.321
+ΔmutS,42,5,rifampicin,0.5,1.303
+ΔmutS,43,5,rifampicin,0.5,1.259
+ΔmutS,44,5,rifampicin,0.5,1.489
+ΔmutS,45,5,rifampicin,0.5,1.514
+ΔmutS,31,6,rifampicin,1,1.552
+ΔmutS,32,6,rifampicin,1,1.589
+ΔmutS,33,6,rifampicin,1,1.636
+ΔmutS,34,6,rifampicin,1,1.466
+ΔmutS,35,6,rifampicin,1,1.478
+ΔmutS,36,6,rifampicin,1,1.54
+ΔmutS,37,6,rifampicin,1,1.49
+ΔmutS,38,6,rifampicin,1,1.579
+ΔmutS,39,6,rifampicin,1,1.505
+ΔmutS,40,6,rifampicin,1,1.536
+ΔmutS,41,6,rifampicin,1,1.516
+ΔmutS,42,6,rifampicin,1,1.468
+ΔmutS,43,6,rifampicin,1,1.367
+ΔmutS,44,6,rifampicin,1,1.489
+ΔmutS,45,6,rifampicin,1,1.309
+ΔmutS,31,7,rifampicin,2,1.659
+ΔmutS,32,7,rifampicin,2,1.664
+ΔmutS,33,7,rifampicin,2,1.559
+ΔmutS,34,7,rifampicin,2,1.638
+ΔmutS,35,7,rifampicin,2,1.705
+ΔmutS,36,7,rifampicin,2,1.629
+ΔmutS,37,7,rifampicin,2,1.56
+ΔmutS,38,7,rifampicin,2,1.637
+ΔmutS,39,7,rifampicin,2,1.599
+ΔmutS,40,7,rifampicin,2,1.507
+ΔmutS,41,7,rifampicin,2,1.547
+ΔmutS,42,7,rifampicin,2,1.476
+ΔmutS,43,7,rifampicin,2,1.384
+ΔmutS,44,7,rifampicin,2,1.541
+ΔmutS,45,7,rifampicin,2,1.522
+ΔmutS,1,1,combination,0,1.123
+ΔmutS,2,1,combination,0,1.194
+ΔmutS,3,1,combination,0,0.979
+ΔmutS,4,1,combination,0,1.123
+ΔmutS,5,1,combination,0,1.045
+ΔmutS,6,1,combination,0,1.247
+ΔmutS,7,1,combination,0,1.127
+ΔmutS,8,1,combination,0,0.998
+ΔmutS,9,1,combination,0,1.094
+ΔmutS,10,1,combination,0,1.069
+ΔmutS,11,1,combination,0,1.214
+ΔmutS,12,1,combination,0,1.329
+ΔmutS,13,1,combination,0,1.032
+ΔmutS,14,1,combination,0,1.135
+ΔmutS,15,1,combination,0,0.945
+ΔmutS,16,1,combination,0,1.038
+ΔmutS,17,1,combination,0,1.008
+ΔmutS,18,1,combination,0,0.986
+ΔmutS,19,1,combination,0,1.007
+ΔmutS,20,1,combination,0,1.053
+ΔmutS,21,1,combination,0,1.157
+ΔmutS,22,1,combination,0,1.087
+ΔmutS,23,1,combination,0,1.217
+ΔmutS,24,1,combination,0,1.07
+ΔmutS,25,1,combination,0,1.234
+ΔmutS,26,1,combination,0,1.033
+ΔmutS,27,1,combination,0,1.035
+ΔmutS,28,1,combination,0,1.197
+ΔmutS,29,1,combination,0,1.128
+ΔmutS,30,1,combination,0,1.163
+ΔmutS,31,1,combination,0,1.146
+ΔmutS,32,1,combination,0,1.22
+ΔmutS,33,1,combination,0,1.024
+ΔmutS,34,1,combination,0,1.325
+ΔmutS,35,1,combination,0,1.076
+ΔmutS,36,1,combination,0,1.026
+ΔmutS,37,1,combination,0,1.149
+ΔmutS,38,1,combination,0,1.097
+ΔmutS,39,1,combination,0,1.217
+ΔmutS,40,1,combination,0,1.185
+ΔmutS,41,1,combination,0,1.246
+ΔmutS,42,1,combination,0,1.282
+ΔmutS,43,1,combination,0,1.159
+ΔmutS,44,1,combination,0,1.087
+ΔmutS,45,1,combination,0,1.279
+ΔmutS,46,1,combination,0,1.067
+ΔmutS,47,1,combination,0,0.949
+ΔmutS,48,1,combination,0,0.92
+ΔmutS,49,1,combination,0,1.099
+ΔmutS,50,1,combination,0,0.886
+ΔmutS,51,1,combination,0,1.046
+ΔmutS,52,1,combination,0,1.046
+ΔmutS,53,1,combination,0,1.079
+ΔmutS,54,1,combination,0,1.07
+ΔmutS,1,2,combination,0.0625,1.271
+ΔmutS,2,2,combination,0.0625,0.048
+ΔmutS,3,2,combination,0.0625,1.338
+ΔmutS,4,2,combination,0.0625,0.096
+ΔmutS,5,2,combination,0.0625,1.199
+ΔmutS,6,2,combination,0.0625,0.987
+ΔmutS,7,2,combination,0.0625,1.384
+ΔmutS,8,2,combination,0.0625,1.374
+ΔmutS,9,2,combination,0.0625,0.655
+ΔmutS,10,2,combination,0.0625,0.816
+ΔmutS,11,2,combination,0.0625,1.321
+ΔmutS,12,2,combination,0.0625,0.042
+ΔmutS,13,2,combination,0.0625,0.039
+ΔmutS,14,2,combination,0.0625,0.057
+ΔmutS,15,2,combination,0.0625,0.659
+ΔmutS,16,2,combination,0.0625,0.527
+ΔmutS,17,2,combination,0.0625,1.056
+ΔmutS,18,2,combination,0.0625,0.098
+ΔmutS,19,2,combination,0.0625,0.276
+ΔmutS,20,2,combination,0.0625,1.272
+ΔmutS,21,2,combination,0.0625,0.329
+ΔmutS,22,2,combination,0.0625,1.282
+ΔmutS,23,2,combination,0.0625,1.348
+ΔmutS,24,2,combination,0.0625,0.506
+ΔmutS,25,2,combination,0.0625,1.216
+ΔmutS,26,2,combination,0.0625,0.077
+ΔmutS,27,2,combination,0.0625,0.193
+ΔmutS,28,2,combination,0.0625,1.27
+ΔmutS,29,2,combination,0.0625,0.196
+ΔmutS,30,2,combination,0.0625,1.216
+ΔmutS,31,2,combination,0.0625,0.526
+ΔmutS,32,2,combination,0.0625,1.126
+ΔmutS,33,2,combination,0.0625,0.053
+ΔmutS,34,2,combination,0.0625,1.394
+ΔmutS,35,2,combination,0.0625,1.001
+ΔmutS,36,2,combination,0.0625,1.466
+ΔmutS,37,2,combination,0.0625,1.364
+ΔmutS,38,2,combination,0.0625,1.304
+ΔmutS,39,2,combination,0.0625,1.194
+ΔmutS,40,2,combination,0.0625,1.265
+ΔmutS,41,2,combination,0.0625,1.221
+ΔmutS,42,2,combination,0.0625,0.05
+ΔmutS,43,2,combination,0.0625,1.336
+ΔmutS,44,2,combination,0.0625,1.191
+ΔmutS,45,2,combination,0.0625,1.268
+ΔmutS,46,2,combination,0.0625,0.651
+ΔmutS,47,2,combination,0.0625,1.179
+ΔmutS,48,2,combination,0.0625,0.884
+ΔmutS,49,2,combination,0.0625,0.225
+ΔmutS,50,2,combination,0.0625,0.397
+ΔmutS,51,2,combination,0.0625,1.334
+ΔmutS,52,2,combination,0.0625,1.258
+ΔmutS,53,2,combination,0.0625,1.309
+ΔmutS,54,2,combination,0.0625,0.194
+ΔmutS,1,3,combination,0.125,1.282
+ΔmutS,2,3,combination,0.125,0.948
+ΔmutS,3,3,combination,0.125,1.427
+ΔmutS,4,3,combination,0.125,1.478
+ΔmutS,5,3,combination,0.125,0.849
+ΔmutS,6,3,combination,0.125,1.069
+ΔmutS,7,3,combination,0.125,1.259
+ΔmutS,8,3,combination,0.125,1.061
+ΔmutS,9,3,combination,0.125,1.256
+ΔmutS,10,3,combination,0.125,1.159
+ΔmutS,11,3,combination,0.125,0.999
+ΔmutS,12,3,combination,0.125,0.04
+ΔmutS,13,3,combination,0.125,0.054
+ΔmutS,14,3,combination,0.125,1.114
+ΔmutS,15,3,combination,0.125,1.181
+ΔmutS,16,3,combination,0.125,1.337
+ΔmutS,17,3,combination,0.125,1.22
+ΔmutS,18,3,combination,0.125,1.001
+ΔmutS,19,3,combination,0.125,0.967
+ΔmutS,20,3,combination,0.125,1.114
+ΔmutS,21,3,combination,0.125,0.05
+ΔmutS,22,3,combination,0.125,1.038
+ΔmutS,23,3,combination,0.125,1.307
+ΔmutS,24,3,combination,0.125,1.299
+ΔmutS,25,3,combination,0.125,1.137
+ΔmutS,26,3,combination,0.125,0.142
+ΔmutS,27,3,combination,0.125,0.344
+ΔmutS,28,3,combination,0.125,1.173
+ΔmutS,29,3,combination,0.125,1.04
+ΔmutS,30,3,combination,0.125,1.287
+ΔmutS,31,3,combination,0.125,1.387
+ΔmutS,32,3,combination,0.125,1.182
+ΔmutS,33,3,combination,0.125,0.038
+ΔmutS,34,3,combination,0.125,1.162
+ΔmutS,35,3,combination,0.125,1.134
+ΔmutS,36,3,combination,0.125,1.23
+ΔmutS,37,3,combination,0.125,1.115
+ΔmutS,38,3,combination,0.125,1.167
+ΔmutS,39,3,combination,0.125,1.062
+ΔmutS,40,3,combination,0.125,0.949
+ΔmutS,41,3,combination,0.125,0.886
+ΔmutS,42,3,combination,0.125,0.57
+ΔmutS,43,3,combination,0.125,1.147
+ΔmutS,44,3,combination,0.125,0.872
+ΔmutS,45,3,combination,0.125,1.123
+ΔmutS,46,3,combination,0.125,1.297
+ΔmutS,47,3,combination,0.125,1.308
+ΔmutS,48,3,combination,0.125,1.26
+ΔmutS,49,3,combination,0.125,0.483
+ΔmutS,50,3,combination,0.125,1.022
+ΔmutS,51,3,combination,0.125,1.139
+ΔmutS,52,3,combination,0.125,1.182
+ΔmutS,53,3,combination,0.125,1.078
+ΔmutS,54,3,combination,0.125,1.184
+ΔmutS,1,4,combination,0.25,1.684
+ΔmutS,2,4,combination,0.25,0.082
+ΔmutS,3,4,combination,0.25,1.624
+ΔmutS,4,4,combination,0.25,1.042
+ΔmutS,5,4,combination,0.25,1.358
+ΔmutS,6,4,combination,0.25,0.844
+ΔmutS,7,4,combination,0.25,1.52
+ΔmutS,8,4,combination,0.25,1.716
+ΔmutS,9,4,combination,0.25,0.961
+ΔmutS,10,4,combination,0.25,1.499
+ΔmutS,11,4,combination,0.25,1.505
+ΔmutS,12,4,combination,0.25,0.041
+ΔmutS,13,4,combination,0.25,0.235
+ΔmutS,14,4,combination,0.25,1.036
+ΔmutS,15,4,combination,0.25,1.44
+ΔmutS,16,4,combination,0.25,1.046
+ΔmutS,17,4,combination,0.25,1.514
+ΔmutS,18,4,combination,0.25,0.52
+ΔmutS,19,4,combination,0.25,0.805
+ΔmutS,20,4,combination,0.25,1.5
+ΔmutS,21,4,combination,0.25,0.044
+ΔmutS,22,4,combination,0.25,1.342
+ΔmutS,23,4,combination,0.25,1.129
+ΔmutS,24,4,combination,0.25,1.1
+ΔmutS,25,4,combination,0.25,1.573
+ΔmutS,26,4,combination,0.25,0.138
+ΔmutS,27,4,combination,0.25,0.041
+ΔmutS,28,4,combination,0.25,1.628
+ΔmutS,29,4,combination,0.25,0.678
+ΔmutS,30,4,combination,0.25,1.518
+ΔmutS,31,4,combination,0.25,1.1
+ΔmutS,32,4,combination,0.25,0.975
+ΔmutS,33,4,combination,0.25,0.051
+ΔmutS,34,4,combination,0.25,1.377
+ΔmutS,35,4,combination,0.25,0.852
+ΔmutS,36,4,combination,0.25,1.481
+ΔmutS,37,4,combination,0.25,0.849
+ΔmutS,38,4,combination,0.25,1.439
+ΔmutS,39,4,combination,0.25,1.373
+ΔmutS,40,4,combination,0.25,1.223
+ΔmutS,41,4,combination,0.25,1.099
+ΔmutS,42,4,combination,0.25,0.789
+ΔmutS,43,4,combination,0.25,1.371
+ΔmutS,44,4,combination,0.25,0.878
+ΔmutS,45,4,combination,0.25,1.454
+ΔmutS,46,4,combination,0.25,1.358
+ΔmutS,47,4,combination,0.25,1.607
+ΔmutS,48,4,combination,0.25,1.514
+ΔmutS,49,4,combination,0.25,0.264
+ΔmutS,50,4,combination,0.25,0.824
+ΔmutS,51,4,combination,0.25,1.526
+ΔmutS,52,4,combination,0.25,1.574
+ΔmutS,53,4,combination,0.25,1.466
+ΔmutS,54,4,combination,0.25,0.373
+ΔmutS,1,5,combination,0.5,1.552
+ΔmutS,2,5,combination,0.5,0.048
+ΔmutS,3,5,combination,0.5,1.718
+ΔmutS,4,5,combination,0.5,1.102
+ΔmutS,5,5,combination,0.5,1.468
+ΔmutS,6,5,combination,0.5,1.131
+ΔmutS,7,5,combination,0.5,1.08
+ΔmutS,8,5,combination,0.5,1.251
+ΔmutS,9,5,combination,0.5,0.131
+ΔmutS,10,5,combination,0.5,1.52
+ΔmutS,11,5,combination,0.5,1.614
+ΔmutS,12,5,combination,0.5,0.044
+ΔmutS,13,5,combination,0.5,0.045
+ΔmutS,14,5,combination,0.5,1.384
+ΔmutS,15,5,combination,0.5,1.175
+ΔmutS,16,5,combination,0.5,1.236
+ΔmutS,17,5,combination,0.5,1.152
+ΔmutS,18,5,combination,0.5,0.136
+ΔmutS,19,5,combination,0.5,0.186
+ΔmutS,20,5,combination,0.5,1.574
+ΔmutS,21,5,combination,0.5,0.046
+ΔmutS,22,5,combination,0.5,0.909
+ΔmutS,23,5,combination,0.5,1.234
+ΔmutS,24,5,combination,0.5,1.246
+ΔmutS,25,5,combination,0.5,1.536
+ΔmutS,26,5,combination,0.5,0.045
+ΔmutS,27,5,combination,0.5,0.086
+ΔmutS,28,5,combination,0.5,1.385
+ΔmutS,29,5,combination,0.5,0.092
+ΔmutS,30,5,combination,0.5,1.518
+ΔmutS,31,5,combination,0.5,0.98
+ΔmutS,32,5,combination,0.5,1.221
+ΔmutS,33,5,combination,0.5,0.045
+ΔmutS,34,5,combination,0.5,0.986
+ΔmutS,35,5,combination,0.5,0.187
+ΔmutS,36,5,combination,0.5,1.296
+ΔmutS,37,5,combination,0.5,0.935
+ΔmutS,38,5,combination,0.5,1.125
+ΔmutS,39,5,combination,0.5,1.252
+ΔmutS,40,5,combination,0.5,1.171
+ΔmutS,41,5,combination,0.5,1.043
+ΔmutS,42,5,combination,0.5,0.074
+ΔmutS,43,5,combination,0.5,1.403
+ΔmutS,44,5,combination,0.5,0.741
+ΔmutS,45,5,combination,0.5,1.185
+ΔmutS,46,5,combination,0.5,1.427
+ΔmutS,47,5,combination,0.5,1.372
+ΔmutS,48,5,combination,0.5,1.347
+ΔmutS,49,5,combination,0.5,0.066
+ΔmutS,50,5,combination,0.5,0.138
+ΔmutS,51,5,combination,0.5,0.99
+ΔmutS,52,5,combination,0.5,1.31
+ΔmutS,53,5,combination,0.5,1.336
+ΔmutS,54,5,combination,0.5,0.078
+ΔmutS,1,6,combination,1,1.496
+ΔmutS,2,6,combination,1,0.063
+ΔmutS,3,6,combination,1,1.554
+ΔmutS,4,6,combination,1,1.155
+ΔmutS,5,6,combination,1,1.566
+ΔmutS,6,6,combination,1,1.127
+ΔmutS,7,6,combination,1,1.489
+ΔmutS,8,6,combination,1,1.533
+ΔmutS,9,6,combination,1,0.051
+ΔmutS,10,6,combination,1,1.308
+ΔmutS,11,6,combination,1,1.296
+ΔmutS,12,6,combination,1,0.061
+ΔmutS,13,6,combination,1,0.056
+ΔmutS,14,6,combination,1,1.239
+ΔmutS,15,6,combination,1,1.286
+ΔmutS,16,6,combination,1,1.139
+ΔmutS,17,6,combination,1,1.269
+ΔmutS,18,6,combination,1,0.05
+ΔmutS,19,6,combination,1,0.076
+ΔmutS,20,6,combination,1,1.497
+ΔmutS,21,6,combination,1,0.063
+ΔmutS,22,6,combination,1,1.392
+ΔmutS,23,6,combination,1,1.237
+ΔmutS,24,6,combination,1,1.048
+ΔmutS,25,6,combination,1,1.501
+ΔmutS,26,6,combination,1,0.057
+ΔmutS,27,6,combination,1,0.053
+ΔmutS,28,6,combination,1,1.052
+ΔmutS,29,6,combination,1,0.066
+ΔmutS,30,6,combination,1,1.531
+ΔmutS,31,6,combination,1,0.944
+ΔmutS,32,6,combination,1,1.216
+ΔmutS,33,6,combination,1,0.057
+ΔmutS,34,6,combination,1,1.026
+ΔmutS,35,6,combination,1,0.06
+ΔmutS,36,6,combination,1,1.515
+ΔmutS,37,6,combination,1,1.36
+ΔmutS,38,6,combination,1,0.904
+ΔmutS,39,6,combination,1,1.244
+ΔmutS,40,6,combination,1,1.464
+ΔmutS,41,6,combination,1,1.282
+ΔmutS,42,6,combination,1,0.062
+ΔmutS,43,6,combination,1,1.562
+ΔmutS,44,6,combination,1,1.286
+ΔmutS,45,6,combination,1,1.44
+ΔmutS,46,6,combination,1,0.805
+ΔmutS,47,6,combination,1,0.763
+ΔmutS,48,6,combination,1,1.445
+ΔmutS,49,6,combination,1,0.057
+ΔmutS,50,6,combination,1,0.058
+ΔmutS,51,6,combination,1,1.279
+ΔmutS,52,6,combination,1,1.163
+ΔmutS,53,6,combination,1,1.518
+ΔmutS,54,6,combination,1,0.059
+ΔmutS,1,7,combination,2,1.533
+ΔmutS,2,7,combination,2,0.079
+ΔmutS,3,7,combination,2,1.276
+ΔmutS,4,7,combination,2,1.403
+ΔmutS,5,7,combination,2,1.579
+ΔmutS,6,7,combination,2,1.248
+ΔmutS,7,7,combination,2,1.334
+ΔmutS,8,7,combination,2,1.644
+ΔmutS,9,7,combination,2,0.173
+ΔmutS,10,7,combination,2,1.495
+ΔmutS,11,7,combination,2,1.418
+ΔmutS,12,7,combination,2,0.09
+ΔmutS,13,7,combination,2,0.081
+ΔmutS,14,7,combination,2,1.524
+ΔmutS,15,7,combination,2,1.585
+ΔmutS,16,7,combination,2,1.496
+ΔmutS,17,7,combination,2,1.399
+ΔmutS,18,7,combination,2,0.062
+ΔmutS,19,7,combination,2,0.097
+ΔmutS,20,7,combination,2,1.614
+ΔmutS,21,7,combination,2,0.083
+ΔmutS,22,7,combination,2,1.326
+ΔmutS,23,7,combination,2,1.381
+ΔmutS,24,7,combination,2,1.257
+ΔmutS,25,7,combination,2,1.488
+ΔmutS,26,7,combination,2,0.076
+ΔmutS,27,7,combination,2,0.064
+ΔmutS,28,7,combination,2,1.224
+ΔmutS,29,7,combination,2,0.11
+ΔmutS,30,7,combination,2,1.441
+ΔmutS,31,7,combination,2,1.2
+ΔmutS,32,7,combination,2,1.404
+ΔmutS,33,7,combination,2,0.096
+ΔmutS,34,7,combination,2,1.236
+ΔmutS,35,7,combination,2,0.08
+ΔmutS,36,7,combination,2,1.484
+ΔmutS,37,7,combination,2,1.399
+ΔmutS,38,7,combination,2,1.226
+ΔmutS,39,7,combination,2,1.601
+ΔmutS,40,7,combination,2,1.52
+ΔmutS,41,7,combination,2,1.488
+ΔmutS,42,7,combination,2,0.083
+ΔmutS,43,7,combination,2,1.494
+ΔmutS,44,7,combination,2,1.327
+ΔmutS,45,7,combination,2,1.587
+ΔmutS,46,7,combination,2,1.194
+ΔmutS,47,7,combination,2,1.271
+ΔmutS,48,7,combination,2,1.494
+ΔmutS,49,7,combination,2,0.075
+ΔmutS,50,7,combination,2,0.073
+ΔmutS,51,7,combination,2,1.459
+ΔmutS,52,7,combination,2,1.488
+ΔmutS,53,7,combination,2,1.42
+ΔmutS,54,7,combination,2,0.07
+BW25113,1,1,combination,0,1.397
+BW25113,2,1,combination,0,1.361
+BW25113,3,1,combination,0,1.363
+BW25113,4,1,combination,0,1.377
+BW25113,5,1,combination,0,1.069
+BW25113,6,1,combination,0,1.331
+BW25113,7,1,combination,0,1.332
+BW25113,8,1,combination,0,1.33
+BW25113,9,1,combination,0,1.382
+BW25113,10,1,combination,0,1.411
+BW25113,11,1,combination,0,1.172
+BW25113,12,1,combination,0,1.242
+BW25113,13,1,combination,0,1.176
+BW25113,14,1,combination,0,1.257
+BW25113,15,1,combination,0,1.166
+BW25113,16,1,combination,0,1.204
+BW25113,17,1,combination,0,1.078
+BW25113,18,1,combination,0,1.219
+BW25113,19,1,combination,0,1.382
+BW25113,20,1,combination,0,1.279
+BW25113,21,1,combination,0,1.294
+BW25113,22,1,combination,0,1.325
+BW25113,23,1,combination,0,1.263
+BW25113,24,1,combination,0,1.251
+BW25113,25,1,combination,0,1.233
+BW25113,26,1,combination,0,1.324
+BW25113,27,1,combination,0,1.359
+BW25113,28,1,combination,0,1.269
+BW25113,29,1,combination,0,1.271
+BW25113,30,1,combination,0,1.197
+BW25113,31,1,combination,0,1.276
+BW25113,32,1,combination,0,1.293
+BW25113,33,1,combination,0,1.067
+BW25113,34,1,combination,0,1.345
+BW25113,35,1,combination,0,1.344
+BW25113,36,1,combination,0,1.328
+BW25113,37,1,combination,0,1.417
+BW25113,38,1,combination,0,1.282
+BW25113,39,1,combination,0,1.458
+BW25113,40,1,combination,0,1.281
+BW25113,41,1,combination,0,1.339
+BW25113,42,1,combination,0,1.358
+BW25113,43,1,combination,0,1.301
+BW25113,44,1,combination,0,1.498
+BW25113,45,1,combination,0,1.355
+BW25113,46,1,combination,0,1.295
+BW25113,47,1,combination,0,1.396
+BW25113,48,1,combination,0,1.298
+BW25113,49,1,combination,0,1.335
+BW25113,50,1,combination,0,1.384
+BW25113,51,1,combination,0,1.368
+BW25113,52,1,combination,0,1.379
+BW25113,53,1,combination,0,1.137
+BW25113,54,1,combination,0,1.316
+BW25113,1,2,combination,0.0625,0.126
+BW25113,2,2,combination,0.0625,0.131
+BW25113,3,2,combination,0.0625,0.14
+BW25113,4,2,combination,0.0625,0.141
+BW25113,5,2,combination,0.0625,0.091
+BW25113,6,2,combination,0.0625,0.145
+BW25113,7,2,combination,0.0625,0.133
+BW25113,8,2,combination,0.0625,0.125
+BW25113,9,2,combination,0.0625,0.122
+BW25113,10,2,combination,0.0625,0.132
+BW25113,11,2,combination,0.0625,0.128
+BW25113,12,2,combination,0.0625,0.098
+BW25113,13,2,combination,0.0625,0.117
+BW25113,14,2,combination,0.0625,0.16
+BW25113,15,2,combination,0.0625,0.128
+BW25113,16,2,combination,0.0625,0.11
+BW25113,17,2,combination,0.0625,0.085
+BW25113,18,2,combination,0.0625,0.082
+BW25113,19,2,combination,0.0625,0.13
+BW25113,20,2,combination,0.0625,0.148
+BW25113,21,2,combination,0.0625,0.134
+BW25113,22,2,combination,0.0625,0.104
+BW25113,23,2,combination,0.0625,0.126
+BW25113,24,2,combination,0.0625,0.143
+BW25113,25,2,combination,0.0625,0.129
+BW25113,26,2,combination,0.0625,0.132
+BW25113,27,2,combination,0.0625,0.105
+BW25113,28,2,combination,0.0625,0.124
+BW25113,29,2,combination,0.0625,0.127
+BW25113,30,2,combination,0.0625,0.108
+BW25113,31,2,combination,0.0625,0.137
+BW25113,32,2,combination,0.0625,0.131
+BW25113,33,2,combination,0.0625,0.079
+BW25113,34,2,combination,0.0625,0.114
+BW25113,35,2,combination,0.0625,0.114
+BW25113,36,2,combination,0.0625,0.119
+BW25113,37,2,combination,0.0625,0.121
+BW25113,38,2,combination,0.0625,0.125
+BW25113,39,2,combination,0.0625,0.127
+BW25113,40,2,combination,0.0625,0.127
+BW25113,41,2,combination,0.0625,0.118
+BW25113,42,2,combination,0.0625,0.124
+BW25113,43,2,combination,0.0625,0.106
+BW25113,44,2,combination,0.0625,0.114
+BW25113,45,2,combination,0.0625,0.098
+BW25113,46,2,combination,0.0625,0.111
+BW25113,47,2,combination,0.0625,0.129
+BW25113,48,2,combination,0.0625,0.106
+BW25113,49,2,combination,0.0625,0.134
+BW25113,50,2,combination,0.0625,0.133
+BW25113,51,2,combination,0.0625,0.117
+BW25113,52,2,combination,0.0625,0.126
+BW25113,53,2,combination,0.0625,0.1
+BW25113,54,2,combination,0.0625,0.11
+BW25113,1,3,combination,0.125,0.044
+BW25113,2,3,combination,0.125,0.037
+BW25113,3,3,combination,0.125,0.038
+BW25113,4,3,combination,0.125,0.041
+BW25113,5,3,combination,0.125,0.042
+BW25113,6,3,combination,0.125,0.037
+BW25113,7,3,combination,0.125,0.037
+BW25113,8,3,combination,0.125,0.037
+BW25113,9,3,combination,0.125,0.038
+BW25113,10,3,combination,0.125,0.041
+BW25113,11,3,combination,0.125,0.037
+BW25113,12,3,combination,0.125,0.038
+BW25113,13,3,combination,0.125,0.036
+BW25113,14,3,combination,0.125,0.04
+BW25113,15,3,combination,0.125,0.037
+BW25113,16,3,combination,0.125,0.037
+BW25113,17,3,combination,0.125,0.037
+BW25113,18,3,combination,0.125,0.037
+BW25113,19,3,combination,0.125,0.039
+BW25113,20,3,combination,0.125,0.042
+BW25113,21,3,combination,0.125,0.039
+BW25113,22,3,combination,0.125,0.037
+BW25113,23,3,combination,0.125,0.039
+BW25113,24,3,combination,0.125,0.037
+BW25113,25,3,combination,0.125,0.038
+BW25113,26,3,combination,0.125,0.041
+BW25113,27,3,combination,0.125,0.039
+BW25113,28,3,combination,0.125,0.037
+BW25113,29,3,combination,0.125,0.037
+BW25113,30,3,combination,0.125,0.038
+BW25113,31,3,combination,0.125,0.039
+BW25113,32,3,combination,0.125,0.036
+BW25113,33,3,combination,0.125,0.037
+BW25113,34,3,combination,0.125,0.039
+BW25113,35,3,combination,0.125,0.038
+BW25113,36,3,combination,0.125,0.042
+BW25113,37,3,combination,0.125,0.037
+BW25113,38,3,combination,0.125,0.037
+BW25113,39,3,combination,0.125,0.037
+BW25113,40,3,combination,0.125,0.037
+BW25113,41,3,combination,0.125,0.036
+BW25113,42,3,combination,0.125,0.037
+BW25113,43,3,combination,0.125,0.037
+BW25113,44,3,combination,0.125,0.04
+BW25113,45,3,combination,0.125,0.04
+BW25113,46,3,combination,0.125,0.04
+BW25113,47,3,combination,0.125,0.038
+BW25113,48,3,combination,0.125,0.036
+BW25113,49,3,combination,0.125,0.037
+BW25113,50,3,combination,0.125,0.038
+BW25113,51,3,combination,0.125,0.041
+BW25113,52,3,combination,0.125,0.038
+BW25113,53,3,combination,0.125,0.042
+BW25113,54,3,combination,0.125,0.039
+BW25113,1,4,combination,0.25,0.043
+BW25113,2,4,combination,0.25,0.041
+BW25113,3,4,combination,0.25,0.039
+BW25113,4,4,combination,0.25,0.038
+BW25113,5,4,combination,0.25,0.037
+BW25113,6,4,combination,0.25,0.038
+BW25113,7,4,combination,0.25,0.039
+BW25113,8,4,combination,0.25,0.039
+BW25113,9,4,combination,0.25,0.039
+BW25113,10,4,combination,0.25,0.044
+BW25113,11,4,combination,0.25,0.047
+BW25113,12,4,combination,0.25,0.038
+BW25113,13,4,combination,0.25,0.044
+BW25113,14,4,combination,0.25,0.041
+BW25113,15,4,combination,0.25,0.038
+BW25113,16,4,combination,0.25,0.04
+BW25113,17,4,combination,0.25,0.039
+BW25113,18,4,combination,0.25,0.039
+BW25113,19,4,combination,0.25,0.068
+BW25113,20,4,combination,0.25,0.059
+BW25113,21,4,combination,0.25,0.049
+BW25113,22,4,combination,0.25,0.045
+BW25113,23,4,combination,0.25,0.041
+BW25113,24,4,combination,0.25,0.038
+BW25113,25,4,combination,0.25,0.039
+BW25113,26,4,combination,0.25,0.038
+BW25113,27,4,combination,0.25,0.04
+BW25113,28,4,combination,0.25,0.073
+BW25113,29,4,combination,0.25,0.082
+BW25113,30,4,combination,0.25,0.092
+BW25113,31,4,combination,0.25,0.101
+BW25113,32,4,combination,0.25,0.112
+BW25113,33,4,combination,0.25,0.119
+BW25113,34,4,combination,0.25,0.125
+BW25113,35,4,combination,0.25,0.131
+BW25113,36,4,combination,0.25,0.137
+BW25113,37,4,combination,0.25,0.173
+BW25113,38,4,combination,0.25,0.169
+BW25113,39,4,combination,0.25,0.162
+BW25113,40,4,combination,0.25,0.161
+BW25113,41,4,combination,0.25,0.155
+BW25113,42,4,combination,0.25,0.152
+BW25113,43,4,combination,0.25,0.146
+BW25113,44,4,combination,0.25,0.14
+BW25113,45,4,combination,0.25,0.136
+BW25113,46,4,combination,0.25,0.187
+BW25113,47,4,combination,0.25,0.186
+BW25113,48,4,combination,0.25,0.189
+BW25113,49,4,combination,0.25,0.192
+BW25113,50,4,combination,0.25,0.196
+BW25113,51,4,combination,0.25,0.198
+BW25113,52,4,combination,0.25,0.201
+BW25113,53,4,combination,0.25,0.206
+BW25113,54,4,combination,0.25,0.208
+BW25113,1,5,combination,0.5,0.05
+BW25113,2,5,combination,0.5,0.045
+BW25113,3,5,combination,0.5,0.044
+BW25113,4,5,combination,0.5,0.044
+BW25113,5,5,combination,0.5,0.043
+BW25113,6,5,combination,0.5,0.044
+BW25113,7,5,combination,0.5,0.044
+BW25113,8,5,combination,0.5,0.044
+BW25113,9,5,combination,0.5,0.044
+BW25113,10,5,combination,0.5,0.051
+BW25113,11,5,combination,0.5,0.046
+BW25113,12,5,combination,0.5,0.045
+BW25113,13,5,combination,0.5,0.044
+BW25113,14,5,combination,0.5,0.044
+BW25113,15,5,combination,0.5,0.044
+BW25113,16,5,combination,0.5,0.046
+BW25113,17,5,combination,0.5,0.052
+BW25113,18,5,combination,0.5,0.05
+BW25113,19,5,combination,0.5,0.078
+BW25113,20,5,combination,0.5,0.069
+BW25113,21,5,combination,0.5,0.065
+BW25113,22,5,combination,0.5,0.059
+BW25113,23,5,combination,0.5,0.057
+BW25113,24,5,combination,0.5,0.052
+BW25113,25,5,combination,0.5,0.052
+BW25113,26,5,combination,0.5,0.047
+BW25113,27,5,combination,0.5,0.044
+BW25113,28,5,combination,0.5,0.058
+BW25113,29,5,combination,0.5,0.047
+BW25113,30,5,combination,0.5,0.045
+BW25113,31,5,combination,0.5,0.042
+BW25113,32,5,combination,0.5,0.043
+BW25113,33,5,combination,0.5,0.045
+BW25113,34,5,combination,0.5,0.043
+BW25113,35,5,combination,0.5,0.045
+BW25113,36,5,combination,0.5,0.045
+BW25113,37,5,combination,0.5,0.053
+BW25113,38,5,combination,0.5,0.043
+BW25113,39,5,combination,0.5,0.042
+BW25113,40,5,combination,0.5,0.043
+BW25113,41,5,combination,0.5,0.042
+BW25113,42,5,combination,0.5,0.043
+BW25113,43,5,combination,0.5,0.049
+BW25113,44,5,combination,0.5,0.042
+BW25113,45,5,combination,0.5,0.044
+BW25113,46,5,combination,0.5,0.049
+BW25113,47,5,combination,0.5,0.047
+BW25113,48,5,combination,0.5,0.043
+BW25113,49,5,combination,0.5,0.05
+BW25113,50,5,combination,0.5,0.044
+BW25113,51,5,combination,0.5,0.043
+BW25113,52,5,combination,0.5,0.044
+BW25113,53,5,combination,0.5,0.043
+BW25113,54,5,combination,0.5,0.044
+BW25113,1,6,combination,1,0.067
+BW25113,2,6,combination,1,0.054
+BW25113,3,6,combination,1,0.05
+BW25113,4,6,combination,1,0.054
+BW25113,5,6,combination,1,0.05
+BW25113,6,6,combination,1,0.05
+BW25113,7,6,combination,1,0.051
+BW25113,8,6,combination,1,0.052
+BW25113,9,6,combination,1,0.051
+BW25113,10,6,combination,1,0.071
+BW25113,11,6,combination,1,0.057
+BW25113,12,6,combination,1,0.052
+BW25113,13,6,combination,1,0.052
+BW25113,14,6,combination,1,0.05
+BW25113,15,6,combination,1,0.049
+BW25113,16,6,combination,1,0.051
+BW25113,17,6,combination,1,0.051
+BW25113,18,6,combination,1,0.049
+BW25113,19,6,combination,1,0.073
+BW25113,20,6,combination,1,0.059
+BW25113,21,6,combination,1,0.052
+BW25113,22,6,combination,1,0.051
+BW25113,23,6,combination,1,0.05
+BW25113,24,6,combination,1,0.051
+BW25113,25,6,combination,1,0.051
+BW25113,26,6,combination,1,0.05
+BW25113,27,6,combination,1,0.052
+BW25113,28,6,combination,1,0.073
+BW25113,29,6,combination,1,0.059
+BW25113,30,6,combination,1,0.053
+BW25113,31,6,combination,1,0.049
+BW25113,32,6,combination,1,0.051
+BW25113,33,6,combination,1,0.05
+BW25113,34,6,combination,1,0.055
+BW25113,35,6,combination,1,0.052
+BW25113,36,6,combination,1,0.051
+BW25113,37,6,combination,1,0.071
+BW25113,38,6,combination,1,0.056
+BW25113,39,6,combination,1,0.052
+BW25113,40,6,combination,1,0.051
+BW25113,41,6,combination,1,0.052
+BW25113,42,6,combination,1,0.052
+BW25113,43,6,combination,1,0.054
+BW25113,44,6,combination,1,0.05
+BW25113,45,6,combination,1,0.052
+BW25113,46,6,combination,1,0.068
+BW25113,47,6,combination,1,0.053
+BW25113,48,6,combination,1,0.052
+BW25113,49,6,combination,1,0.05
+BW25113,50,6,combination,1,0.052
+BW25113,51,6,combination,1,0.049
+BW25113,52,6,combination,1,0.053
+BW25113,53,6,combination,1,0.051
+BW25113,54,6,combination,1,0.052
+BW25113,1,7,combination,2,0.087
+BW25113,2,7,combination,2,0.069
+BW25113,3,7,combination,2,0.076
+BW25113,4,7,combination,2,0.071
+BW25113,5,7,combination,2,0.064
+BW25113,6,7,combination,2,0.064
+BW25113,7,7,combination,2,0.063
+BW25113,8,7,combination,2,0.057
+BW25113,9,7,combination,2,0.06
+BW25113,10,7,combination,2,0.094
+BW25113,11,7,combination,2,0.078
+BW25113,12,7,combination,2,0.062
+BW25113,13,7,combination,2,0.059
+BW25113,14,7,combination,2,0.064
+BW25113,15,7,combination,2,0.064
+BW25113,16,7,combination,2,0.059
+BW25113,17,7,combination,2,0.072
+BW25113,18,7,combination,2,0.058
+BW25113,19,7,combination,2,0.111
+BW25113,20,7,combination,2,0.087
+BW25113,21,7,combination,2,0.067
+BW25113,22,7,combination,2,0.064
+BW25113,23,7,combination,2,0.072
+BW25113,24,7,combination,2,0.08
+BW25113,25,7,combination,2,0.06
+BW25113,26,7,combination,2,0.059
+BW25113,27,7,combination,2,0.058
+BW25113,28,7,combination,2,0.11
+BW25113,29,7,combination,2,0.089
+BW25113,30,7,combination,2,0.068
+BW25113,31,7,combination,2,0.064
+BW25113,32,7,combination,2,0.067
+BW25113,33,7,combination,2,0.059
+BW25113,34,7,combination,2,0.066
+BW25113,35,7,combination,2,0.064
+BW25113,36,7,combination,2,0.058
+BW25113,37,7,combination,2,0.099
+BW25113,38,7,combination,2,0.074
+BW25113,39,7,combination,2,0.07
+BW25113,40,7,combination,2,0.06
+BW25113,41,7,combination,2,0.076
+BW25113,42,7,combination,2,0.063
+BW25113,43,7,combination,2,0.101
+BW25113,44,7,combination,2,0.062
+BW25113,45,7,combination,2,0.061
+BW25113,46,7,combination,2,0.086
+BW25113,47,7,combination,2,0.07
+BW25113,48,7,combination,2,0.073
+BW25113,49,7,combination,2,0.059
+BW25113,50,7,combination,2,0.059
+BW25113,51,7,combination,2,0.06
+BW25113,52,7,combination,2,0.065
+BW25113,53,7,combination,2,0.064
+BW25113,54,7,combination,2,0.064
