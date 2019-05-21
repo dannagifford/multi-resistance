@@ -197,8 +197,8 @@ waic2 <- waic(fitness.model.intercept)
 loo_compare(waic1, waic2)
 
 # Model M4: Compare data and simulation models
-#source("~/Dropbox (The University of Manchester)/Mutators/simulations/timescale-corrected/dt=0,25-corrected/plottimescale.R")
-muller.sim = readRDS("~/Dropbox (The University of Manchester)/Mutators/simulations/timescale-corrected/dt=0,25-corrected/muller.rds")
+#source("simulations/plots.R") # Run this to generate muller.rds
+muller.sim = readRDS("simulations/muller.rds")
 popnsAB.sim = muller.sim %>%
 	group_by(day) %>%
 	filter(time==max(time)&rep<=60) %>%
