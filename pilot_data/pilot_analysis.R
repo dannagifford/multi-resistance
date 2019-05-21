@@ -1,7 +1,13 @@
-library(tidyverse)
-library(grid)
-library(LaplacesDemon)
-library(Cairo)
+#install.packages(tidyverse)
+#install.packages(grid)
+#install.packages(LaplacesDemon)
+#install.packages(Cairo)
+#install.packages(ggpubr)
+
+require(tidyverse)
+require(grid)
+require(LaplacesDemon)
+require(Cairo)
 require(ggpubr)
 
 theme_set(theme_bw())
