@@ -1,3 +1,7 @@
+#install.packages(brms)
+#install.packages(tidyverse)
+#install.packages(future)
+
 library(brms)
 library(tidyverse)
 library(future)
