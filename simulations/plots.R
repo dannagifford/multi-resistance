@@ -1,3 +1,9 @@
+#install.packages(tidyverse)
+#install.packages(ggpubr)
+#install.packages(tidyverse)
+#install.packages(grid)
+#install.packages(scales)
+
 require(tidyverse)
 require(ggpubr)
 require(tidyverse)
@@ -14,7 +20,6 @@ theme_set(theme_bw())
 theme_update(text = element_text(size = 10), 
 
 	panel.grid.major = element_blank(), 
-
 	panel.grid.minor = element_blank()
 )
 
