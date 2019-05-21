@@ -140,7 +140,7 @@ n.plot = results.gathered %>%
 
 			sec.axis = sec_axis(~ ., breaks = (unique(results$day)-0.5)*spd, 
 
-			labels = unique(muller$concentration), name = "Simulated antibiotic concentration (mg/l)")) + 
+			labels = unique(results.gathered$concentration), name = "Simulated antibiotic concentration (mg/l)")) + 
 		geom_vline(xintercept = spd*(1:6) + 2, color = "grey80") + 
 		theme(axis.text.x.top = element_text(angle = 45, hjust = 0))
 
