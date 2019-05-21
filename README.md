@@ -1,4 +1,4 @@
-To perform the statistical analyses and figure plotting associated with https://www.biorxiv.org/content/10.1101/643585v1 and PBIOLOGY-D-19-01437
+To perform the statistical analyses and figure plotting associated with BIORXIV/2019/643585 (https://www.biorxiv.org/content/10.1101/643585v1) and PBIOLOGY-D-19-01437
 
 You will need R (https://cran.r-project.org/). Packages needed are loaded by the scripts, but you may need to install them first.
 
