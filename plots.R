@@ -3,11 +3,13 @@
 #install.packages("ggpubr")
 #install.packages("grid")
 #install.packages("scales")
+#install.packages("cowplot")
 
 require(tidyverse)
 require(ggpubr)
 require(grid)
 require(scales)
+#require(cowplot) 
 
 #source("munging.R") # This code will recreate all Rds files, which is slow, so we load them via readRDS instead after they are created.
 
@@ -72,6 +74,9 @@ mullert = ggplotGrob(muller)
 mullert[["grobs"]][[18]][["children"]][[2]] = nullGrob()
 muller = as_ggplot(mullert)
 
+ggsave("expevol.pdf", muller, device = "pdf", height = 6, width = 8)
+
+
 #day6 = popns %>%
 #	group_by(volume, day, antibiotic, pmutS.text, pmutS, concentration, state.simple) %>%
 #	summarise(count = n()) %>%
@@ -89,8 +94,6 @@ muller = as_ggplot(mullert)
 #	filter(day == 6, volume == 1, antibiotic != "no antibiotic") %>%
 #	complete(state.sum, fill = list(count = 0))
 
-pointcolours = bestcolours
-pointcolours[1] = "grey60"
 
 #day6p = day6 %>% ggplot(aes(x = pmutS, y = count)) +
 #	geom_line(aes(group = state.simple, color = state.simple)) +
@@ -103,11 +106,14 @@ pointcolours[1] = "grey60"
 #	scale_shape_manual(values = c(21,22,23,25,24), name = "Detection of") +
 #	theme(plot.margin = margin(5,14,7,15))
 
-ggsave("expevol.pdf", muller, device = "pdf", height = 6, width = 8)
 
 ### Growth curve plots
 #### Fluctuation test generated strains
 #Not shown in the text, but plots raw growth curves (i.e. OD vs time):
+
+pointcolours = bestcolours
+pointcolours[1] = "grey60"
+
 FTsamples.mean = readRDS("FTsamples_mean.Rds")
 FT.gc.plot = FTsamples.mean %>%
 	filter(!grepl("mutator", strain2), time > 1, time <= 30) %>%
@@ -118,6 +124,7 @@ FT.gc.plot = FTsamples.mean %>%
 	geom_vline(xintercept = 22, linetype = "11", color = "grey40") +
 	guides(color = guide_legend(title = "Strain"), linetype = F) +
 	scale_y_continuous( sec.axis = sec_axis(~ ., breaks = NULL, labels = NULL, name = "Antibiotic concentration (mg/l)"))
+
 
 FTcurves.mean = readRDS("FTcurves_mean.Rds")
 FT.auc.plot = FTcurves.mean %>%
@@ -135,6 +142,7 @@ FT.auc.plot = FTcurves.mean %>%
 	geom_vline(aes(xintercept = ifelse(antibiotic == "combination",5,6)), linetype = "22", color = "grey60") +
 	theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ggsave("ftauc.pdf", FT.auc.plot, device = "pdf", height = 2.5, width = 7)
+
 
 ##### Selection strains
 #Not shown in the text, but plots raw growth curves (i.e. OD vs time):
@@ -164,6 +172,7 @@ ggsave("ftauc.pdf", FT.auc.plot, device = "pdf", height = 2.5, width = 7)
 #	scale_color_manual(values = c("#ef0358","#ef0358")) +
 #	scale_fill_manual(values = c("#ef0358","#ef0358")) +
 #		theme(legend.key = element_rect(color = "white"))
+
 
 # Instead we plot AUC in the presence and absence of antibiotics, coloured by mutator proportion.
 joinedcurves.mean = readRDS("joinedcurves_mean.Rds")
@@ -205,6 +214,8 @@ compare.plot = compare_data_sim %>%
 		guides(shape = FALSE, fill = guide_legend(override.aes = list(shape = c(22,23,23,23,24,24,24))))
 
 ggsave("sim_vs_experiment.pdf", compare.plot, device = "pdf", height = 2, width = 8)
+
+
 dailyOD = readRDS("dailyOD.Rds")
 odp = dailyOD %>%
 	filter(volume == 1) %>%
@@ -244,6 +255,7 @@ odnp_log = odnp +
 	scale_y_log10(name = "Number of bacteria", labels = trans_format("log10", math_format(10^.x))) +
 	annotate("text", x = 0.001, y = 1.4*5.71e8, label = scientific_10x(5.71e8, digits = 2), size = 3)
 
+# We only use cowplot for this one thing so we don't load it into the environment...
 odnp_inset <-
   cowplot::ggdraw() +
   cowplot::draw_plot(odnp_log) +
