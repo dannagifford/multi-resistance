@@ -1,0 +1,97 @@
+row,col,concentration,antibiotic,well,replicate,is.blank
+A,1,NA,NA,Sample X1,NA,F
+A,2,NA,NA,Sample X2,NA,T
+A,3,NA,NA,Sample X3,NA,T
+A,4,NA,NA,Sample X4,NA,T
+A,5,NA,NA,Sample X5,NA,T
+A,6,NA,NA,Sample X6,NA,T
+A,7,NA,NA,Sample X7,NA,T
+A,8,NA,NA,Sample X8,NA,T
+A,9,NA,NA,Sample X9,NA,T
+A,10,NA,NA,Sample X10,NA,T
+A,11,NA,NA,Sample X11,NA,T
+A,12,NA,NA,Sample X12,NA,F
+B,1,NA,NA,Sample X13,NA,F
+B,2,2,rifampicin,Sample X14,1,F
+B,3,2,nalidixic acid,Sample X15,1,F
+B,4,2,combination,Sample X16,1,F
+B,5,2,rifampicin,Sample X17,2,F
+B,6,2,nalidixic acid,Sample X18,2,F
+B,7,2,combination,Sample X19,2,F
+B,8,2,rifampicin,Sample X20,3,F
+B,9,2,nalidixic acid,Sample X21,3,F
+B,10,2,combination,Sample X22,3,F
+B,11,0,MH,Sample X23,1,F
+B,12,NA,NA,Sample X24,NA,F
+C,1,NA,NA,Sample X25,NA,F
+C,2,1,rifampicin,Sample X26,1,F
+C,3,1,nalidixic acid,Sample X27,1,F
+C,4,1,combination,Sample X28,1,F
+C,5,1,rifampicin,Sample X29,2,F
+C,6,1,nalidixic acid,Sample X30,2,F
+C,7,1,combination,Sample X31,2,F
+C,8,1,rifampicin,Sample X32,3,F
+C,9,1,nalidixic acid,Sample X33,3,F
+C,10,1,combination,Sample X34,3,F
+C,11,0,MH,Sample X35,2,F
+C,12,NA,NA,Sample X36,NA,F
+D,1,NA,NA,Sample X37,NA,F
+D,2,0.5,rifampicin,Sample X38,1,F
+D,3,0.5,nalidixic acid,Sample X39,1,F
+D,4,0.5,combination,Sample X40,1,F
+D,5,0.5,rifampicin,Sample X41,2,F
+D,6,0.5,nalidixic acid,Sample X42,2,F
+D,7,0.5,combination,Sample X43,2,F
+D,8,0.5,rifampicin,Sample X44,3,F
+D,9,0.5,nalidixic acid,Sample X45,3,F
+D,10,0.5,combination,Sample X46,3,F
+D,11,0,MH,Sample X47,3,F
+D,12,NA,NA,Sample X48,NA,F
+E,1,NA,NA,Sample X49,NA,F
+E,2,0.25,rifampicin,Sample X50,1,F
+E,3,0.25,nalidixic acid,Sample X51,1,F
+E,4,0.25,combination,Sample X52,1,F
+E,5,0.25,rifampicin,Sample X53,2,F
+E,6,0.25,nalidixic acid,Sample X54,2,F
+E,7,0.25,combination,Sample X55,2,F
+E,8,0.25,rifampicin,Sample X56,3,F
+E,9,0.25,nalidixic acid,Sample X57,3,F
+E,10,0.25,combination,Sample X58,3,F
+E,11,0,MH,Sample X59,4,F
+E,12,NA,NA,Sample X60,NA,F
+F,1,NA,NA,Sample X61,NA,F
+F,2,0.125,rifampicin,Sample X62,1,F
+F,3,0.125,nalidixic acid,Sample X63,1,F
+F,4,0.125,combination,Sample X64,1,F
+F,5,0.125,rifampicin,Sample X65,2,F
+F,6,0.125,nalidixic acid,Sample X66,2,F
+F,7,0.125,combination,Sample X67,2,F
+F,8,0.125,rifampicin,Sample X68,3,F
+F,9,0.125,nalidixic acid,Sample X69,3,F
+F,10,0.125,combination,Sample X70,3,F
+F,11,0,MH,Sample X71,5,F
+F,12,NA,NA,Sample X72,NA,F
+F,1,NA,NA,Sample X73,NA,F
+G,2,0.0625,rifampicin,Sample X74,1,F
+G,3,0.0625,nalidixic acid,Sample X75,1,F
+G,4,0.0625,combination,Sample X76,1,F
+G,5,0.0625,rifampicin,Sample X77,2,F
+G,6,0.0625,nalidixic acid,Sample X78,2,F
+G,7,0.0625,combination,Sample X79,2,F
+G,8,0.0625,rifampicin,Sample X80,3,F
+G,9,0.0625,nalidixic acid,Sample X81,3,F
+G,10,0.0625,combination,Sample X82,3,F
+G,11,0,MH,Sample X83,6,F
+G,12,NA,NA,Sample X84,NA,F
+H,1,NA,NA,Sample X85,NA,F
+H,2,NA,NA,Sample X86,NA,F
+H,3,NA,NA,Sample X87,NA,F
+H,4,NA,NA,Sample X88,NA,F
+H,5,NA,NA,Sample X89,NA,F
+H,6,NA,NA,Sample X90,NA,F
+H,7,NA,NA,Sample X91,NA,F
+H,8,NA,NA,Sample X92,NA,F
+H,9,NA,NA,Sample X93,NA,F
+H,10,NA,NA,Sample X94,NA,F
+H,11,NA,NA,Sample X95,NA,F
+H,12,NA,NA,Sample X96,NA,F
