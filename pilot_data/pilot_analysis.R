@@ -1,14 +1,8 @@
-#install.packages(tidyverse)
-#install.packages(grid)
-#install.packages(LaplacesDemon)
-#install.packages(Cairo)
-#install.packages(ggpubr)
-
-require(tidyverse)
-require(grid)
-require(LaplacesDemon)
-require(Cairo)
-require(ggpubr)
+library(tidyverse)
+library(grid)
+library(LaplacesDemon)
+library(Cairo)
+library(ggpubr)
 
 theme_set(theme_bw())
 theme_update(text = element_text(size=10),
@@ -18,7 +12,7 @@ theme_update(text = element_text(size=10),
 
 # Pilot experiment with either all BW25113 or mutators to set priors
 
-pilot_survival = read_csv("2017-12-01_population-survival-datda.csv") %>%
+pilot_survival = read_csv("2017-12-01_population-survival-data.csv") %>%
 	mutate(antibiotic = factor(antibiotic,
 		levels=c("none", "rifampicin", "nalidixic acid", "combination"))) %>%
 	mutate(strain = recode_factor(strain, BW25113 = "wild-type", `ΔmutS`="mutator"))
@@ -48,7 +42,7 @@ prior_plotS1 = ggplot(data.frame(x=c(-20, 20)), aes(x)) +
 	geom_vline(xintercept = c(-10,logit(1/54), logit(39/54), 10), linetype="33", color="grey60")  +
 	geom_text(data = tibble(x = c(-10,logit(1/54),logit(39/54), 10), 
 		text = paste("p =",c("0.00005", "1/54", "39/54", 0.99995))), mapping = aes(x, y=0.14, label = text), hjust="left", angle = -90, nudge_x=-0.75, size=3) + 
-	labs(x="Parameter", y="Density", tag="B") +
+	labs(x="logit(pi)", y="Density", tag="B") +
 scale_linetype_manual("Priors", values = c("11", "solid"))
 
 prior_explainS1 = ggarrange(pilot_plot, prior_plotS1, nrow = 2, heights=c(1.3, 1))
@@ -63,7 +57,7 @@ prior_plotS2 = ggplot(data.frame(x=c(-10, 30)), aes(x)) +
 	geom_vline(xintercept = c(0,24), linetype="33", color="grey60")  +
 	geom_text(data = tibble(x = c(0,24), 
 		text = paste("AUC =",c("0", "24"))), mapping = aes(x, y=0.11, label = text), hjust="left", angle = -90, nudge_x=-0.75, size=3) + 
-	labs(x="Parameter", y="Density") +
+	labs(x="logit(pi)", y="Density") +
 scale_linetype_manual("Priors", values = c("11", "solid"))
 
 ggsave("prior_justificationS2.pdf", prior_plotS2, width=6, height=2, device=cairo_pdf)
