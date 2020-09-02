@@ -14,9 +14,9 @@ popnsAB.model = muller.model %>%
 	mutate(`double resistance` = as.numeric(as.character(state.simple)=="double resistance")) %>%
 	mutate(state.double = factor(`double resistance`, levels=c(0,1), labels = c("no double resistance", "double resistance")))
 
-popnsAB.model$pmutS.ordered = as.ordered(popnsAB$pmutS.text)
+popnsAB.model$pmutS.ordered = as.ordered(popnsAB.model$pmutS.text)
 
-popnsday6.model = popnsAB %>%
+popnsday6.model = popnsAB.model %>%
 	filter(day==6)
 
 # Model SI
@@ -35,45 +35,45 @@ controls = list(adapt_delta = 0.99, max_treedepth=15)
 
 today = format(Sys.time(), format="%Y-%m-%d-%H:%M:%S")
 
-brmname = "bernoulli1way"
-brmfile = paste0(today, "_", brmname)
-ber_1way %<-% {brm (state.double~(pmutS.text + antibiotic),
-	family=bernoulli("logit"), chains=3, iter=5000, warmup=600,
-	prior=priors, control=controls,
-	data=popnsday6, cores=3, file=brmfile)}
+#brmname = "bernoulli1way"
+#brmfile = paste0(today, "_", brmname)
+#ber_1way %<-% {brm (state.double~(pmutS.text + antibiotic),
+#	family=bernoulli("logit"), chains=3, iter=5000, warmup=1000,
+#	prior=priors, control=controls,
+#	data=popnsday6.model, cores=3, file=brmfile)}
 
-brmname = "bernoulli2way"
-brmfile = paste0(today, "_", brmname)
-ber_2way %<-% {brm (state.double~(pmutS.text + antibiotic)^2 ,
-	family=bernoulli("logit"), chains=3, iter=5000, warmup=1000,
-	prior=priors, control=controls,
-	data=popnsday6, cores=3, file=brmfile)}
+#brmname = "bernoulli2way"
+#brmfile = paste0(today, "_", brmname)
+#ber_2way %<-% {brm (state.double~(pmutS.text + antibiotic)^2 ,
+#	family=bernoulli("logit"), chains=3, iter=5000, warmup=1000,
+#	prior=priors, control=controls,
+#	data=popnsday6.model, cores=3, file=brmfile)}
 
-brmname = "categorical1way"
+brmname = "categorical2waymain"
 brmfile = paste0(today, "_", brmname)
 cat_1way %<-% {brm (state.simple~(pmutS.text + antibiotic),
 	family=categorical("logit"), chains=3, iter=5000, warmup=1000,
 	prior=priors, control=controls,
-	data=popnsday6, cores=3, file=brmfile)}
+	data=popnsday6.model, cores=3, file=brmfile)}
 
-brmname = "categorical2way"
+brmname = "categorical2wayinteraction"
 brmfile = paste0(today, "_", brmname)
 cat_2way %<-% {brm (state.simple~(pmutS.text + antibiotic)^2,
 	family=categorical("logit"), chains=3, iter=5000, warmup=1000,
 	prior=priors, control=controls,
-	data=popnsday6, cores=3, file=brmfile)}
+	data=popnsday6.model, cores=3, file=brmfile)}
 
-brmname = "categorical3way_day"
-brmfile = paste0(today, "_", brmname)
-cat_3wayday %<-% {brm (state.simple~(pmutS.text + antibiotic + fday)^3,
-	family=categorical("logit"), chains=3, iter=5000, warmup=1000,
-	prior=priors, control=controls,
-	data=popnsAB, cores=3, file=brmfile)}
+#brmname = "categorical3way_day"
+#brmfile = paste0(today, "_", brmname)
+#cat_3wayday %<-% {brm (state.simple~(pmutS.text + antibiotic + fday)^3,
+#	family=categorical("logit"), chains=3, iter=5000, warmup=1000,
+#	prior=priors, control=controls,
+#	data=popnsAB.model, cores=3, file=brmfile)}
 
-brmname = "categorical2way_day"
-brmfile = paste0(today, "_", brmname)
-cat_2wayday %<-% {brm (state.simple~(pmutS.text + antibiotic + fday)^2,
-	family=categorical("logit"), chains=3, iter=5000, warmup=1000,
-	prior=priors, control=controls,
-	data=popnsAB, cores=3, file=brmfile)}
+#brmname = "categorical2way_day"
+#brmfile = paste0(today, "_", brmname)
+#cat_2wayday %<-% {brm (state.simple~(pmutS.text + antibiotic + fday)^2,
+#	family=categorical("logit"), chains=3, iter=5000, warmup=1000,
+#	prior=priors, control=controls,
+#	data=popnsAB.model, cores=3, file=brmfile)}
 
