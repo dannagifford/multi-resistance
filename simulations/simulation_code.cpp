@@ -32,7 +32,7 @@ double bS, muA, muB, bA, bB, bD;
 double bSp, muAp, muBp, bAp, bBp, bDp;
 double kS, kA, kB, kD; //maximum value that can be reached
 double kSp, kAp, kBp, kDp; //maximum value that can be reached
-int eva_change;
+int eva_change, nite, nsave;
 double t, dt;
 
 double nT, ncm, ncT;
@@ -41,12 +41,6 @@ std::string parameters, outname;
 std::random_device rd;  //Will be used to obtain a seed for the random number engine
 std::mt19937 generator(rd()); //Standard mersenne_twister_engine seeded with rd()
 
-std::string remove_extension( const std::string& fileName )
-{
-    return fileName.substr( 0, fileName.find_last_of(".") );
-}
-
-
 std::vector<double> p_array = {0, 0.05, 0.1, 0.3, 0.5};
 
 double getFromINI(const std::string& section, const std::string& value) {
@@ -54,6 +48,12 @@ double getFromINI(const std::string& section, const std::string& value) {
 	boost::property_tree::ini_parser::read_ini(parameters, pt);
 	return pt.get<double>(section + "." + value);
 }
+
+std::string remove_extension( const std::string& fileName )
+{
+    return fileName.substr( 0, fileName.find_last_of(".") );
+}
+
 
 void SetExperiment() {
 	replicates = getFromINI("experiment", "replicates");
@@ -78,7 +78,7 @@ void SetIniCond(double p) {
 	nDp = 0;
 	muAp = mutator * muA;
 	muBp = mutator * muB;
-    	t = 0;
+    t = 0;
 }
 
 
@@ -164,8 +164,13 @@ double Binomial(double n, double prob) {
 }
 
 double Dilution(double n) {
-	std::binomial_distribution<int> binomial(n, dilution);
-	return binomial(generator);
+    if (n == 0) { //this happens when ni > ki
+        return 0;
+    }
+    else {
+        std::binomial_distribution<int> binomial(n, dilution);
+        return binomial(generator);
+    }
 }
 
 void EvaluateChange(double n, int index) {
@@ -180,11 +185,12 @@ void SaveandPrint(std::ofstream& myfile) {
 }
 
 int main(int argc, char* argv[]) {
-	parameters = argv[1]; //set here the .ini file to read
+	parameters = argv[1]; //set here the .ini file name to read
 	outname = remove_extension(argv[1]);
+
 	SetExperiment();
 	readINIFile();
-	int nsave = 1/dt;
+	int nsave = 1/dt; //must come after readINIFile()
 	cout << "Now running parameter file: " << parameters << ".ini" << endl;
     for (int i = 0; i <= p_array.size()-1; i = i+1) {
         double p = p_array[i];
