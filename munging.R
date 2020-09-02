@@ -208,7 +208,7 @@ NTmodel = ODvsNT %>%
 	mutate(blankOD = correctedOD) %>%
 	filter(`Well Row` == "A" ) %>%
 	lm(NT~blankOD, data = .)
-saveRDS(ODvsN, file = "ODvsN.Rds")
+saveRDS(ODvsNT, file = "ODvsNT.Rds")
 
 #### Fit growth curves
 FTcurves = FTsamples.blanked %>%
