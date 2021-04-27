@@ -16,5 +16,3 @@ Plots and analysis can then be performed in R with 'plots.R' and 'model-fitting-
 Rscript plots.R
 
 Rscript model-fitting-simulations.R
-
-Representative output of the model is shown in all-runs-nal-p=0,3-100runs.eps
