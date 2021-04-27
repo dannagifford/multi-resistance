@@ -1,4 +1,4 @@
-antibiotic,day,strain,parameter,mean,lower,upper
+antibiotic,day,strain,parameter,mean,lower_0.025,upper_0.975
 none,1,S,k1,0.425338,0.411325,0.439352
 none,1,S,k2,1.00005,0.978928,1.02117
 none,1,S,r1,0.947878,0.867369,1.02839
