@@ -1,0 +1,1281 @@
+antibiotic,day,parameter,value
+combination,1,k1_error_L_A,0.389271
+combination,1,k1_error_L_B,0.348689
+combination,1,k1_error_L_D,0.340798
+combination,1,k1_error_L_S,0.326247
+combination,1,k1_error_U_A,0.408868
+combination,1,k1_error_U_B,0.401292
+combination,1,k1_error_U_D,0.416926
+combination,1,k1_error_U_S,0.403436
+combination,1,k2_error_L_A,0.873667
+combination,1,k2_error_L_B,0.689166
+combination,1,k2_error_L_D,0.824678
+combination,1,k2_error_L_S,0.697831
+combination,1,k2_error_U_A,0.955298
+combination,1,k2_error_U_B,0.707488
+combination,1,k2_error_U_D,0.878047
+combination,1,k2_error_U_S,0.721393
+combination,1,kA1,0.39907
+combination,1,kA2,0.914482
+combination,1,kB1,0.374991
+combination,1,kB2,0.698327
+combination,1,kD1,0.378862
+combination,1,kD2,0.851363
+combination,1,kS1,0.364842
+combination,1,kS2,0.709612
+combination,1,n0A,0.394726
+combination,1,n0B,0.34323
+combination,1,n0D,0.34467
+combination,1,n0S,0.320331
+combination,1,r1_error_L_A,0.918248
+combination,1,r1_error_L_B,1.00316
+combination,1,r1_error_L_D,0.897207
+combination,1,r1_error_L_S,0.911901
+combination,1,r1_error_U_A,1.06489
+combination,1,r1_error_U_B,1.27612
+combination,1,r1_error_U_D,1.16643
+combination,1,r1_error_U_S,1.26231
+combination,1,r2_error_L_A,0.100376
+combination,1,r2_error_L_B,0.176919
+combination,1,r2_error_L_D,0.114849
+combination,1,r2_error_L_S,0.184278
+combination,1,r2_error_U_A,0.120816
+combination,1,r2_error_U_B,0.202503
+combination,1,r2_error_U_D,0.132247
+combination,1,r2_error_U_S,0.215614
+combination,1,rA1,0.991571
+combination,1,rA2,0.110596
+combination,1,rB1,1.13964
+combination,1,rB2,0.189711
+combination,1,rD1,1.03182
+combination,1,rD2,0.123548
+combination,1,rS1,1.0871
+combination,1,rS2,0.199946
+combination,2,k1_error_L_A,0.282806
+combination,2,k1_error_L_B,0.31836
+combination,2,k1_error_L_D,0.352049
+combination,2,k1_error_L_S,0.250765
+combination,2,k1_error_U_A,0.317528
+combination,2,k1_error_U_B,0.354706
+combination,2,k1_error_U_D,0.37947
+combination,2,k1_error_U_S,0.332931
+combination,2,k2_error_L_A,0.742667
+combination,2,k2_error_L_B,0.453531
+combination,2,k2_error_L_D,0.795091
+combination,2,k2_error_L_S,0.310995
+combination,2,k2_error_U_A,0.83971
+combination,2,k2_error_U_B,0.459914
+combination,2,k2_error_U_D,0.843558
+combination,2,k2_error_U_S,0.315571
+combination,2,kA1,0.300167
+combination,2,kA2,0.791189
+combination,2,kB1,0.336533
+combination,2,kB2,0.456723
+combination,2,kD1,0.365759
+combination,2,kD2,0.819325
+combination,2,kS1,0.291848
+combination,2,kS2,0.313283
+combination,2,n0A,0.263465
+combination,2,n0B,0.302008
+combination,2,n0D,0.348903
+combination,2,n0S,0.212147
+combination,2,r1_error_L_A,0.692602
+combination,2,r1_error_L_B,0.96357
+combination,2,r1_error_L_D,0.903979
+combination,2,r1_error_L_S,0.619094
+combination,2,r1_error_U_A,0.825358
+combination,2,r1_error_U_B,1.16023
+combination,2,r1_error_U_D,1.05825
+combination,2,r1_error_U_S,0.783513
+combination,2,r2_error_L_A,0.0908386
+combination,2,r2_error_L_B,0.283422
+combination,2,r2_error_L_D,0.111363
+combination,2,r2_error_L_S,0.366004
+combination,2,r2_error_U_A,0.107191
+combination,2,r2_error_U_B,0.351184
+combination,2,r2_error_U_D,0.127882
+combination,2,r2_error_U_S,0.486534
+combination,2,rA1,0.75898
+combination,2,rA2,0.0990149
+combination,2,rB1,1.0619
+combination,2,rB2,0.317303
+combination,2,rD1,0.981117
+combination,2,rD2,0.119622
+combination,2,rS1,0.701303
+combination,2,rS2,0.426269
+combination,3,k1_error_L_A,0.05
+combination,3,k1_error_L_B,0.194668
+combination,3,k1_error_L_D,0.354825
+combination,3,k1_error_L_S,0.0303119
+combination,3,k1_error_U_A,0.05
+combination,3,k1_error_U_B,0.212368
+combination,3,k1_error_U_D,0.408869
+combination,3,k1_error_U_S,0.0389539
+combination,3,k2_error_L_A,-0.33125
+combination,3,k2_error_L_B,0.258151
+combination,3,k2_error_L_D,0.848314
+combination,3,k2_error_L_S,0.0152474
+combination,3,k2_error_U_A,1.05026
+combination,3,k2_error_U_B,0.276736
+combination,3,k2_error_U_D,0.918615
+combination,3,k2_error_U_S,0.0189242
+combination,3,kA1,0.05
+combination,3,kA2,0.359507
+combination,3,kB1,0.203518
+combination,3,kB2,0.267444
+combination,3,kD1,0.381847
+combination,3,kD2,0.883465
+combination,3,kS1,0.0346329
+combination,3,kS2,0.0170858
+combination,3,n0A,0.05
+combination,3,n0B,0.195306
+combination,3,n0D,0.350706
+combination,3,n0S,0.0324154
+combination,3,r1_error_L_A,0.829328
+combination,3,r1_error_L_B,0.815001
+combination,3,r1_error_L_D,0.856031
+combination,3,r1_error_L_S,0.325466
+combination,3,r1_error_U_A,1.07574
+combination,3,r1_error_U_B,0.965118
+combination,3,r1_error_U_D,1.0425
+combination,3,r1_error_U_S,0.539274
+combination,3,r2_error_L_A,0.0559856
+combination,3,r2_error_L_B,0.152758
+combination,3,r2_error_L_D,0.0957715
+combination,3,r2_error_L_S,0.063504
+combination,3,r2_error_U_A,0.406783
+combination,3,r2_error_U_B,0.263379
+combination,3,r2_error_U_D,0.110703
+combination,3,r2_error_U_S,0.204147
+combination,3,rA1,0.952536
+combination,3,rA2,0.231384
+combination,3,rB1,0.890059
+combination,3,rB2,0.208068
+combination,3,rD1,0.949267
+combination,3,rD2,0.103237
+combination,3,rS1,0.43237
+combination,3,rS2,0.133826
+combination,4,k1_error_L_A,0.0553779
+combination,4,k1_error_L_B,-0.387264
+combination,4,k1_error_L_D,0.369513
+combination,4,k1_error_L_S,0.012314
+combination,4,k1_error_U_A,0.067845
+combination,4,k1_error_U_B,0.647617
+combination,4,k1_error_U_D,0.400164
+combination,4,k1_error_U_S,0.0168266
+combination,4,k2_error_L_A,0.0186369
+combination,4,k2_error_L_B,-0.152955
+combination,4,k2_error_L_D,0.830282
+combination,4,k2_error_L_S,0.00094828
+combination,4,k2_error_U_A,0.020194
+combination,4,k2_error_U_B,0.178936
+combination,4,k2_error_U_D,0.920781
+combination,4,k2_error_U_S,0.00978387
+combination,4,kA1,0.0616114
+combination,4,kA2,0.0194155
+combination,4,kB1,0.130177
+combination,4,kB2,0.0129909
+combination,4,kD1,0.384839
+combination,4,kD2,0.875531
+combination,4,kS1,0.0145703
+combination,4,kS2,0.00536607
+combination,4,n0A,0.05819
+combination,4,n0B,0.0271769
+combination,4,n0D,0.358578
+combination,4,n0S,0.0135914
+combination,4,r1_error_L_A,1.20069
+combination,4,r1_error_L_B,0.14554
+combination,4,r1_error_L_D,0.844671
+combination,4,r1_error_L_S,0.116787
+combination,4,r1_error_U_A,1.80265
+combination,4,r1_error_U_B,0.467704
+combination,4,r1_error_U_D,0.989359
+combination,4,r1_error_U_S,0.281308
+combination,4,r2_error_L_A,0.0863437
+combination,4,r2_error_L_B,-0.651381
+combination,4,r2_error_L_D,0.0957699
+combination,4,r2_error_L_S,-0.0435224
+combination,4,r2_error_U_A,0.119814
+combination,4,r2_error_U_B,0.701866
+combination,4,r2_error_U_D,0.115992
+combination,4,r2_error_U_S,0.138771
+combination,4,rA1,1.50167
+combination,4,rA2,0.103079
+combination,4,rB1,0.306622
+combination,4,rB2,0.0252426
+combination,4,rD1,0.917015
+combination,4,rD2,0.105881
+combination,4,rS1,0.199047
+combination,4,rS2,0.0476244
+combination,5,k1_error_L_A,0.024684
+combination,5,k1_error_L_B,0.0173527
+combination,5,k1_error_L_D,0.342611
+combination,5,k1_error_L_S,-0.0135426
+combination,5,k1_error_U_A,0.0366577
+combination,5,k1_error_U_B,0.0868779
+combination,5,k1_error_U_D,0.389137
+combination,5,k1_error_U_S,0.0209624
+combination,5,k2_error_L_A,0.00656333
+combination,5,k2_error_L_B,-0.00640982
+combination,5,k2_error_L_D,0.830554
+combination,5,k2_error_L_S,-0.00473181
+combination,5,k2_error_U_A,0.00904162
+combination,5,k2_error_U_B,0.0273918
+combination,5,k2_error_U_D,0.920209
+combination,5,k2_error_U_S,0.00895866
+combination,5,kA1,0.0306708
+combination,5,kA2,0.00780248
+combination,5,kB1,0.0521153
+combination,5,kB2,0.010491
+combination,5,kD1,0.365874
+combination,5,kD2,0.875381
+combination,5,kS1,0.00370989
+combination,5,kS2,0.00211342
+combination,5,n0A,0.0283333
+combination,5,n0B,0.02456
+combination,5,n0D,0.342512
+combination,5,n0S,0.00348884
+combination,5,r1_error_L_A,0.986475
+combination,5,r1_error_L_B,0.157717
+combination,5,r1_error_L_D,0.870883
+combination,5,r1_error_L_S,-4.47869
+combination,5,r1_error_U_A,2.18599
+combination,5,r1_error_U_B,0.245842
+combination,5,r1_error_U_D,1.06666
+combination,5,r1_error_U_S,4.68805
+combination,5,r2_error_L_A,0.031078
+combination,5,r2_error_L_B,-0.092317
+combination,5,r2_error_L_D,0.0926581
+combination,5,r2_error_L_S,-0.433756
+combination,5,r2_error_U_A,0.0730918
+combination,5,r2_error_U_B,0.168036
+combination,5,r2_error_U_D,0.110191
+combination,5,r2_error_U_S,0.516801
+combination,5,rA1,1.58623
+combination,5,rA2,0.0520849
+combination,5,rB1,0.201779
+combination,5,rB2,0.0378595
+combination,5,rD1,0.968774
+combination,5,rD2,0.101424
+combination,5,rS1,0.10468
+combination,5,rS2,0.0415223
+combination,6,k1_error_L_A,0.0106716
+combination,6,k1_error_L_B,-0.593188
+combination,6,k1_error_L_D,0.32648
+combination,6,k1_error_L_S,-0.199068
+combination,6,k1_error_U_A,0.0197987
+combination,6,k1_error_U_B,0.644105
+combination,6,k1_error_U_D,0.370236
+combination,6,k1_error_U_S,0.228881
+combination,6,k2_error_L_A,-0.00478253
+combination,6,k2_error_L_B,-0.0104519
+combination,6,k2_error_L_D,0.778591
+combination,6,k2_error_L_S,0.000193524
+combination,6,k2_error_U_A,0.0302954
+combination,6,k2_error_U_B,0.0639883
+combination,6,k2_error_U_D,0.906147
+combination,6,k2_error_U_S,0.00320186
+combination,6,kA1,0.0152352
+combination,6,kA2,0.0127565
+combination,6,kB1,0.0254585
+combination,6,kB2,0.0267682
+combination,6,kD1,0.348358
+combination,6,kD2,0.842369
+combination,6,kS1,0.0149066
+combination,6,kS2,0.00169769
+combination,6,n0A,0.0139264
+combination,6,n0B,0.00504984
+combination,6,n0D,0.323996
+combination,6,n0S,0.00392638
+combination,6,r1_error_L_A,0.755911
+combination,6,r1_error_L_B,-0.265718
+combination,6,r1_error_L_D,0.86033
+combination,6,r1_error_L_S,-0.33425
+combination,6,r1_error_U_A,1.82686
+combination,6,r1_error_U_B,0.431674
+combination,6,r1_error_U_D,1.04123
+combination,6,r1_error_U_S,0.740311
+combination,6,r2_error_L_A,-0.578209
+combination,6,r2_error_L_B,0.0250499
+combination,6,r2_error_L_D,0.0755727
+combination,6,r2_error_L_S,-0.0871078
+combination,6,r2_error_U_A,0.634685
+combination,6,r2_error_U_B,0.164265
+combination,6,r2_error_U_D,0.0935482
+combination,6,r2_error_U_S,0.183704
+combination,6,rA1,1.29138
+combination,6,rA2,0.0282379
+combination,6,rB1,0.082978
+combination,6,rB2,0.0946576
+combination,6,rD1,0.950778
+combination,6,rD2,0.0845605
+combination,6,rS1,0.203031
+combination,6,rS2,0.0482979
+nalidixic acid,1,k1_error_L_A,0.396009
+nalidixic acid,1,k1_error_L_B,0.363194
+nalidixic acid,1,k1_error_L_D,0.355572
+nalidixic acid,1,k1_error_L_S,0.383304
+nalidixic acid,1,k1_error_U_A,0.409421
+nalidixic acid,1,k1_error_U_B,0.411899
+nalidixic acid,1,k1_error_U_D,0.396621
+nalidixic acid,1,k1_error_U_S,0.415749
+nalidixic acid,1,k2_error_L_A,0.906798
+nalidixic acid,1,k2_error_L_B,0.941213
+nalidixic acid,1,k2_error_L_D,0.799092
+nalidixic acid,1,k2_error_L_S,0.911376
+nalidixic acid,1,k2_error_U_A,1.01258
+nalidixic acid,1,k2_error_U_B,1.00568
+nalidixic acid,1,k2_error_U_D,0.859593
+nalidixic acid,1,k2_error_U_S,0.963083
+nalidixic acid,1,kA1,0.402715
+nalidixic acid,1,kA2,0.959691
+nalidixic acid,1,kB1,0.387546
+nalidixic acid,1,kB2,0.973445
+nalidixic acid,1,kD1,0.376097
+nalidixic acid,1,kD2,0.829342
+nalidixic acid,1,kS1,0.399527
+nalidixic acid,1,kS2,0.937229
+nalidixic acid,1,n0A,0.400145
+nalidixic acid,1,n0B,0.3589
+nalidixic acid,1,n0D,0.351017
+nalidixic acid,1,n0S,0.385273
+nalidixic acid,1,r1_error_L_A,0.958142
+nalidixic acid,1,r1_error_L_B,0.946036
+nalidixic acid,1,r1_error_L_D,0.8674
+nalidixic acid,1,r1_error_L_S,0.941211
+nalidixic acid,1,r1_error_U_A,1.08247
+nalidixic acid,1,r1_error_U_B,1.18037
+nalidixic acid,1,r1_error_U_D,1.04975
+nalidixic acid,1,r1_error_U_S,1.1475
+nalidixic acid,1,r2_error_L_A,0.100763
+nalidixic acid,1,r2_error_L_B,0.116449
+nalidixic acid,1,r2_error_L_D,0.105853
+nalidixic acid,1,r2_error_L_S,0.133053
+nalidixic acid,1,r2_error_U_A,0.123477
+nalidixic acid,1,r2_error_U_B,0.13289
+nalidixic acid,1,r2_error_U_D,0.124322
+nalidixic acid,1,r2_error_U_S,0.153883
+nalidixic acid,1,rA1,1.0203
+nalidixic acid,1,rA2,0.11212
+nalidixic acid,1,rB1,1.0632
+nalidixic acid,1,rB2,0.124669
+nalidixic acid,1,rD1,0.958576
+nalidixic acid,1,rD2,0.115087
+nalidixic acid,1,rS1,1.04436
+nalidixic acid,1,rS2,0.143468
+nalidixic acid,2,k1_error_L_A,0.335833
+nalidixic acid,2,k1_error_L_B,0.378746
+nalidixic acid,2,k1_error_L_D,0.347429
+nalidixic acid,2,k1_error_L_S,0.333989
+nalidixic acid,2,k1_error_U_A,0.357436
+nalidixic acid,2,k1_error_U_B,0.426087
+nalidixic acid,2,k1_error_U_D,0.386683
+nalidixic acid,2,k1_error_U_S,0.390098
+nalidixic acid,2,k2_error_L_A,0.810298
+nalidixic acid,2,k2_error_L_B,0.952263
+nalidixic acid,2,k2_error_L_D,0.807222
+nalidixic acid,2,k2_error_L_S,0.847102
+nalidixic acid,2,k2_error_U_A,0.894695
+nalidixic acid,2,k2_error_U_B,1.01469
+nalidixic acid,2,k2_error_U_D,0.856346
+nalidixic acid,2,k2_error_U_S,0.941814
+nalidixic acid,2,kA1,0.346634
+nalidixic acid,2,kA2,0.852497
+nalidixic acid,2,kB1,0.402417
+nalidixic acid,2,kB2,0.983478
+nalidixic acid,2,kD1,0.367056
+nalidixic acid,2,kD2,0.831784
+nalidixic acid,2,kS1,0.362044
+nalidixic acid,2,kS2,0.894458
+nalidixic acid,2,n0A,0.323827
+nalidixic acid,2,n0B,0.36537
+nalidixic acid,2,n0D,0.340271
+nalidixic acid,2,n0S,0.323208
+nalidixic acid,2,r1_error_L_A,0.866163
+nalidixic acid,2,r1_error_L_B,0.958796
+nalidixic acid,2,r1_error_L_D,0.900637
+nalidixic acid,2,r1_error_L_S,0.618228
+nalidixic acid,2,r1_error_U_A,0.984687
+nalidixic acid,2,r1_error_U_B,1.18719
+nalidixic acid,2,r1_error_U_D,1.08039
+nalidixic acid,2,r1_error_U_S,0.764207
+nalidixic acid,2,r2_error_L_A,0.0923035
+nalidixic acid,2,r2_error_L_B,0.111937
+nalidixic acid,2,r2_error_L_D,0.113789
+nalidixic acid,2,r2_error_L_S,0.101091
+nalidixic acid,2,r2_error_U_A,0.107925
+nalidixic acid,2,r2_error_U_B,0.127697
+nalidixic acid,2,r2_error_U_D,0.129802
+nalidixic acid,2,r2_error_U_S,0.119757
+nalidixic acid,2,rA1,0.925425
+nalidixic acid,2,rA2,0.100114
+nalidixic acid,2,rB1,1.07299
+nalidixic acid,2,rB2,0.119817
+nalidixic acid,2,rD1,0.990516
+nalidixic acid,2,rD2,0.121795
+nalidixic acid,2,rS1,0.691218
+nalidixic acid,2,rS2,0.110424
+nalidixic acid,3,k1_error_L_A,0.070982
+nalidixic acid,3,k1_error_L_B,0.379906
+nalidixic acid,3,k1_error_L_D,0.365387
+nalidixic acid,3,k1_error_L_S,0.0484149
+nalidixic acid,3,k1_error_U_A,0.0952792
+nalidixic acid,3,k1_error_U_B,0.418048
+nalidixic acid,3,k1_error_U_D,0.411016
+nalidixic acid,3,k1_error_U_S,0.151548
+nalidixic acid,3,k2_error_L_A,0.675013
+nalidixic acid,3,k2_error_L_B,0.952863
+nalidixic acid,3,k2_error_L_D,0.828349
+nalidixic acid,3,k2_error_L_S,0.0330959
+nalidixic acid,3,k2_error_U_A,0.882181
+nalidixic acid,3,k2_error_U_B,1.03228
+nalidixic acid,3,k2_error_U_D,0.913532
+nalidixic acid,3,k2_error_U_S,0.0506956
+nalidixic acid,3,kA1,0.0831306
+nalidixic acid,3,kA2,0.778597
+nalidixic acid,3,kB1,0.398977
+nalidixic acid,3,kB2,0.992572
+nalidixic acid,3,kD1,0.388202
+nalidixic acid,3,kD2,0.87094
+nalidixic acid,3,kS1,0.0999813
+nalidixic acid,3,kS2,0.0418957
+nalidixic acid,3,n0A,0.0825614
+nalidixic acid,3,n0B,0.374533
+nalidixic acid,3,n0D,0.362225
+nalidixic acid,3,n0S,0.0785772
+nalidixic acid,3,r1_error_L_A,0.760892
+nalidixic acid,3,r1_error_L_B,0.954637
+nalidixic acid,3,r1_error_L_D,0.818739
+nalidixic acid,3,r1_error_L_S,1.12842
+nalidixic acid,3,r1_error_U_A,2.68365
+nalidixic acid,3,r1_error_U_B,1.15206
+nalidixic acid,3,r1_error_U_D,1.00061
+nalidixic acid,3,r1_error_U_S,3.29033
+nalidixic acid,3,r2_error_L_A,0.112661
+nalidixic acid,3,r2_error_L_B,0.102519
+nalidixic acid,3,r2_error_L_D,0.0948216
+nalidixic acid,3,r2_error_L_S,0.0126367
+nalidixic acid,3,r2_error_U_A,0.134655
+nalidixic acid,3,r2_error_U_B,0.118619
+nalidixic acid,3,r2_error_U_D,0.11471
+nalidixic acid,3,r2_error_U_S,0.493199
+nalidixic acid,3,rA1,1.72227
+nalidixic acid,3,rA2,0.123658
+nalidixic acid,3,rB1,1.05335
+nalidixic acid,3,rB2,0.110569
+nalidixic acid,3,rD1,0.909677
+nalidixic acid,3,rD2,0.104766
+nalidixic acid,3,rS1,2.20938
+nalidixic acid,3,rS2,0.252918
+nalidixic acid,4,k1_error_L_A,0.089554
+nalidixic acid,4,k1_error_L_B,0.412328
+nalidixic acid,4,k1_error_L_D,0.37583
+nalidixic acid,4,k1_error_L_S,0.0822724
+nalidixic acid,4,k1_error_U_A,0.102311
+nalidixic acid,4,k1_error_U_B,0.44903
+nalidixic acid,4,k1_error_U_D,0.411595
+nalidixic acid,4,k1_error_U_S,0.112472
+nalidixic acid,4,k2_error_L_A,0.0219304
+nalidixic acid,4,k2_error_L_B,1.02224
+nalidixic acid,4,k2_error_L_D,0.86723
+nalidixic acid,4,k2_error_L_S,0.00782372
+nalidixic acid,4,k2_error_U_A,0.0381358
+nalidixic acid,4,k2_error_U_B,1.12065
+nalidixic acid,4,k2_error_U_D,0.925968
+nalidixic acid,4,k2_error_U_S,0.0171991
+nalidixic acid,4,kA1,0.0959324
+nalidixic acid,4,kA2,0.0300331
+nalidixic acid,4,kB1,0.430679
+nalidixic acid,4,kB2,1.07145
+nalidixic acid,4,kD1,0.393713
+nalidixic acid,4,kD2,0.896599
+nalidixic acid,4,kS1,0.0973721
+nalidixic acid,4,kS2,0.0125114
+nalidixic acid,4,n0A,0.0951105
+nalidixic acid,4,n0B,0.398353
+nalidixic acid,4,n0D,0.370811
+nalidixic acid,4,n0S,0.0910458
+nalidixic acid,4,r1_error_L_A,1.27281
+nalidixic acid,4,r1_error_L_B,0.939983
+nalidixic acid,4,r1_error_L_D,0.955295
+nalidixic acid,4,r1_error_L_S,1.42292
+nalidixic acid,4,r1_error_U_A,1.90844
+nalidixic acid,4,r1_error_U_B,1.11322
+nalidixic acid,4,r1_error_U_D,1.11501
+nalidixic acid,4,r1_error_U_S,2.41385
+nalidixic acid,4,r2_error_L_A,0.0222046
+nalidixic acid,4,r2_error_L_B,0.089162
+nalidixic acid,4,r2_error_L_D,0.0965668
+nalidixic acid,4,r2_error_L_S,0.0259526
+nalidixic acid,4,r2_error_U_A,0.0805508
+nalidixic acid,4,r2_error_U_B,0.103779
+nalidixic acid,4,r2_error_U_D,0.109725
+nalidixic acid,4,r2_error_U_S,0.0958107
+nalidixic acid,4,rA1,1.59063
+nalidixic acid,4,rA2,0.0513777
+nalidixic acid,4,rB1,1.0266
+nalidixic acid,4,rB2,0.0964704
+nalidixic acid,4,rD1,1.03515
+nalidixic acid,4,rD2,0.103146
+nalidixic acid,4,rS1,1.91839
+nalidixic acid,4,rS2,0.0608817
+nalidixic acid,5,k1_error_L_A,0.0656647
+nalidixic acid,5,k1_error_L_B,0.416872
+nalidixic acid,5,k1_error_L_D,0.396991
+nalidixic acid,5,k1_error_L_S,0.0548353
+nalidixic acid,5,k1_error_U_A,0.0902233
+nalidixic acid,5,k1_error_U_B,0.489201
+nalidixic acid,5,k1_error_U_D,0.412545
+nalidixic acid,5,k1_error_U_S,0.0740058
+nalidixic acid,5,k2_error_L_A,0.0131276
+nalidixic acid,5,k2_error_L_B,1.04341
+nalidixic acid,5,k2_error_L_D,0.841791
+nalidixic acid,5,k2_error_L_S,0.0104277
+nalidixic acid,5,k2_error_U_A,0.0191423
+nalidixic acid,5,k2_error_U_B,1.18483
+nalidixic acid,5,k2_error_U_D,0.915304
+nalidixic acid,5,k2_error_U_S,0.0133705
+nalidixic acid,5,kA1,0.077944
+nalidixic acid,5,kA2,0.016135
+nalidixic acid,5,kB1,0.453037
+nalidixic acid,5,kB2,1.11412
+nalidixic acid,5,kD1,0.404768
+nalidixic acid,5,kD2,0.878548
+nalidixic acid,5,kS1,0.0644205
+nalidixic acid,5,kS2,0.0118991
+nalidixic acid,5,n0A,0.0730399
+nalidixic acid,5,n0B,0.408899
+nalidixic acid,5,n0D,0.399544
+nalidixic acid,5,n0S,0.057602
+nalidixic acid,5,r1_error_L_A,1.10563
+nalidixic acid,5,r1_error_L_B,0.901907
+nalidixic acid,5,r1_error_L_D,0.985884
+nalidixic acid,5,r1_error_L_S,1.02513
+nalidixic acid,5,r1_error_U_A,1.91979
+nalidixic acid,5,r1_error_U_B,1.12666
+nalidixic acid,5,r1_error_U_D,1.1004
+nalidixic acid,5,r1_error_U_S,1.77753
+nalidixic acid,5,r2_error_L_A,0.0209175
+nalidixic acid,5,r2_error_L_B,0.080703
+nalidixic acid,5,r2_error_L_D,0.0946916
+nalidixic acid,5,r2_error_L_S,0.0414317
+nalidixic acid,5,r2_error_U_A,0.0436869
+nalidixic acid,5,r2_error_U_B,0.096876
+nalidixic acid,5,r2_error_U_D,0.112301
+nalidixic acid,5,r2_error_U_S,0.0750577
+nalidixic acid,5,rA1,1.51271
+nalidixic acid,5,rA2,0.0323022
+nalidixic acid,5,rB1,1.01428
+nalidixic acid,5,rB2,0.0887895
+nalidixic acid,5,rD1,1.04314
+nalidixic acid,5,rD2,0.103496
+nalidixic acid,5,rS1,1.40133
+nalidixic acid,5,rS2,0.0582447
+nalidixic acid,6,k1_error_L_A,0.0343543
+nalidixic acid,6,k1_error_L_B,0.417071
+nalidixic acid,6,k1_error_L_D,0.358192
+nalidixic acid,6,k1_error_L_S,0.0275027
+nalidixic acid,6,k1_error_U_A,0.0438412
+nalidixic acid,6,k1_error_U_B,0.460476
+nalidixic acid,6,k1_error_U_D,0.421091
+nalidixic acid,6,k1_error_U_S,0.0414915
+nalidixic acid,6,k2_error_L_A,0.000879018
+nalidixic acid,6,k2_error_L_B,1.09501
+nalidixic acid,6,k2_error_L_D,0.838704
+nalidixic acid,6,k2_error_L_S,0.00290276
+nalidixic acid,6,k2_error_U_A,0.00931491
+nalidixic acid,6,k2_error_U_B,1.28151
+nalidixic acid,6,k2_error_U_D,1.00066
+nalidixic acid,6,k2_error_U_S,0.00766032
+nalidixic acid,6,kA1,0.0390978
+nalidixic acid,6,kA2,0.00509696
+nalidixic acid,6,kB1,0.438773
+nalidixic acid,6,kB2,1.18826
+nalidixic acid,6,kD1,0.389642
+nalidixic acid,6,kD2,0.919682
+nalidixic acid,6,kS1,0.0344971
+nalidixic acid,6,kS2,0.00528154
+nalidixic acid,6,n0A,0.038087
+nalidixic acid,6,n0B,0.411045
+nalidixic acid,6,n0D,0.360302
+nalidixic acid,6,n0S,0.0330212
+nalidixic acid,6,r1_error_L_A,0.866346
+nalidixic acid,6,r1_error_L_B,0.993778
+nalidixic acid,6,r1_error_L_D,0.858368
+nalidixic acid,6,r1_error_L_S,0.949453
+nalidixic acid,6,r1_error_U_A,1.57247
+nalidixic acid,6,r1_error_U_B,1.15744
+nalidixic acid,6,r1_error_U_D,1.08681
+nalidixic acid,6,r1_error_U_S,2.10176
+nalidixic acid,6,r2_error_L_A,-0.00108884
+nalidixic acid,6,r2_error_L_B,0.0628988
+nalidixic acid,6,r2_error_L_D,0.0741997
+nalidixic acid,6,r2_error_L_S,0.00635102
+nalidixic acid,6,r2_error_U_A,0.0228251
+nalidixic acid,6,r2_error_U_B,0.0746291
+nalidixic acid,6,r2_error_U_D,0.0959125
+nalidixic acid,6,r2_error_U_S,0.0336012
+nalidixic acid,6,rA1,1.21941
+nalidixic acid,6,rA2,0.0108681
+nalidixic acid,6,rB1,1.07561
+nalidixic acid,6,rB2,0.068764
+nalidixic acid,6,rD1,0.972589
+nalidixic acid,6,rD2,0.0850561
+nalidixic acid,6,rS1,1.52561
+nalidixic acid,6,rS2,0.0199761
+none,1,k1_error_L_A,0.346959
+none,1,k1_error_L_A,0.346959
+none,1,k1_error_L_B,0.375991
+none,1,k1_error_L_B,0.375991
+none,1,k1_error_L_D,0.395608
+none,1,k1_error_L_D,0.395608
+none,1,k1_error_L_S,0.411325
+none,1,k1_error_L_S,0.411325
+none,1,k1_error_U_A,0.447587
+none,1,k1_error_U_A,0.447587
+none,1,k1_error_U_B,0.481801
+none,1,k1_error_U_B,0.481801
+none,1,k1_error_U_D,0.415502
+none,1,k1_error_U_D,0.415502
+none,1,k1_error_U_S,0.439352
+none,1,k1_error_U_S,0.439352
+none,1,k2_error_L_A,1.08235
+none,1,k2_error_L_A,1.08235
+none,1,k2_error_L_B,0.971823
+none,1,k2_error_L_B,0.971823
+none,1,k2_error_L_D,0.802835
+none,1,k2_error_L_D,0.802835
+none,1,k2_error_L_S,0.978928
+none,1,k2_error_L_S,0.978928
+none,1,k2_error_U_A,1.23167
+none,1,k2_error_U_A,1.23167
+none,1,k2_error_U_B,1.08562
+none,1,k2_error_U_B,1.08562
+none,1,k2_error_U_D,0.863354
+none,1,k2_error_U_D,0.863354
+none,1,k2_error_U_S,1.02117
+none,1,k2_error_U_S,1.02117
+none,1,kA1,0.397273
+none,1,kA2,1.15701
+none,1,kB1,0.428896
+none,1,kB2,1.02872
+none,1,kD1,0.405555
+none,1,kD2,0.833095
+none,1,kS1,0.425338
+none,1,kS2,1.00005
+none,1,n0A,0.367204
+none,1,n0B,0.394944
+none,1,n0D,0.398312
+none,1,n0S,0.414548
+none,1,r1_error_L_A,0.968733
+none,1,r1_error_L_A,0.968733
+none,1,r1_error_L_B,0.951472
+none,1,r1_error_L_B,0.951472
+none,1,r1_error_L_D,0.893773
+none,1,r1_error_L_D,0.893773
+none,1,r1_error_L_S,0.867369
+none,1,r1_error_L_S,0.867369
+none,1,r1_error_U_A,1.37921
+none,1,r1_error_U_A,1.37921
+none,1,r1_error_U_B,1.35227
+none,1,r1_error_U_B,1.35227
+none,1,r1_error_U_D,1.02315
+none,1,r1_error_U_D,1.02315
+none,1,r1_error_U_S,1.02839
+none,1,r1_error_U_S,1.02839
+none,1,r2_error_L_A,0.0904758
+none,1,r2_error_L_A,0.0904758
+none,1,r2_error_L_B,0.0981476
+none,1,r2_error_L_B,0.0981476
+none,1,r2_error_L_D,0.1152
+none,1,r2_error_L_D,0.1152
+none,1,r2_error_L_S,0.154033
+none,1,r2_error_L_S,0.154033
+none,1,r2_error_U_A,0.10751
+none,1,r2_error_U_A,0.10751
+none,1,r2_error_U_B,0.120445
+none,1,r2_error_U_B,0.120445
+none,1,r2_error_U_D,0.139268
+none,1,r2_error_U_D,0.139268
+none,1,r2_error_U_S,0.174191
+none,1,r2_error_U_S,0.174191
+none,1,rA1,1.17397
+none,1,rA2,0.0989931
+none,1,rB1,1.15187
+none,1,rB2,0.109296
+none,1,rD1,0.958463
+none,1,rD2,0.127234
+none,1,rS1,0.947878
+none,1,rS2,0.164112
+none,2,k1_error_L_A,0.346959
+none,2,k1_error_L_B,0.375991
+none,2,k1_error_L_D,0.395608
+none,2,k1_error_L_S,0.411325
+none,2,k1_error_U_A,0.447587
+none,2,k1_error_U_B,0.481801
+none,2,k1_error_U_D,0.415502
+none,2,k1_error_U_S,0.439352
+none,2,k2_error_L_A,1.08235
+none,2,k2_error_L_B,0.971823
+none,2,k2_error_L_D,0.802835
+none,2,k2_error_L_S,0.978928
+none,2,k2_error_U_A,1.23167
+none,2,k2_error_U_B,1.08562
+none,2,k2_error_U_D,0.863354
+none,2,k2_error_U_S,1.02117
+none,2,kA1,0.397273
+none,2,kA2,1.15701
+none,2,kB1,0.428896
+none,2,kB2,1.02872
+none,2,kD1,0.405555
+none,2,kD2,0.833095
+none,2,kS1,0.425338
+none,2,kS2,1.00005
+none,2,n0A,0.367204
+none,2,n0B,0.394944
+none,2,n0D,0.398312
+none,2,n0S,0.414548
+none,2,r1_error_L_A,0.968733
+none,2,r1_error_L_B,0.951472
+none,2,r1_error_L_D,0.893773
+none,2,r1_error_L_S,0.867369
+none,2,r1_error_U_A,1.37921
+none,2,r1_error_U_B,1.35227
+none,2,r1_error_U_D,1.02315
+none,2,r1_error_U_S,1.02839
+none,2,r2_error_L_A,0.0904758
+none,2,r2_error_L_B,0.0981476
+none,2,r2_error_L_D,0.1152
+none,2,r2_error_L_S,0.154033
+none,2,r2_error_U_A,0.10751
+none,2,r2_error_U_B,0.120445
+none,2,r2_error_U_D,0.139268
+none,2,r2_error_U_S,0.174191
+none,2,rA1,1.17397
+none,2,rA2,0.0989931
+none,2,rB1,1.15187
+none,2,rB2,0.109296
+none,2,rD1,0.958463
+none,2,rD2,0.127234
+none,2,rS1,0.947878
+none,2,rS2,0.164112
+none,3,k1_error_L_A,0.346959
+none,3,k1_error_L_B,0.375991
+none,3,k1_error_L_D,0.395608
+none,3,k1_error_L_S,0.411325
+none,3,k1_error_U_A,0.447587
+none,3,k1_error_U_B,0.481801
+none,3,k1_error_U_D,0.415502
+none,3,k1_error_U_S,0.439352
+none,3,k2_error_L_A,1.08235
+none,3,k2_error_L_B,0.971823
+none,3,k2_error_L_D,0.802835
+none,3,k2_error_L_S,0.978928
+none,3,k2_error_U_A,1.23167
+none,3,k2_error_U_B,1.08562
+none,3,k2_error_U_D,0.863354
+none,3,k2_error_U_S,1.02117
+none,3,kA1,0.397273
+none,3,kA2,1.15701
+none,3,kB1,0.428896
+none,3,kB2,1.02872
+none,3,kD1,0.405555
+none,3,kD2,0.833095
+none,3,kS1,0.425338
+none,3,kS2,1.00005
+none,3,n0A,0.367204
+none,3,n0B,0.394944
+none,3,n0D,0.398312
+none,3,n0S,0.414548
+none,3,r1_error_L_A,0.968733
+none,3,r1_error_L_B,0.951472
+none,3,r1_error_L_D,0.893773
+none,3,r1_error_L_S,0.867369
+none,3,r1_error_U_A,1.37921
+none,3,r1_error_U_B,1.35227
+none,3,r1_error_U_D,1.02315
+none,3,r1_error_U_S,1.02839
+none,3,r2_error_L_A,0.0904758
+none,3,r2_error_L_B,0.0981476
+none,3,r2_error_L_D,0.1152
+none,3,r2_error_L_S,0.154033
+none,3,r2_error_U_A,0.10751
+none,3,r2_error_U_B,0.120445
+none,3,r2_error_U_D,0.139268
+none,3,r2_error_U_S,0.174191
+none,3,rA1,1.17397
+none,3,rA2,0.0989931
+none,3,rB1,1.15187
+none,3,rB2,0.109296
+none,3,rD1,0.958463
+none,3,rD2,0.127234
+none,3,rS1,0.947878
+none,3,rS2,0.164112
+none,4,k1_error_L_A,0.346959
+none,4,k1_error_L_B,0.375991
+none,4,k1_error_L_D,0.395608
+none,4,k1_error_L_S,0.411325
+none,4,k1_error_U_A,0.447587
+none,4,k1_error_U_B,0.481801
+none,4,k1_error_U_D,0.415502
+none,4,k1_error_U_S,0.439352
+none,4,k2_error_L_A,1.08235
+none,4,k2_error_L_B,0.971823
+none,4,k2_error_L_D,0.802835
+none,4,k2_error_L_S,0.978928
+none,4,k2_error_U_A,1.23167
+none,4,k2_error_U_B,1.08562
+none,4,k2_error_U_D,0.863354
+none,4,k2_error_U_S,1.02117
+none,4,kA1,0.397273
+none,4,kA2,1.15701
+none,4,kB1,0.428896
+none,4,kB2,1.02872
+none,4,kD1,0.405555
+none,4,kD2,0.833095
+none,4,kS1,0.425338
+none,4,kS2,1.00005
+none,4,n0A,0.367204
+none,4,n0B,0.394944
+none,4,n0D,0.398312
+none,4,n0S,0.414548
+none,4,r1_error_L_A,0.968733
+none,4,r1_error_L_B,0.951472
+none,4,r1_error_L_D,0.893773
+none,4,r1_error_L_S,0.867369
+none,4,r1_error_U_A,1.37921
+none,4,r1_error_U_B,1.35227
+none,4,r1_error_U_D,1.02315
+none,4,r1_error_U_S,1.02839
+none,4,r2_error_L_A,0.0904758
+none,4,r2_error_L_B,0.0981476
+none,4,r2_error_L_D,0.1152
+none,4,r2_error_L_S,0.154033
+none,4,r2_error_U_A,0.10751
+none,4,r2_error_U_B,0.120445
+none,4,r2_error_U_D,0.139268
+none,4,r2_error_U_S,0.174191
+none,4,rA1,1.17397
+none,4,rA2,0.0989931
+none,4,rB1,1.15187
+none,4,rB2,0.109296
+none,4,rD1,0.958463
+none,4,rD2,0.127234
+none,4,rS1,0.947878
+none,4,rS2,0.164112
+none,5,k1_error_L_A,0.346959
+none,5,k1_error_L_B,0.375991
+none,5,k1_error_L_D,0.395608
+none,5,k1_error_L_S,0.411325
+none,5,k1_error_U_A,0.447587
+none,5,k1_error_U_B,0.481801
+none,5,k1_error_U_D,0.415502
+none,5,k1_error_U_S,0.439352
+none,5,k2_error_L_A,1.08235
+none,5,k2_error_L_B,0.971823
+none,5,k2_error_L_D,0.802835
+none,5,k2_error_L_S,0.978928
+none,5,k2_error_U_A,1.23167
+none,5,k2_error_U_B,1.08562
+none,5,k2_error_U_D,0.863354
+none,5,k2_error_U_S,1.02117
+none,5,kA1,0.397273
+none,5,kA2,1.15701
+none,5,kB1,0.428896
+none,5,kB2,1.02872
+none,5,kD1,0.405555
+none,5,kD2,0.833095
+none,5,kS1,0.425338
+none,5,kS2,1.00005
+none,5,n0A,0.367204
+none,5,n0B,0.394944
+none,5,n0D,0.398312
+none,5,n0S,0.414548
+none,5,r1_error_L_A,0.968733
+none,5,r1_error_L_B,0.951472
+none,5,r1_error_L_D,0.893773
+none,5,r1_error_L_S,0.867369
+none,5,r1_error_U_A,1.37921
+none,5,r1_error_U_B,1.35227
+none,5,r1_error_U_D,1.02315
+none,5,r1_error_U_S,1.02839
+none,5,r2_error_L_A,0.0904758
+none,5,r2_error_L_B,0.0981476
+none,5,r2_error_L_D,0.1152
+none,5,r2_error_L_S,0.154033
+none,5,r2_error_U_A,0.10751
+none,5,r2_error_U_B,0.120445
+none,5,r2_error_U_D,0.139268
+none,5,r2_error_U_S,0.174191
+none,5,rA1,1.17397
+none,5,rA2,0.0989931
+none,5,rB1,1.15187
+none,5,rB2,0.109296
+none,5,rD1,0.958463
+none,5,rD2,0.127234
+none,5,rS1,0.947878
+none,5,rS2,0.164112
+none,6,k1_error_L_A,0.346959
+none,6,k1_error_L_B,0.375991
+none,6,k1_error_L_D,0.395608
+none,6,k1_error_L_S,0.411325
+none,6,k1_error_U_A,0.447587
+none,6,k1_error_U_B,0.481801
+none,6,k1_error_U_D,0.415502
+none,6,k1_error_U_S,0.439352
+none,6,k2_error_L_A,1.08235
+none,6,k2_error_L_B,0.971823
+none,6,k2_error_L_D,0.802835
+none,6,k2_error_L_S,0.978928
+none,6,k2_error_U_A,1.23167
+none,6,k2_error_U_B,1.08562
+none,6,k2_error_U_D,0.863354
+none,6,k2_error_U_S,1.02117
+none,6,kA1,0.397273
+none,6,kA2,1.15701
+none,6,kB1,0.428896
+none,6,kB2,1.02872
+none,6,kD1,0.405555
+none,6,kD2,0.833095
+none,6,kS1,0.425338
+none,6,kS2,1.00005
+none,6,n0A,0.367204
+none,6,n0B,0.394944
+none,6,n0D,0.398312
+none,6,n0S,0.414548
+none,6,r1_error_L_A,0.968733
+none,6,r1_error_L_B,0.951472
+none,6,r1_error_L_D,0.893773
+none,6,r1_error_L_S,0.867369
+none,6,r1_error_U_A,1.37921
+none,6,r1_error_U_B,1.35227
+none,6,r1_error_U_D,1.02315
+none,6,r1_error_U_S,1.02839
+none,6,r2_error_L_A,0.0904758
+none,6,r2_error_L_B,0.0981476
+none,6,r2_error_L_D,0.1152
+none,6,r2_error_L_S,0.154033
+none,6,r2_error_U_A,0.10751
+none,6,r2_error_U_B,0.120445
+none,6,r2_error_U_D,0.139268
+none,6,r2_error_U_S,0.174191
+none,6,rA1,1.17397
+none,6,rA2,0.0989931
+none,6,rB1,1.15187
+none,6,rB2,0.109296
+none,6,rD1,0.958463
+none,6,rD2,0.127234
+none,6,rS1,0.947878
+none,6,rS2,0.164112
+rifampicin,1,k1_error_L_A,0.338259
+rifampicin,1,k1_error_L_B,0.357268
+rifampicin,1,k1_error_L_D,0.374254
+rifampicin,1,k1_error_L_S,0.304648
+rifampicin,1,k1_error_U_A,0.392511
+rifampicin,1,k1_error_U_B,0.392859
+rifampicin,1,k1_error_U_D,0.401604
+rifampicin,1,k1_error_U_S,0.39368
+rifampicin,1,k2_error_L_A,0.981177
+rifampicin,1,k2_error_L_B,0.636441
+rifampicin,1,k2_error_L_D,0.814048
+rifampicin,1,k2_error_L_S,0.755183
+rifampicin,1,k2_error_U_A,1.06292
+rifampicin,1,k2_error_U_B,0.643926
+rifampicin,1,k2_error_U_D,0.870252
+rifampicin,1,k2_error_U_S,0.771314
+rifampicin,1,kA1,0.365385
+rifampicin,1,kA2,1.02205
+rifampicin,1,kB1,0.375063
+rifampicin,1,kB2,0.640184
+rifampicin,1,kD1,0.387929
+rifampicin,1,kD2,0.84215
+rifampicin,1,kS1,0.350036
+rifampicin,1,kS2,0.763288
+rifampicin,1,n0A,0.338531
+rifampicin,1,n0B,0.36997
+rifampicin,1,n0D,0.371771
+rifampicin,1,n0S,0.310404
+rifampicin,1,r1_error_L_A,0.921738
+rifampicin,1,r1_error_L_B,0.836619
+rifampicin,1,r1_error_L_D,0.838657
+rifampicin,1,r1_error_L_S,0.929935
+rifampicin,1,r1_error_U_A,1.16431
+rifampicin,1,r1_error_U_B,1.10473
+rifampicin,1,r1_error_U_D,0.96701
+rifampicin,1,r1_error_U_S,1.26673
+rifampicin,1,r2_error_L_A,0.109526
+rifampicin,1,r2_error_L_B,0.263802
+rifampicin,1,r2_error_L_D,0.107211
+rifampicin,1,r2_error_L_S,0.201394
+rifampicin,1,r2_error_U_A,0.124187
+rifampicin,1,r2_error_U_B,0.320248
+rifampicin,1,r2_error_U_D,0.124504
+rifampicin,1,r2_error_U_S,0.220407
+rifampicin,1,rA1,1.04302
+rifampicin,1,rA2,0.116856
+rifampicin,1,rB1,0.970675
+rifampicin,1,rB2,0.292025
+rifampicin,1,rD1,0.902833
+rifampicin,1,rD2,0.115857
+rifampicin,1,rS1,1.09386
+rifampicin,1,rS2,0.210714
+rifampicin,2,k1_error_L_A,0.357612
+rifampicin,2,k1_error_L_B,0.126836
+rifampicin,2,k1_error_L_D,0.391545
+rifampicin,2,k1_error_L_S,0.23244
+rifampicin,2,k1_error_U_A,0.383806
+rifampicin,2,k1_error_U_B,0.459826
+rifampicin,2,k1_error_U_D,0.413599
+rifampicin,2,k1_error_U_S,0.341889
+rifampicin,2,k2_error_L_A,0.9889
+rifampicin,2,k2_error_L_B,0.450435
+rifampicin,2,k2_error_L_D,0.818799
+rifampicin,2,k2_error_L_S,0.562752
+rifampicin,2,k2_error_U_A,1.06155
+rifampicin,2,k2_error_U_B,0.455855
+rifampicin,2,k2_error_U_D,0.876492
+rifampicin,2,k2_error_U_S,0.573944
+rifampicin,2,kA1,0.370709
+rifampicin,2,kA2,1.02522
+rifampicin,2,kB1,0.293331
+rifampicin,2,kB2,0.453145
+rifampicin,2,kD1,0.402572
+rifampicin,2,kD2,0.847645
+rifampicin,2,kS1,0.287164
+rifampicin,2,kS2,0.568348
+rifampicin,2,n0A,0.361849
+rifampicin,2,n0B,0.227325
+rifampicin,2,n0D,0.391048
+rifampicin,2,n0S,0.271138
+rifampicin,2,r1_error_L_A,0.967899
+rifampicin,2,r1_error_L_B,0.660669
+rifampicin,2,r1_error_L_D,0.806894
+rifampicin,2,r1_error_L_S,0.70367
+rifampicin,2,r1_error_U_A,1.14595
+rifampicin,2,r1_error_U_B,1.5271
+rifampicin,2,r1_error_U_D,0.924826
+rifampicin,2,r1_error_U_S,1.50663
+rifampicin,2,r2_error_L_A,0.109285
+rifampicin,2,r2_error_L_B,0.303493
+rifampicin,2,r2_error_L_D,0.113346
+rifampicin,2,r2_error_L_S,0.231032
+rifampicin,2,r2_error_U_A,0.123156
+rifampicin,2,r2_error_U_B,0.364383
+rifampicin,2,r2_error_U_D,0.134708
+rifampicin,2,r2_error_U_S,0.296177
+rifampicin,2,rA1,1.05692
+rifampicin,2,rA2,0.11622
+rifampicin,2,rB1,1.09388
+rifampicin,2,rB2,0.333938
+rifampicin,2,rD1,0.86586
+rifampicin,2,rD2,0.124027
+rifampicin,2,rS1,1.10515
+rifampicin,2,rS2,0.263604
+rifampicin,3,k1_error_L_A,0.364372
+rifampicin,3,k1_error_L_B,-0.582004
+rifampicin,3,k1_error_L_D,0.37229
+rifampicin,3,k1_error_L_S,0.148163
+rifampicin,3,k1_error_U_A,0.383749
+rifampicin,3,k1_error_U_B,0.983094
+rifampicin,3,k1_error_U_D,0.409038
+rifampicin,3,k1_error_U_S,0.224295
+rifampicin,3,k2_error_L_A,0.956242
+rifampicin,3,k2_error_L_B,0.250009
+rifampicin,3,k2_error_L_D,0.843925
+rifampicin,3,k2_error_L_S,0.256322
+rifampicin,3,k2_error_U_A,1.04445
+rifampicin,3,k2_error_U_B,0.261887
+rifampicin,3,k2_error_U_D,0.916339
+rifampicin,3,k2_error_U_S,0.266194
+rifampicin,3,kA1,0.374061
+rifampicin,3,kA2,1.00034
+rifampicin,3,kB1,0.200545
+rifampicin,3,kB2,0.255948
+rifampicin,3,kD1,0.390664
+rifampicin,3,kD2,0.880132
+rifampicin,3,kS1,0.186229
+rifampicin,3,kS2,0.261258
+rifampicin,3,n0A,0.367727
+rifampicin,3,n0B,0.103819
+rifampicin,3,n0D,0.373146
+rifampicin,3,n0S,0.167604
+rifampicin,3,r1_error_L_A,0.908454
+rifampicin,3,r1_error_L_B,-0.460131
+rifampicin,3,r1_error_L_D,0.817803
+rifampicin,3,r1_error_L_S,0.679888
+rifampicin,3,r1_error_U_A,1.05601
+rifampicin,3,r1_error_U_B,2.58683
+rifampicin,3,r1_error_U_D,0.983535
+rifampicin,3,r1_error_U_S,1.21771
+rifampicin,3,r2_error_L_A,0.108091
+rifampicin,3,r2_error_L_B,0.363948
+rifampicin,3,r2_error_L_D,0.106824
+rifampicin,3,r2_error_L_S,0.274472
+rifampicin,3,r2_error_U_A,0.125572
+rifampicin,3,r2_error_U_B,0.601261
+rifampicin,3,r2_error_U_D,0.127191
+rifampicin,3,r2_error_U_S,0.456994
+rifampicin,3,rA1,0.982233
+rifampicin,3,rA2,0.116832
+rifampicin,3,rB1,1.06335
+rifampicin,3,rB2,0.482605
+rifampicin,3,rD1,0.900669
+rifampicin,3,rD2,0.117007
+rifampicin,3,rS1,0.948798
+rifampicin,3,rS2,0.365733
+rifampicin,4,k1_error_L_A,0.381806
+rifampicin,4,k1_error_L_B,0.0386843
+rifampicin,4,k1_error_L_D,0.391056
+rifampicin,4,k1_error_L_S,0.0256073
+rifampicin,4,k1_error_U_A,0.399356
+rifampicin,4,k1_error_U_B,0.0420364
+rifampicin,4,k1_error_U_D,0.405647
+rifampicin,4,k1_error_U_S,0.0278844
+rifampicin,4,k2_error_L_A,0.935498
+rifampicin,4,k2_error_L_B,0.232431
+rifampicin,4,k2_error_L_D,0.849434
+rifampicin,4,k2_error_L_S,0.267963
+rifampicin,4,k2_error_U_A,1.04459
+rifampicin,4,k2_error_U_B,0.266443
+rifampicin,4,k2_error_U_D,0.919237
+rifampicin,4,k2_error_U_S,0.287825
+rifampicin,4,kA1,0.390581
+rifampicin,4,kA2,0.990046
+rifampicin,4,kB1,0.0403604
+rifampicin,4,kB2,0.249437
+rifampicin,4,kD1,0.398351
+rifampicin,4,kD2,0.884335
+rifampicin,4,kS1,0.0267459
+rifampicin,4,kS2,0.277894
+rifampicin,4,n0A,0.386064
+rifampicin,4,n0B,0.0403545
+rifampicin,4,n0D,0.393056
+rifampicin,4,n0S,0.0267403
+rifampicin,4,r1_error_L_A,0.87235
+rifampicin,4,r1_error_L_B,0.565899
+rifampicin,4,r1_error_L_D,0.870174
+rifampicin,4,r1_error_L_S,0.629205
+rifampicin,4,r1_error_U_A,1.00301
+rifampicin,4,r1_error_U_B,1.04865
+rifampicin,4,r1_error_U_D,0.973499
+rifampicin,4,r1_error_U_S,1.05235
+rifampicin,4,r2_error_L_A,0.101763
+rifampicin,4,r2_error_L_B,0.369878
+rifampicin,4,r2_error_L_D,0.106564
+rifampicin,4,r2_error_L_S,0.385027
+rifampicin,4,r2_error_U_A,0.122637
+rifampicin,4,r2_error_U_B,0.452602
+rifampicin,4,r2_error_U_D,0.126416
+rifampicin,4,r2_error_U_S,0.422141
+rifampicin,4,rA1,0.937679
+rifampicin,4,rA2,0.1122
+rifampicin,4,rB1,0.807273
+rifampicin,4,rB2,0.41124
+rifampicin,4,rD1,0.921836
+rifampicin,4,rD2,0.11649
+rifampicin,4,rS1,0.840779
+rifampicin,4,rS2,0.403584
+rifampicin,5,k1_error_L_A,0.365238
+rifampicin,5,k1_error_L_B,-3.34693
+rifampicin,5,k1_error_L_D,0.390631
+rifampicin,5,k1_error_L_S,-0.358341
+rifampicin,5,k1_error_U_A,0.38014
+rifampicin,5,k1_error_U_B,3.54526
+rifampicin,5,k1_error_U_D,0.404083
+rifampicin,5,k1_error_U_S,0.556146
+rifampicin,5,k2_error_L_A,0.80377
+rifampicin,5,k2_error_L_B,0.0443129
+rifampicin,5,k2_error_L_D,0.873475
+rifampicin,5,k2_error_L_S,0.00170374
+rifampicin,5,k2_error_U_A,0.893467
+rifampicin,5,k2_error_U_B,0.0468451
+rifampicin,5,k2_error_U_D,0.971131
+rifampicin,5,k2_error_U_S,0.0219272
+rifampicin,5,kA1,0.372689
+rifampicin,5,kA2,0.848618
+rifampicin,5,kB1,0.0991653
+rifampicin,5,kB2,0.045579
+rifampicin,5,kD1,0.397357
+rifampicin,5,kD2,0.922303
+rifampicin,5,kS1,0.0989027
+rifampicin,5,kS2,0.0118155
+rifampicin,5,n0A,0.367347
+rifampicin,5,n0B,0.00895183
+rifampicin,5,n0D,0.391087
+rifampicin,5,n0S,0.0192523
+rifampicin,5,r1_error_L_A,0.867823
+rifampicin,5,r1_error_L_B,-0.101433
+rifampicin,5,r1_error_L_D,0.887667
+rifampicin,5,r1_error_L_S,0.0944362
+rifampicin,5,r1_error_U_A,0.974776
+rifampicin,5,r1_error_U_B,0.268264
+rifampicin,5,r1_error_U_D,0.986718
+rifampicin,5,r1_error_U_S,0.291361
+rifampicin,5,r2_error_L_A,0.0998097
+rifampicin,5,r2_error_L_B,0.367234
+rifampicin,5,r2_error_L_D,0.0910087
+rifampicin,5,r2_error_L_S,-0.632342
+rifampicin,5,r2_error_U_A,0.121637
+rifampicin,5,r2_error_U_B,0.441728
+rifampicin,5,r2_error_U_D,0.11023
+rifampicin,5,r2_error_U_S,1.04908
+rifampicin,5,rA1,0.9213
+rifampicin,5,rA2,0.110723
+rifampicin,5,rB1,0.0834154
+rifampicin,5,rB2,0.404481
+rifampicin,5,rD1,0.937193
+rifampicin,5,rD2,0.100619
+rifampicin,5,rS1,0.192899
+rifampicin,5,rS2,0.208367
+rifampicin,6,k1_error_L_A,0.333551
+rifampicin,6,k1_error_L_B,0.00933375
+rifampicin,6,k1_error_L_D,0.385351
+rifampicin,6,k1_error_L_S,-0.202669
+rifampicin,6,k1_error_U_A,0.357033
+rifampicin,6,k1_error_U_B,0.0134106
+rifampicin,6,k1_error_U_D,0.400349
+rifampicin,6,k1_error_U_S,0.211208
+rifampicin,6,k2_error_L_A,0.735433
+rifampicin,6,k2_error_L_B,-0.415413
+rifampicin,6,k2_error_L_D,0.852771
+rifampicin,6,k2_error_L_S,-0.0241845
+rifampicin,6,k2_error_U_A,0.840184
+rifampicin,6,k2_error_U_B,0.873755
+rifampicin,6,k2_error_U_D,0.920469
+rifampicin,6,k2_error_U_S,0.0494614
+rifampicin,6,kA1,0.345292
+rifampicin,6,kA2,0.787809
+rifampicin,6,kB1,0.0113722
+rifampicin,6,kB2,0.229171
+rifampicin,6,kD1,0.39285
+rifampicin,6,kD2,0.88662
+rifampicin,6,kS1,0.00426952
+rifampicin,6,kS2,0.0126384
+rifampicin,6,n0A,0.336533
+rifampicin,6,n0B,0.0106933
+rifampicin,6,n0D,0.384623
+rifampicin,6,n0S,0.00222707
+rifampicin,6,r1_error_L_A,0.843374
+rifampicin,6,r1_error_L_B,0.118779
+rifampicin,6,r1_error_L_D,0.900086
+rifampicin,6,r1_error_L_S,-13.0589
+rifampicin,6,r1_error_U_A,1.00377
+rifampicin,6,r1_error_U_B,0.308815
+rifampicin,6,r1_error_U_D,1.0004
+rifampicin,6,r1_error_U_S,13.805
+rifampicin,6,r2_error_L_A,0.0907517
+rifampicin,6,r2_error_L_B,0.125787
+rifampicin,6,r2_error_L_D,0.0985497
+rifampicin,6,r2_error_L_S,-0.0612705
+rifampicin,6,r2_error_U_A,0.116777
+rifampicin,6,r2_error_U_B,0.263592
+rifampicin,6,r2_error_U_D,0.114857
+rifampicin,6,r2_error_U_S,0.218003
+rifampicin,6,rA1,0.923569
+rifampicin,6,rA2,0.103764
+rifampicin,6,rB1,0.213797
+rifampicin,6,rB2,0.19469
+rifampicin,6,rD1,0.950243
+rifampicin,6,rD2,0.106703
+rifampicin,6,rS1,0.373088
+rifampicin,6,rS2,0.0783664

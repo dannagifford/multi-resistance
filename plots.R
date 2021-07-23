@@ -12,7 +12,7 @@ require(grid)
 #require(egg)
 require(scales)
 require(flan)
-
+require(brms)
 
 #source("munging.R") # This code will recreate all Rds files, which is slow, so we load them via readRDS instead after they are created.
 
@@ -76,8 +76,8 @@ muller = popns %>%
 		geom_bar(width = 1, stat = "count", color = "black", size = 0.2) +
 		facet_grid(pmutS.text~antibiotic) +
 		scale_fill_manual(values = bestcolours, name = "Detection of") +
-		labs(x = "Time (days)", y = "Number of populations") +
-		scale_x_continuous("Time (days)", breaks = unique(popns$day), labels = unique(popns$day), sec.axis = sec_axis(~ ., breaks = unique(popns$day), labels = unique(popns$concentration)*10, name = "Antibiotic concentration (mg/l)")) +
+		labs(x = "Time (# transfers)", y = "Number of populations") +
+		scale_x_continuous("Time (# transfers)", breaks = unique(popns$day), labels = unique(popns$day), sec.axis = sec_axis(~ ., breaks = unique(popns$day), labels = unique(popns$concentration)*10, name = "Antibiotic concentration (mg/l)")) +
 		scale_y_continuous(sec.axis = sec_axis(~ ., breaks = NULL, labels = NULL, name = "Initial mutator frequency")) +
 		theme(legend.key = element_rect(color = "white")) +
 		theme(axis.text.x.top = element_text(angle = 45, hjust = 0))
@@ -86,36 +86,8 @@ mullert = ggplotGrob(muller)
 mullert[["grobs"]][[18]][["children"]][[2]] = nullGrob()
 muller = as_ggplot(mullert)
 
-#day6 = popns %>%
-#	group_by(volume, day, antibiotic, pmutS.text, pmutS, concentration, state.simple) %>%
-#	summarise(count = n()) %>%
-#	filter(day == 6, volume == 1) %>%
-#	complete(state.simple, fill = list(count = 0))
-
-#day6Tot = day6 %>%
-#	mutate(state.sum = gsub("double","any", state.simple)) %>%
-#	mutate(state.sum = map2_chr(antibiotic, state.sum, ~gsub(.x, "any", .y))) %>%
-#	mutate(state.sum = map2_chr(antibiotic, state.sum, ~ifelse(.x != "combination",
-#		gsub("mixed", "any", .y), .y))) %>%
-#	filter(state.sum == "any resistance") %>%
-#	group_by(volume, day, antibiotic, pmutS.text, pmutS, concentration, state.sum) %>%
-#	summarise(count = sum(count)) %>%
-#	filter(day == 6, volume == 1, antibiotic != "no antibiotic") %>%
-#	complete(state.sum, fill = list(count = 0))
-
 pointcolours = bestcolours
 pointcolours[1] = "grey60"
-
-#day6p = day6 %>% ggplot(aes(x = pmutS, y = count)) +
-#	geom_line(aes(group = state.simple, color = state.simple)) +
-#	geom_point(aes(fill = state.simple, shape = state.simple), size = 2) +
-#	facet_grid(~antibiotic, scale = "free_x") +
-#	geom_hline(yintercept = 60, linetype = "dashed", color = "grey40") +
-#	labs(x = 'Initial mutator frequency', y = "Number of populations") +
-#	scale_color_manual(values = muller.cols.day6, guide = F) +
-#	scale_fill_manual(values = muller.cols.day6, name = "Detection of") +
-#	scale_shape_manual(values = c(21,22,23,25,24), name = "Detection of") +
-#	theme(plot.margin = margin(5,14,7,15))
 
 ggsave("expevol.pdf", muller, device = "pdf", height = 6, width = 8)
 
@@ -129,6 +101,8 @@ FT.gc.plot = FTsamples.mean %>%
 	mutate(concentration = concentration *10) %>%
 	ggplot(aes(x = time, y = OD_mean, color = strain2, linetype = as.factor(id))) +
 	geom_line(aes(group = paste(id, strain2))) +
+#	geom_ribbon(aes(ymin = OD_mean - OD_sd, ymax = OD_mean + OD_sd, fill = strain2), inherit.aes=T, alpha = 0.3) +
+#	scale_fill_manual(values = pointcolours[-4]) +
 	facet_grid(antibiotic~concentration) +
 	scale_color_manual(values = pointcolours[-4]) +
 	geom_vline(xintercept = 22, linetype = "11", color = "grey40") +
@@ -187,29 +161,23 @@ ggsave("ftauc.pdf", FT.auc.plot, device = "pdf", height = 2.5, width = 7)
 
 # Instead we plot AUC in the presence and absence of antibiotics, coloured by mutator proportion.
 joinedcurves.mean = readRDS("joinedcurves_mean.Rds")
+
 joined.auc.plot = joinedcurves.mean %>%
-	group_by(antibiotic, concentration, pmutS.text) %>%
-	nest(auc_e_mean, auc_e_sd, .key = auc_e) %>%
-	spread(concentration, auc_e) %>%
-	unnest(`0`, `2`, .sep = "_") %>%
-	ggplot(aes(`0_auc_e_mean`,`2_auc_e_mean`, fill = pmutS.text, shape = pmutS.text)) +
-		geom_errorbarh(aes(xmin = `0_auc_e_mean`-`0_auc_e_sd`, xmax = `0_auc_e_mean`+`0_auc_e_sd`, color = pmutS.text)) +
-		geom_errorbar(aes(ymin = `2_auc_e_mean`-`2_auc_e_sd`, ymax = `2_auc_e_mean`+`2_auc_e_sd`, color = pmutS.text)) +
-		geom_point(size = 2) +
-		geom_abline(slope = 1, intercept = 0, linetype = "22", colour = "grey60") +
-		scale_y_continuous(name = "Growth in 20 mg/l", limits = c(5,10)) +
-		scale_x_continuous(name = "Growth in 0 mg/l", limits = c(5,10)) +
-		scale_colour_manual(values = c("grey60","#f6acc7","#ef0358","#82002f"))+
-		scale_fill_manual(values = c("white","#f6acc7","#ef0358","#82002f"))+
-		scale_shape_manual(values = c(1:4+20)) +
-		guides(color = "none", fill = guide_legend(title = "Initial mutator frequency"), shape = guide_legend(title = "Initial mutator frequency"))
+	mutate(pmutS.text = recode_factor(pmutS.text, "none (from fluctuation test)"
+		= "wild-type background\n(from fluctuation test)")) %>%
+	ggplot(aes(x=pmutS.text, y = auc_e_mean, fill = paste(concentration*10, "mg/l"))) +
+	geom_boxplot() +
+	geom_jitter(aes(linetype = as.factor(concentration*10)), position = position_dodge(width = 0.75), colour = "grey40", size = 0.75) +
+	scale_fill_manual(values = c("white", "grey80"), name = "Antibiotic\noncentration") +
+	labs(x = "Initial mutator frequency", y = "Growth (AUC of OD600)")
+
 
 ggsave("joinedauc.pdf", joined.auc.plot, device = "pdf", height = 3, width = 5)
 
 
 compare_data_sim = readRDS("compare_data_sim.Rds")
 compare.plot = compare_data_sim %>%
-	ggplot(aes(`Estimate from experiment`, `Estimate from simulation`, fill = Predictor, shape = `Predictor type`)) +
+	ggplot(aes(`Estimate from experiment`, `Estimate from simulation`, fill = Coefficient, shape = `Coefficient type`)) +
 		facet_grid(~Response) +
 		xlab("Estimate from experiment") + # bugfix
 		ylab("Estimate from simulation") +
@@ -225,6 +193,8 @@ compare.plot = compare_data_sim %>%
 		guides(shape = FALSE, fill = guide_legend(override.aes = list(shape = c(22,23,23,23,24,24,24))))
 
 ggsave("sim_vs_experiment.pdf", compare.plot, device = "pdf", height = 2, width = 8)
+
+
 dailyOD = readRDS("dailyOD.Rds")
 odp = dailyOD %>%
 	filter(volume == 1) %>%
@@ -234,7 +204,7 @@ odp = dailyOD %>%
 	scale_fill_manual(values = bestcolours2, name = "") +
 	scale_shape_manual(values = c(21,22,23,25,24), name = "") +
 	labs(y = "Optical density (600 nm)") +
-	scale_x_continuous("Time (days)", breaks = unique(dailyOD$day), labels = unique(dailyOD$day), sec.axis = sec_axis(~ ., breaks = unique(dailyOD$day), labels = unique(dailyOD$concentration)*10, name = "Concentration (mg/l)")) +
+	scale_x_continuous("Time (# transfers)", breaks = unique(dailyOD$day), labels = unique(dailyOD$day), sec.axis = sec_axis(~ ., breaks = unique(dailyOD$day), labels = unique(dailyOD$concentration)*10, name = "Concentration (mg/l)")) +
 	scale_y_continuous(limits = c(0.1,2), sec.axis = sec_axis(~ ., breaks = NULL, labels = NULL, name = "Initiial mutator frequency")) +
 	theme(axis.text.x.top = element_text(angle = 45, hjust = 0))
 
@@ -246,31 +216,6 @@ pdf("OD.pdf", height = 7 , width = 8)
 grid.newpage()
 grid.draw(odpt)
 dev.off()
-
-# Old NT plot.
-###### OD versus N
-#ODvsNT = readRDS("ODvsNT.Rds")
-#odnp = ODvsNT %>%
-#	ggplot(aes(x=correctedOD, y=NT)) +
-#	geom_point() +
-#	scale_x_continuous(name = " ") +
-#	scale_y_continuous(name = " ", labels = scientific_10x) +
-#	theme(plot.background = element_rect(fill = "transparent", colour = NA)) +
-#	geom_vline(xintercept = 1, color = "grey40", linetype = "22") +
-#	geom_hline(yintercept = 5.71e8, color = "grey40", linetype = "22")
-
-#odnp_log = odnp +
-#	scale_x_log10(name = "Optical density") +
-#	scale_y_log10(name = "Number of bacteria", labels = trans_format("log10", math_format(10^.x))) +
-#	annotate("text", x = 0.001, y = 1.4*5.71e8, label = scientific_10x(5.71e8, digits = 2), size = 3)
-
-#odnp_inset <-
-#  cowplot::ggdraw() +
-#  cowplot::draw_plot(odnp_log) +
-#  cowplot::draw_plot(odnp, x = 0.46, y = 0.1, width = 0.5, height = 0.4)
-
-#ggsave("ODvsNT.pdf", odnp_inset, width = 3, height = 3)	
-
 
 #### New plots to address reviewers' comments
 MHcols = "grey60"
@@ -413,6 +358,8 @@ killp = alldata %>%
 	facet_wrap(~antibiotic, nrow=4) +
 	theme(plot.margin = unit(c(0,0.5,0,0), "lines"))
 
+
+# Original linear model fit
 lmdata = alldata %>%
 	filter(OD.blanked>0.05, NT>0) %>%
 	mutate(antibiotic2 = gsub("combination", "double", antibiotic)) %>%
@@ -421,36 +368,117 @@ lmdata = alldata %>%
 	mutate(grows_in = map2_lgl(strain, antibiotic2,
 		~ grepl(.y, .x)  | .y=="MH")) %>%
 	select(-antibiotic2) %>%
-	filter((experiment == "kill" & series == 24) | experiment == "odvnt" | experiment == "odvnt_original", (grows_in | concentration <=10)) %>%
+	filter((experiment == "kill" & series == 24) | experiment == "odvnt" ) %>%
+#	filter((experiment == "kill" & series == 24) | experiment == "odvnt" | experiment == "odvnt_original", (grows_in | concentration <=10)) %>%
 	droplevels()
 
-m1 = lm(log10(NT) ~ log10(OD.blanked) * (antibiotic/concentration)*strain, data = lmdata)
+# Non-linear vs linear model fitting
+brmsdata = alldata %>%
+	filter(OD.blanked>0, NT>0) %>%
+#	filter(OD.blanked>0.05, NT>0) %>%
+	mutate(mOD.blanked = 1000*OD.blanked) %>%
+	mutate(antibiotic2 = gsub("combination", "double", antibiotic)) %>%
+	mutate(strain2 = factor(ifelse(grepl("resistant",strain),"resistant","sensitive"),
+		levels = c("sensitive","resistant"))) %>%
+	mutate(grows_in = map2_lgl(strain, antibiotic2,
+		~ grepl(.y, .x)  | .y=="MH")) %>%
+	select(-antibiotic2) %>%
+	filter((experiment == "kill" & series == 24) | experiment == "odvnt" ) %>%
+#	filter((experiment == "kill" & series == 24) | experiment == "odvnt" | experiment == "odvnt_original", (grows_in | concentration <=10)) %>%
+	droplevels()
+
+m1 = lm(log10(NT) ~ log10(mOD.blanked) * (antibiotic/concentration)*strain, data = brmsdata)
 m2 = step(m1)
 summary(m2)
 
-odp_rev = alldata %>%
-	mutate(fitted_vals = 10^predict(m2, newdata = alldata)) %>%
+seed = 19
+prior1 <- prior(normal(0,.1), class = "b", nlpar = "b1") +
+	prior(normal(0,.1), class = "b", nlpar = "b2") +
+	prior(normal(0,.1), class = "b", nlpar = "b3")
+
+prior2 <- prior(normal(0,.1), class = "b", nlpar = "b1") +
+	prior(normal(0,.1), class = "b", nlpar = "b2")
+
+fit1 <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked)^b3 + b1, b2 + b3 + b1 ~ strain*antibiotic/concentration, nl = TRUE), data = brmsdata, prior = prior1, chains = 4, cores = 4, seed = 19)
+fit1a <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked)^b3 + b1, b2 + b3 + b1 ~ antibiotic/concentration, nl = TRUE), data = brmsdata, prior = prior1, chains = 4, cores = 4, seed = 19)
+fit1b <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked)^b3 + b1, b2 + b3 + b1 ~ antibiotic, nl = TRUE), data = brmsdata, prior = prior1, chains = 4, cores = 4, seed = 19)
+fit1c <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked)^b3 + b1, b2 + b3 + b1 ~ 1, nl = TRUE), data = brmsdata, prior = prior1, chains = 4, cores = 4, seed = 19)
+
+fit1d <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked)^b3 + b1, b2+b3 ~ 1, b1 ~ antibiotic/concentration, nl = TRUE, family = gaussian), data = brmsdata, prior = prior1, chains = 4, cores = 4, seed = 19)
+
+
+
+fit2 <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked) + b1, b1 + b2 ~ strain*antibiotic/concentration, nl = TRUE, family = gaussian), data = brmsdata, prior = prior2, chains = 4, cores = 4, seed = 19)
+fit2a <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked) + b1, b1 + b2 ~ antibiotic/concentration, nl = TRUE, family = gaussian), data = brmsdata, prior = prior2, chains = 4, cores = 4, seed = 19)
+fit2b <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked) + b1, b1 + b2 ~ antibiotic, nl = TRUE, family = gaussian), data = brmsdata, prior = prior2, chains = 4, cores = 4, seed = 19)
+fit2c <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked) + b1, b1 + b2 ~ 1, nl = TRUE, family = gaussian), data = brmsdata, prior = prior2, chains = 4, cores = 4, seed = 19)
+fit2d <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked) + b1, b2 ~ 1, b1 ~ antibiotic/concentration, nl = TRUE, family = gaussian), data = brmsdata, prior = prior2, chains = 4, cores = 4, seed = 19)
+
+
+
+fit1 = add_criterion(fit1, c("loo","waic"))
+fit1a = add_criterion(fit1a, c("loo","waic"))
+fit1b = add_criterion(fit1b, c("loo","waic"))
+fit1c = add_criterion(fit1c, c("loo","waic"))
+fit1d = add_criterion(fit1d, c("loo","waic"))
+
+fit2 = add_criterion(fit2, c("loo","waic"))
+fit2a = add_criterion(fit2a, c("loo","waic"))
+fit2b = add_criterion(fit2b, c("loo","waic"))
+fit2c = add_criterion(fit2c, c("loo","waic"))
+fit2d = add_criterion(fit2d, c("loo","waic"))
+
+# Compare different fixed effects
+loo_compare(fit1,fit1a,fit1b,fit1c,fit1d)
+loo_compare(fit2,fit2a,fit2b,fit2c,fit2d)
+
+# Compare goodness of fit of linear vs non-linear for best fixed effects
+loo_compare(fit1d, fit2d)
+
+alldata %>%
+	mutate(mOD.blanked = OD.blanked*1000) %>%
+	filter(experiment %in% c("odvnt", "kill")) %>%
+	mutate( fittedml= 10^predict(m2, newdata = .),
+		fitted1 = 10^predict(fit1d, newdata = .)[,1],
+		fitted2 = 10^predict(fit2d, newdata = .)[,1]) %>%
 	filter(NT > 0) %>%
-	ggplot(aes(x = OD.blanked,
+	ggplot(aes(x=fitted1, y=fitted2)) + geom_point() +
+	facet_grid(~antibiotic) +
+	scale_x_log10() + scale_y_log10() +
+	geom_abline(intercept = 0, slope = 1)
+
+
+
+## MODEL COMPARISONS
+
+odp_rev2 = alldata %>%
+	mutate(mOD.blanked = OD.blanked *1000) %>%
+	filter(experiment %in% c("odvnt", "kill")) %>%
+	mutate(fittedml= 10^predict(m2, newdata = .),
+		fitted1 = 10^predict(fit1d, newdata = .)[,1],
+		fitted2 = 10^predict(fit2d, newdata = .)[,1]) %>%
+	filter(NT > 0) %>%
+	ggplot(aes(x = mOD.blanked/1000,
 	y = NT,
 	shape = strain,
 	fill = abconc)) +
 	scale_shape_manual(values = c(21,25,22:24), name = "Strain") +
-	scale_x_log10(limits = c(0.01,1)) +
+#	ylim(0,5e8) +
+	scale_x_log10() +
 	scale_y_log10(labels = trans_format("log10", math_format(10^.x))) +
 	guides(fill = guide_legend(override.aes=list(shape=22, size=4), colour=NA)) +
-#	scale_fill_manual(values = c(MHcols, rifcols, nalcols[-3], doubcols[-3]), name = "Antibiotic concentration (mg/l)") + 
 	scale_fill_manual(values = c(MHcols, rifcols, nalcols, doubcols), name = "Antibiotic concentration (mg/l)") + 
 	labs(x="Blanked OD", y="Number of bacteria (in 200μl)") + 
 	facet_wrap(~antibiotic, nrow = 4) + 
 	theme(legend.key.size = unit(0.8, 'lines')) +
 	theme(plot.margin = unit(c(0,0.5,0,0), "lines")) +
 	geom_point(size = 2) +
-	geom_line(aes(x = OD.blanked, y = fitted_vals, colour = abconc), inherit.aes=F) +
+#	geom_line(aes(x = mOD.blanked/1000, y = fitted1, colour = abconc), inherit.aes=F) +
+	geom_line(aes(x = mOD.blanked/1000, y = fitted2, colour = abconc), inherit.aes=F) +
 	scale_colour_manual(values = c(MHcols, rifcols, nalcols, doubcols), name = "Antibiotic concentration (mg/l)")
 
 
-joinedODp = ggarrange(odp_rev, killp, ncol = 2, legend.grob = get_legend(odp), legend = "right", labels = "AUTO", font.label = list(face = "plain"), align = "v")
+joinedODp = ggarrange(odp_rev2, killp, ncol = 2, legend.grob = get_legend(odp), legend = "right", labels = "AUTO", font.label = list(face = "plain"), align = "v")
 cairo_pdf("ODvsNT.pdf", width = 6, height = 6)
 joinedODp
 dev.off()

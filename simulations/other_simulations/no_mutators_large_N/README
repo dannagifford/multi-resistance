@@ -1,0 +1,1 @@
+These additional simulations vary the max. population size (maxn and ncT) to address a comment about mutatonal supply made by a reviewer. The simulation code (simulation-code-wtonly.cpp) is modified to remove mutators (p=0). Otherwise, the changing of population size is done by the ini files.

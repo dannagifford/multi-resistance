@@ -2,7 +2,7 @@ library(brms)
 library(tidyverse)
 library(future)
 
-muller.model = readRDS("muller.rds")
+muller.model = readRDS("muller_sim.rds")
 popnsAB.model = muller.model %>%
 	group_by(day) %>%
 	filter(time==max(time)&rep<=60) %>%
@@ -49,19 +49,21 @@ today = format(Sys.time(), format="%Y-%m-%d-%H:%M:%S")
 #	prior=priors, control=controls,
 #	data=popnsday6.model, cores=3, file=brmfile)}
 
-brmname = "categorical2waymain"
+brmname = "categorical2waymainsim"
 brmfile = paste0(today, "_", brmname)
-cat_1way %<-% {brm (state.simple~(pmutS.text + antibiotic),
+#cat_2way_sim %<-% {brm (state.simple~(pmutS.text + antibiotic),
+cat_2way_sim = brm (state.simple~(pmutS.text + antibiotic),
 	family=categorical("logit"), chains=3, iter=5000, warmup=1000,
 	prior=priors, control=controls,
-	data=popnsday6.model, cores=3, file=brmfile)}
+	data=popnsday6.model, cores=3, file=brmfile)
 
 brmname = "categorical2wayinteraction"
 brmfile = paste0(today, "_", brmname)
-cat_2way %<-% {brm (state.simple~(pmutS.text + antibiotic)^2,
+#cat_2way_interaction_sim %<-% {brm (state.simple~(pmutS.text + antibiotic)^2,
+cat_2way_interaction_sim = brm (state.simple~(pmutS.text + antibiotic)^2,
 	family=categorical("logit"), chains=3, iter=5000, warmup=1000,
 	prior=priors, control=controls,
-	data=popnsday6.model, cores=3, file=brmfile)}
+	data=popnsday6.model, cores=3, file=brmfile)
 
 #brmname = "categorical3way_day"
 #brmfile = paste0(today, "_", brmname)
@@ -76,4 +78,9 @@ cat_2way %<-% {brm (state.simple~(pmutS.text + antibiotic)^2,
 #	family=categorical("logit"), chains=3, iter=5000, warmup=1000,
 #	prior=priors, control=controls,
 #	data=popnsAB.model, cores=3, file=brmfile)}
+
+
+cat_2way_sim.waic <- waic(cat_2way_sim)
+cat_2way_interaction_sim.waic <- waic(cat_2way_interaction_sim)
+loo(cat_2way_sim,cat_2way_interaction_sim, compare=T, reloo = T)
 

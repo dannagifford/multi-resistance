@@ -215,27 +215,32 @@ doubleRvsnalR = hypothesis(FT.model, hypothesis = "b_nalidixicacid_strain2double
 
 
 # Model M3: Fitness of double resistant strains in the presence and absence of the antibiotic combination
-joinedcurves = readRDS("joinedcurves.Rds")
+joinedcurves = readRDS("joinedcurves_mean.Rds")
 
-# brms doesn't like backticked names, so we rename these first
-# brms 2.8.0 and later uses mvbind() instead of cbind()
-brmname = "fitness.model"
+# NB: brms doesn't like backticked names
+# NB: brms 2.8.0 and later uses mvbind() instead of cbind()
+
+brmname = "fitness.model.cor3"
 brmfile = name.brmfile(brmname)
 controls = list(adapt_delta = 0.99, max_treedepth = 15)
 priors = c(set_prior ("student_t(7, 10, 2.5)", class = "Intercept"),
 		set_prior ("student_t(7, 0, 2.5)", class = "b"))
 
-fitness.model = joinedcurves %>%
+
+brmfile = "fitness.model.cor2"
+fitness.model.cor2 = joinedcurves %>%
 	mutate(concentration = paste0("conc_", concentration)) %>%
-	spread(concentration, auc_e) %>%
-	rename(row = `Well Row`, col = `Well Col`) %>%
-	brm(mvbind(conc_0, conc_2) ~ pmutS.text + (1|rep),
-	#brm(cbind(conc_0, conc_2) ~ pmutS.text + (1|rep), # use if brms<2.8.0
+	ungroup() %>%
+	select(concentration, pmutS.text, id, auc_e, rep) %>%
+	pivot_wider(names_from = concentration, values_from = auc_e) %>%
+	filter(conc_0>1) %>%
+	brm(bf(mvbind(conc_0, conc_2) ~ pmutS.text + (1|rep) + (1|p|id),
+		sigma ~ pmutS.text),
 		family = "student",		
 		chains = 4, iter = 2000, warmup = 1000,
 		control = controls, sample_prior = "yes", prior = priors,
 		data = ., cores = 4, file = brmfile)
-
+		
 brmname = "fitness.model.intercept"
 brmfile = name.brmfile(brmname)
 controls = list(adapt_delta = 0.99, max_treedepth = 15)
@@ -246,7 +251,6 @@ fitness.model.intercept = joinedcurves %>%
 	spread(concentration, auc_e) %>%
 	rename(row = `Well Row`, col = `Well Col`) %>%
 	brm(mvbind(conc_0, conc_2) ~ 1 + (1|rep),
-	#brm(cbind(conc_0, conc_2) ~ 1 + (1|rep), # use if brms<2.8.0
 		family = "student",		
 		chains = 4, iter = 2000, warmup = 1000,
 		control = controls, sample_prior = "yes", prior = priors,
@@ -259,8 +263,9 @@ waic2 <- waic(fitness.model.intercept)
 loo_compare(waic1, waic2)
 
 # Model M4: Compare data and simulation models
-#source("~/Dropbox (The University of Manchester)/Mutators/simulations/timescale-corrected/dt=0,25-corrected/plottimescale.R")
-muller.sim = readRDS("~/Dropbox (The University of Manchester)/Mutators/simulations/timescale-corrected/dt=0,25-corrected/muller.rds")
+#You must first run the plot code for the simulations:
+#source("./simulations/neg-binomials/plots-simulations.R")
+muller.sim = readRDS("./simulations/neg-binomials/muller_sim.rds")
 popnsAB.sim = muller.sim %>%
 	group_by(day) %>%
 	filter(time==max(time)&rep<=60) %>%
@@ -284,29 +289,27 @@ controls = list(adapt_delta = 0.99, max_treedepth = 15)
 
 brmname = "categorical2way_sim"
 brmfile = name.brmfile(brmname)
-cat.2way.sim %<-% {brm (state.simple ~ (pmutS.text + antibiotic)^2, 
+cat.2way.interaction.sim %<-% {brm (state.simple ~ (pmutS.text + antibiotic)^2, 
 	family = categorical("logit"), chains = 4, iter = 2000, warmup = 1000,
 	prior = priors, control = controls, sample_prior = "yes",
 	data = popnsday6.sim, cores = 4, file = brmfile)}
-#cat.2way.sim = readRDS("2020-07-20-12:27:17_categorical2wayinteraction.rds")
 
 brmname = "categorical1way_sim"
 brmfile = name.brmfile(brmname)
-cat.1way.sim %<-% {brm (state.simple ~ pmutS.text + antibiotic, 
+cat.2way.main.sim %<-% {brm (state.simple ~ pmutS.text + antibiotic, 
 	family = categorical("logit"), chains = 4, iter = 2000, warmup = 1000,
 	prior = priors, control = controls, sample_prior = "yes",
 	data = popnsday6.sim, cores = 4, file = brmfile)}
 
-#cat.1way.sim = readRDS("2020-07-20-12:27:17_categorical2waymain.rds")
 
-compare_data_sim = left_join(fixtable(fixef(cat.1way)), fixtable(fixef(cat.1way.sim)),
+compare_data_sim = left_join(fixtable(fixef(cat.2way)), fixtable(fixef(cat.2way.sim)),
 	by = "parameter", suffix = c(" from experiment"," from simulation")) %>%
-	separate(parameter, into = c("Response", "Predictor"), sep="_") %>%
+	separate(parameter, into = c("Response", "Coefficient"), sep="_") %>%
 	mutate(Response = gsub(x = Response, pattern = "mu", replacement = "")) %>%
-	mutate(is.mutator = grepl("pmutS", Predictor)*1) %>%
-	mutate(is.antibiotic = grepl("antibiotic", Predictor)*2) %>%
-	mutate(is.interaction = grepl(":", Predictor)) %>%
-	mutate(`Predictor type` = recode_factor(is.antibiotic + is.mutator,
+	mutate(is.mutator = grepl("pmutS", Coefficient)*1) %>%
+	mutate(is.antibiotic = grepl("antibiotic", Coefficient)*2) %>%
+	mutate(is.interaction = grepl(":", Coefficient)) %>%
+	mutate(`Coefficient type` = recode_factor(is.antibiotic + is.mutator,
 		`0` = "intercept", `1` = "mutator frequency", `2` = "antibiotic treatment", `3` = "interaction")) %>%
 	mutate(Response = gsub(x = Response, pattern = "resistance", replacement = " resistance")) %>%
 	mutate(Response = gsub(x = Response, pattern = "nalidixicacid", replacement = "nalidixic acid")) %>%
@@ -314,17 +317,15 @@ compare_data_sim = left_join(fixtable(fixef(cat.1way)), fixtable(fixef(cat.1way.
 				`nalidixic acid resistance`="nalidixic acid resistance",
 				`mixed resistance`="mixed resistance",
 				`double resistance`="double resistance")) %>%
-	mutate(Predictor = gsub(x = Predictor, pattern = "pmutS.text", replacement = "")) %>%
-	mutate(Predictor = gsub(x = Predictor, pattern = "antibiotic", replacement = "")) %>%
-	mutate(Predictor = gsub(x = Predictor, pattern = "nalidixicacid", replacement = "nalidixic acid")) %>%
-	mutate(Predictor = factor(Predictor, levels = c(
+	mutate(Coefficient = gsub(x = Coefficient, pattern = "pmutS.text", replacement = "")) %>%
+	mutate(Coefficient = gsub(x = Coefficient, pattern = "antibiotic", replacement = "")) %>%
+	mutate(Coefficient = gsub(x = Coefficient, pattern = "nalidixicacid", replacement = "nalidixic acid")) %>%
+	mutate(Coefficient = factor(Coefficient, levels = c(
 		"Intercept",
 		"low", "intermediate", "high",
 		"rifampicin", "nalidixic acid", "combination",
 		"low:rifampicin", "low:nalidixic acid", "low:combination",
 		"intermediate:rifampicin", "intermediate:nalidixic acid", "intermediate:combination",
 		"high:rifampicin", "high:nalidixic acid", "high:combination")))
-
-#compare_data_sim$`Agreement of non-zero effect` = (compare_data_sim[5]>0 & compare_data_sim[9]>0 & compare_data_sim[6]>0 & compare_data_sim[10]>0) | (compare_data_sim[5]<0 & compare_data_sim[9]<0 & compare_data_sim[6]<0 & compare_data_sim[10]<0)
 
 saveRDS(compare_data_sim, "compare_data_sim.Rds")

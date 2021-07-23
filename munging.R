@@ -221,7 +221,8 @@ FTcurves = FTsamples.blanked %>%
 			as_tibble() %>%
 			type_convert())) %>%
 		unnest(vals) %>%
-	arrange(id)
+	arrange(id) %>%
+	mutate(id = as.character(id))
 
 # For Ernesto:
 FTsamples.blanked %>%
@@ -314,7 +315,27 @@ EVcurves = EVdata %>%
 
 EVcurves.mean = EVcurves %>%
 	group_by(concentration, volume, antibiotic, pmutS, pmutS.text, lineage) %>%
-	summarise_at(.vars = vars(k:auc_e), .funs = c("mean","sd"))
+	filter(auc_e>0.1) %>% #things smaller didn't grow...
+	summarise_at(.vars = vars(k:auc_e), .funs = c("mean","sd")) %>%
+	mutate(id = lineage)
+	
+	
+
+joinedcurves = FTcurves %>%
+	filter(antibiotic == "combination",
+		concentration %in% c(0,2),
+		strain == "D") %>%
+	bind_rows(., EVcurves) %>%
+	replace_na(list(pmutS.text="none")) %>%
+	mutate(pmutS.text = recode_factor(pmutS.text, none="none (from fluctuation test)")) %>%
+	mutate(strain = "D", strain2 = "double resistant") %>%
+	mutate(id_EV = paste(`Well Row`, `Well Col`)) %>%
+	mutate(id = ifelse(is.na(id), id_EV, id)) %>%
+	mutate(rep = ifelse(grepl("plate[789]", rep), 
+		paste0("plate",as.numeric(gsub("[^0-9.-]", "", rep))-6 ),rep)) %>%
+	select(-id_EV)
+saveRDS(joinedcurves, file = "joinedcurves.Rds")
+	
 
 joinedcurves.mean = FTcurves.mean %>%
 	filter(antibiotic == "combination",
@@ -322,7 +343,8 @@ joinedcurves.mean = FTcurves.mean %>%
 		strain == "D") %>%
 	bind_rows(., EVcurves.mean) %>%
 	replace_na(list(pmutS.text="none")) %>%
-	mutate(pmutS.text = recode_factor(pmutS.text, none="none (from fluctuation test)"))
+	mutate(pmutS.text = recode_factor(pmutS.text, none="none (from fluctuation test)")) %>%
+	mutate(strain = "D", strain2 = "double resistant")
 
 saveRDS(joinedcurves.mean, file = "joinedcurves_mean.Rds")
 

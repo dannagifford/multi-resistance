@@ -1,0 +1,84 @@
+A,rifampicin,0.999649
+S,rifampicin,0.99902
+B,rifampicin,0.999393
+D,rifampicin,0.999596
+S,nalidixic acid,0.999472
+A,nalidixic acid,0.99923
+B,nalidixic acid,0.999705
+D,nalidixic acid,0.999575
+S,combination,0.999565
+A,combination,0.999253
+B,combination,0.999066
+D,combination,0.999572
+A,rifampicin,0.999597
+S,rifampicin,0.999558
+B,rifampicin,0.99738
+D,rifampicin,0.99966
+S,nalidixic acid,0.99945
+A,nalidixic acid,0.999594
+B,nalidixic acid,0.999547
+D,nalidixic acid,0.999534
+S,combination,0.999126
+A,combination,0.99948
+B,combination,0.999399
+D,combination,0.999495
+A,rifampicin,0.99964
+S,rifampicin,0.992436
+B,rifampicin,0.996249
+D,rifampicin,0.999578
+S,nalidixic acid,0.999482
+A,nalidixic acid,0.999736
+B,nalidixic acid,0.999535
+D,nalidixic acid,0.99964
+S,combination,0.999243
+A,combination,0.999622
+B,combination,0.999392
+D,combination,0.99964
+A,rifampicin,0.999583
+S,rifampicin,0.995522
+B,rifampicin,0.986072
+D,rifampicin,0.999463
+S,nalidixic acid,0.993094
+A,nalidixic acid,0.997628
+B,nalidixic acid,0.999565
+D,nalidixic acid,0.999439
+S,combination,0.957264
+A,combination,0.973067
+B,combination,0.99931
+D,combination,0.99963
+A,rifampicin,0.99956
+S,rifampicin,0.999471
+B,rifampicin,0.998223
+D,rifampicin,0.999672
+S,nalidixic acid,0.988008
+A,nalidixic acid,0.983973
+B,nalidixic acid,0.999585
+D,nalidixic acid,0.999705
+S,combination,0.884335
+A,combination,0.977345
+B,combination,0.986721
+D,combination,0.999595
+A,rifampicin,0.999664
+S,rifampicin,0.945502
+B,rifampicin,0.997252
+D,rifampicin,0.999694
+S,nalidixic acid,0.964446
+A,nalidixic acid,0.97461
+B,nalidixic acid,0.999489
+D,nalidixic acid,0.999701
+S,combination,0.197911
+A,combination,0.936154
+B,combination,0.987401
+D,combination,0.999545
+A,rifampicin,0.999333
+S,rifampicin,0.37149
+B,rifampicin,0.99165
+D,rifampicin,0.999739
+S,nalidixic acid,0.957634
+A,nalidixic acid,0.967806
+B,nalidixic acid,0.999704
+D,nalidixic acid,0.999324
+S,combination,0.358967
+A,combination,0.972949
+B,combination,0.971007
+D,combination,0.999551

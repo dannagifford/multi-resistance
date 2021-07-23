@@ -32,6 +32,8 @@ double bS, muA, muB, bA, bB, bD;
 double bSp, muAp, muBp, bAp, bBp, bDp;
 double kS, kA, kB, kD; //maximum value that can be reached
 double kSp, kAp, kBp, kDp; //maximum value that can be reached
+double nSA, nSB, nAD, nBD, nSf, nAf, nBf, nDf;
+double nSAp, nSBp, nADp, nBDp, nSfp, nAfp, nBfp, nDfp;
 int eva_change, nite, nsave;
 double t, dt;
 
@@ -63,8 +65,7 @@ void SetExperiment() {
 	muA = getFromINI("experiment", "muA");
 	muB = getFromINI("experiment", "muB");
 	mutator = getFromINI("experiment", "mutator");
-	ncT = getFromINI("experiment", "ncT");
-	dt = getFromINI("experiment", "dt");
+    ncT = getFromINI("experiment", "ncT");
 }
 
 void SetIniCond(double p) {
@@ -104,10 +105,10 @@ void readINIFile() {
 		kA2v[k - 1] = getFromINI(day, "kA2") * maxn;
 		kB2v[k - 1] = getFromINI(day, "kB2") * maxn;
 		kD2v[k - 1] = getFromINI(day, "kD2") * maxn;
-		n0S[k - 1] = getFromINI(day, "n0S") * maxn;
-		n0A[k - 1] = getFromINI(day, "n0A") * maxn;
-		n0B[k - 1] = getFromINI(day, "n0B") * maxn;
-		n0D[k - 1] = getFromINI(day, "n0D") * maxn;
+//		n0S[k - 1] = getFromINI(day, "n0S") * maxn;
+//		n0A[k - 1] = getFromINI(day, "n0A") * maxn;
+//		n0B[k - 1] = getFromINI(day, "n0B") * maxn;
+//		n0D[k - 1] = getFromINI(day, "n0D") * maxn;
 	}
 }
 
@@ -142,7 +143,7 @@ void SetValues2(int index) {
 	kA = kA2v[index - 1];
 	kB = kB2v[index - 1];
 	kD = kD2v[index - 1];
-	/* Hypermutator variables */
+/* Hypermutator variables */
 	bSp = bS;
 	bAp = bA;
 	bBp = bB;
@@ -160,6 +161,18 @@ double Binomial(double n, double prob) {
     else {
         std::binomial_distribution<int64_t> binomial(n, prob);
         return binomial(generator);
+    }
+}
+
+
+
+double NegBinomial(double n, double prob) {
+    if (prob < 0) { //this happens when ni > ki
+        return 0;
+    }
+    else {
+        std::negative_binomial_distribution<int64_t> negbinomial(n, prob);
+        return negbinomial(generator);
     }
 }
 
@@ -181,43 +194,76 @@ void EvaluateChange(double n, int index) {
 }
 
 void SaveandPrint(std::ofstream& myfile) {
-	myfile << nS << "\t" << nA << "\t" << nB << "\t" << nD << "\t" << nSp << "\t" << nAp << "\t" << nBp << "\t" << nDp << "\n";
+    myfile << nS << "\t" << nA << "\t" << nB << "\t" << nD << "\t" << nSp << "\t" << nAp << "\t" << nBp << "\t" << nDp << endl;
+    //cout << nT << endl;
 }
 
 int main(int argc, char* argv[]) {
 	parameters = argv[1]; //set here the .ini file name to read
 	outname = remove_extension(argv[1]);
 
+    dt = 0.01; //in hours units
+	nsave = (int)(1/dt);
+    //nsave = 100;
 	SetExperiment();
 	readINIFile();
-	int nsave = 1/dt; //must come after readINIFile()
-	cout << "Now running parameter file: " << parameters << ".ini" << endl;
+	cout << "Resistance simulation now running parameter file: " << parameters << endl;
     for (int i = 0; i <= p_array.size()-1; i = i+1) {
         double p = p_array[i];
 		ofstream myfile;
 		stringstream stream;
 		stream << fixed << setprecision(2) << p; string filename = stream.str();
 		myfile.open(outname + "_p=" + filename + ".txt");
-		cout << "p = " << p << endl;
+		cout << "Mutator proportion p = " << p << endl;
 		for (int run = 1; run <= replicates; run++) {
 			SetIniCond(p);
 			SaveandPrint(myfile); //save first day
 			for (int day = 1; day <= 6; day++) {
 				SetValues1(day);
                 eva_change = 0; //if it's 0, the change hasn't ocurred yet
-				int nite = 0;
+				nite = 0;
 				do {
 					nT = nS + nA + nB + nD + nSp + nAp + nBp + nDp;
 					EvaluateChange(nT, day);
-					nnS = nS + Binomial(nS, (exp(bS*(1.0 - nT / kS)) - 1.0)*(1 - (muA + muB))); //S->S+S
-					nnA = nA + Binomial(nS, (exp(bS*(1.0 - nT / kS)) - 1.0)*muA) + Binomial(nA, (exp(bA*(1.0 - nT / kA)) - 1.0)*(1 - muB)); //Mutation S->A and A->A+A
-					nnB = nB + Binomial(nS, (exp(bS*(1.0 - nT / kS)) - 1.0)*muB) + Binomial(nB, (exp(bB*(1.0 - nT / kB)) - 1.0)*(1 - muA)); //Mutation S->B and B->B+B
-					nnD = nD + Binomial(nA, (exp(bA*(1.0 - nT / kA)) - 1.0)*muB) + Binomial(nB, (exp(bB*(1.0 - nT / kB)) - 1.0)*muA) + Binomial(nD, exp(bD*(1.0 - nT / kD)) - 1.0); //Mutation A->D, B->D, and D->D+D
+                    
+                    //offpsring
+                    nSf = NegBinomial(nS, exp(-bS*(1.0 - nT / kS)));
+                    nAf = NegBinomial(nA, exp(-bA*(1.0 - nT / kA)));
+                    nBf = NegBinomial(nB, exp(-bB*(1.0 - nT / kB)));
+                    nDf = NegBinomial(nD, exp(-bD*(1.0 - nT / kD)));
+                    
+                    //mutants
+                    nSA = Binomial(nSf, muA);
+                    nSB = Binomial(nSf, muB);
+                    nAD = Binomial(nAf, muB);
+                    nBD = Binomial(nBf, muA);
+                
+                    //update
+					nnS = nS + (nSf - nSA - nSB); //S->S+S
+					nnA = nA + nSA + (nAf - nAD); //Mutation S->A and A->A+A
+					nnB = nB + nSB + (nBf - nBD); //Mutation S->B and B->B+B
+					nnD = nD + nDf + nAD + nBD; //Mutation A->D, B->D, and D->D+D
+                 
+                    
+/* Hypermutator variables */                    
+                    //offpsring
+                    nSfp = NegBinomial(nSp, exp(-bSp*(1.0 - nT / kSp)));
+                    nAfp = NegBinomial(nAp, exp(-bAp*(1.0 - nT / kAp)));
+                    nBfp = NegBinomial(nBp, exp(-bBp*(1.0 - nT / kBp)));
+                    nDfp = NegBinomial(nDp, exp(-bDp*(1.0 - nT / kDp)));
+                    
+                    //mutants
+                    nSAp = Binomial(nSfp, muAp);
+                    nSBp = Binomial(nSfp, muBp);
+                    nADp = Binomial(nAfp, muBp);
+                    nBDp = Binomial(nBfp, muAp);
+                
+                    //update
+                    nnSp = nSp + (nSfp - nSAp - nSBp); //S->S+S
+                    nnAp = nAp + nSAp + (nAfp - nADp); //Mutation S->A and A->A+A
+                    nnBp = nBp + nSBp + (nBfp - nBDp); //Mutation S->B and B->B+B
+                    nnDp = nDp + nDfp + nADp + nBDp; //Mutation A->D, B->D, and D->D+D
 
-					nnSp = nSp + Binomial(nSp, (exp(bSp*(1.0 - nT / kSp)) - 1.0)*(1 - (muAp + muBp))); //S'->S'+S'
-					nnAp = nAp + Binomial(nSp, (exp(bSp*(1.0 - nT / kSp)) - 1.0)*muAp) + Binomial(nAp, (exp(bAp*(1.0 - nT / kAp)) - 1.0)*(1 - muBp)); //Mutation S'->A' and A'->A'+A'
-					nnBp = nBp + Binomial(nSp, (exp(bSp*(1.0 - nT / kSp)) - 1.0)*muBp) + Binomial(nBp, (exp(bBp*(1.0 - nT / kBp)) - 1.0)*(1 - muAp)); //Mutation S'->B' and B'->B'+B'
-					nnDp = nDp + Binomial(nAp, (exp(bAp*(1.0 - nT / kAp)) - 1.0)*muBp) + Binomial(nBp, (exp(bBp*(1.0 - nT / kBp)) - 1.0)*muAp) + Binomial(nDp, exp(bDp*(1.0 - nT / kDp)) - 1.0); //Mutation A'->D', B'->D', and D'->D'+D'
 					nS = nnS;
 					nA = nnA;
 					nB = nnB;
@@ -225,7 +271,7 @@ int main(int argc, char* argv[]) {
 					nSp = nnSp;
 					nAp = nnAp;
 					nBp = nnBp;
-                    nDp = nnDp;
+					nDp = nnDp;
                     t += dt;
 					++nite;
                     if (nite % nsave == 0){ //save data only every 1 hour

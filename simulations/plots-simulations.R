@@ -67,7 +67,7 @@ mads = function(x) {
 	data_frame(y = median(x), ymin = y - mad(x), ymax = y + mad(x))}
 
 # Munging
-results = data_frame(files = list.files(pattern = ".txt", recursive = T)) %>%
+results = data_frame(files = list.files(pattern = ".txt", recursive = T, path = c("none", "rif", "nal", "both"), full.names = T)) %>%
 	mutate(data = map(files, ~read_tsv(., col_names = c("S", "A", "B", "D", "mut_S", "mut_A", "mut_B", "mut_D"), col_types = "dddddddd") %>%
 		mutate(time = rep(1:nsteps, times = nreps), rep = rep(1:nreps, each = nsteps)) %>%
 		mutate(day = (time-1) %/% spd + 1) %>%
@@ -100,14 +100,14 @@ states = list(St = "no resistance",
 		Mt = "mixed resistance", 
 		Dt = "double resistance")
 
-muller = results %>%
+muller_sim = results %>%
 	select(treatment, day, concentration, p, pmutS.text, rep, time, St, At, Bt, Dt) %>%
 	mutate(total = St + At + Bt + Dt) %>%
 	gather(state, value, -c(treatment, p, pmutS.text, time, day, rep, concentration, total)) %>%
 	mutate(detected = map2_lgl(total, value, ~rbinom(n = 1, size = .x, prob = .y/(.x*200))>0)) %>%
 	select(-value, -total) %>%
 	spread(state, detected) %>%
-	mutate(Mt = At&Bt, St = ifelse(At|Bt|Mt|Dt, F, St), At = ifelse(Mt|Dt, F, At), Bt = ifelse(Mt|Dt, F, Bt), Mt = ifelse(Dt, F, Mt)) %>%
+	mutate(Mt = At&Bt, St = ifelse(At|Bt|Mt|Dt, F, 1), At = ifelse(Mt|Dt, F, At), Bt = ifelse(Mt|Dt, F, Bt), Mt = ifelse(Dt, F, Mt)) %>%
 	gather(state, value, -c(treatment, day, concentration, p, pmutS.text, rep, time)) %>%
 	filter(value == T) %>%
 	select(-value) %>%
@@ -115,7 +115,7 @@ muller = results %>%
 	arrange(treatment, day, time, rep) %>%
 	droplevels()
 
-saveRDS(muller, "muller.rds")
+saveRDS(muller_sim, "muller_sim.rds")
 
 # Plots
 bestcolours = c("grey90", "#469067", "#235161", "#6f2c3d", "#ef0358")
@@ -131,11 +131,10 @@ n.plot = results.gathered %>%
 		scale_colour_manual(name = "Strain", values = c(bestcolours2[-4], bestcolours2[-4])) + 
 		scale_fill_manual(name = "Strain", values = c(bestcolours2[-4], bestcolours2[-4])) + 
 		guides(linetype = guide_legend(title = "Mutation rate", override.aes = list(colour = "black", fill = NA))) + 
-		scale_x_continuous(name = "Time (days)", breaks = (unique(results$day)-0.5)*spd, labels = unique(results$day), limits = c(0, nsteps-1), expand = expand_scale(mult = 0, add = 0), 
-
+		scale_x_continuous(name = "Time (# transfers)", breaks = (unique(results$day)-0.5)*spd, labels = unique(results$day), limits = c(0, nsteps-1), expand = expand_scale(mult = 0, add = 0), 
 			sec.axis = sec_axis(~ ., breaks = (unique(results$day)-0.5)*spd, 
 
-			labels = unique(muller$concentration), name = "Simulated antibiotic concentration (mg/l)")) + 
+			labels = unique(muller_sim$concentration), name = "Simulated antibiotic concentration (mg/l)")) + 
 		geom_vline(xintercept = spd*(1:6) + 2, color = "grey80") + 
 		theme(axis.text.x.top = element_text(angle = 45, hjust = 0))
 
@@ -144,8 +143,6 @@ n.plot[["grobs"]][[18]][["children"]][[2]] = nullGrob()
 n.plot = as_ggplot(n.plot)
 
 results.gathered.mean = results.gathered %>% group_by(treatment, p, time, day, pmutS.text, strain, mutator) %>% summarise(mean = mean(n + 1), sd = sd(n + 1))
-
-#median absolute deviation
 
 plotinator = function(data, suppress.strain = T){
 output = ggplot(data = data, aes(x = time, y = n + 1, fill = strain, color = strain, linetype = mutator, alpha = mutator)) + 
@@ -156,11 +153,11 @@ output = ggplot(data = data, aes(x = time, y = n + 1, fill = strain, color = str
 		scale_colour_manual(name = "Strain", values = c(bestcolours2[-4], bestcolours2[-4])) + 
 		scale_fill_manual(name = "Strain", values = c(bestcolours2[-4], bestcolours2[-4])) + 
 		guides(fill = F, color = F, linetype = F) + 
-		scale_x_continuous(name = "Time (days)", breaks = (unique(results$day)-0.5)*spd, labels = unique(results$day), limits = c(0, nsteps-1), expand = expand_scale(mult = 0, add = 0), 
+		scale_x_continuous(name = "Time (# transfers)", breaks = (unique(results$day)-0.5)*spd, labels = unique(results$day), limits = c(0, nsteps-1), expand = expand_scale(mult = 0, add = 0), 
 
 			sec.axis = sec_axis(~ ., breaks = (unique(results$day)-0.5)*spd, 
 
-			labels = unique(muller$concentration), name = "Simulated antibiotic concentration (mg/l)")) + 
+			labels = unique(muller_sim$concentration), name = "Simulated antibiotic concentration (mg/l)")) + 
 		scale_linetype_manual(values = c("44", "solid")) + 
 #		geom_vline(xintercept = spd*(1:6) + 2, color = "grey80") + 
 		theme(axis.text.x.top = element_text(angle = 45, hjust = 0))
@@ -192,16 +189,15 @@ n.plot.all.iqr = ggarrange(plotlist = n.plot.separated.iqr$plots, labels = "AUTO
 
 
 # Muller-like plot equivalent to experiment
-
-# Muller-like plot equivalent to experiment
-muller.sim.plot = muller %>%
+#readRDS("muller_sim.rds")
+muller.sim.plot = muller_sim %>%
 	ggplot(aes(x = time, fill = state)) +
 		geom_bar(width = 1.2, size = 0) +
 		facet_grid(pmutS.text~treatment) +
 		scale_fill_manual(values = bestcolours) +
-		scale_x_continuous(name = "Time (days)", breaks = (unique(results$day)-0.5)*spd, labels = unique(results$day), limits = c(0, nsteps-1), expand = expand_scale(mult = 0, add = 0), 
+		scale_x_continuous(name = "Time (# transfers)", breaks = (unique(results$day)-0.5)*spd, labels = unique(results$day), limits = c(0, nsteps-1), expand = expand_scale(mult = 0, add = 0), 
 			sec.axis = sec_axis(~ ., breaks = (unique(results$day)-0.5)*spd, 
-			labels = unique(muller$concentration), name = "Simulated antibiotic concentration (mg/l)")) +
+			labels = unique(muller_sim$concentration), name = "Simulated antibiotic concentration (mg/l)")) +
 		scale_y_continuous(name = "Number of simulated populations", 
 			sec.axis = sec_axis(~ ., breaks = NULL, labels = NULL, name = "Initial mutator frequency")) +
 		geom_vline(xintercept = (1:6)*spd+1, size = 0.2) +
@@ -213,8 +209,8 @@ muller.sim.plot[["grobs"]][[18]][["children"]][[2]] = nullGrob()
 muller.sim.plot = as_ggplot(muller.sim.plot)
 
 
-day6.sim.plot = muller %>%
-	filter(time == max(muller$time)) %>%
+day6.sim.plot = muller_sim %>%
+	filter(time == max(muller_sim$time)) %>%
 	group_by(treatment, p, state) %>%
 	summarise(count = n()) %>%
 	complete(treatment, p, state, fill = list(count = 0)) %>%
@@ -237,21 +233,26 @@ ggsave("nplot_combo_sim.pdf", n.plot.combo, width = 8, height = 5)
 ggsave("day6_sim.pdf", day6.sim.plot, width = 8, height = 2.5)
 ggsave("expevol.pdf", expevol, width = 8, height = 7.5)
 
+params = read_csv("parameter_95CI.csv") %>%
+	mutate(strain = recode_factor(strain, S="sensitive", A="rifampicin resistant",B="nalidixic acid resistant",D="double resistant"),
+		antibiotic = factor(antibiotic, levels = c("none","rifampicin", "nalidixic acid", "combination"))) %>%
+	mutate(parameter = recode_factor(parameter, r1="ri(1)", r2 = "ri(2)", k1 = "ki(1)", k2 = "ki(2)"))
 
 
-params = data_frame(files = list.files(pattern = "[a-z].ini$", recursive = T), 
-	inis = map(files, ~read_table(file = ., col_names = "parameter"))) %>%
-	separate(files, into = "treatment") %>%
-	unnest() %>%
-	separate(parameter, into = c("parameter", "value"), sep = " = ") %>%
-	type_convert() %>%
-	filter(!is.na(value)) 
+params_plot = params %>%
+		ggplot(aes(x=day, y=mean, fill = strain, shape = strain)) +
+		geom_errorbar(aes(x=day, ymin = lower, ymax = upper, colour = strain), position = position_dodge(width=0.3), width = 0) +
+		geom_line(aes(colour = strain), position = position_dodge(width=0.3)) +
+		geom_point(size = 2, position = position_dodge(width=0.3)) +
+	facet_grid(parameter~antibiotic, scales = "free_y") + 
+	scale_colour_manual(values = bestcolours2[c(1,2,3,5)], name = "Strain") +
+	scale_fill_manual(values = bestcolours[c(1,2,3,5)], name = "Strain") +
+	scale_shape_manual(values = c(21, 22, 23, 25, 24), name = "Strain") +
+	scale_x_continuous("Time (# transfers)", breaks = unique(params$day), labels = unique(params$day), sec.axis = sec_axis(~ ., breaks = unique(params$day), labels = 2^(unique(params$day)-5)*10, name = "Concentration (mg/l)")) +
+		theme(axis.text.x.top = element_text(angle = 45, hjust = 0))
 
-params$day = rep(c(rep(NA, 9), rep(1:6, each = 20)), times = 4)
+params_plot = ggplotGrob(params_plot)
+params_plot[["grobs"]][[18]][["children"]][[2]] = nullGrob()
+params_plot = as_ggplot(params_plot)
 
-params = params %>%
-	filter(!is.na(day), day>0) %>%
-	spread(key = parameter, value = value) %>%
-	mutate(treatment = recode_factor(treatment, none = "none", rif = "rifampicin", nal = "nalidixic acid", both = "combination"))
-
-write_csv(params, "simulation_parameters.csv")
+ggsave("params_plot.pdf", params_plot, height = 6, width = 7)
