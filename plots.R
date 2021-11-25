@@ -4,7 +4,7 @@
 #install.packages("grid")
 #install.packages("egg")
 #install.packages("scales")
-#install.packages("rflan")
+#install.packages("flan")
 
 require(tidyverse)
 require(ggpubr)
@@ -175,24 +175,24 @@ joined.auc.plot = joinedcurves.mean %>%
 ggsave("joinedauc.pdf", joined.auc.plot, device = "pdf", height = 3, width = 5)
 
 
-compare_data_sim = readRDS("compare_data_sim.Rds")
-compare.plot = compare_data_sim %>%
-	ggplot(aes(`Estimate from experiment`, `Estimate from simulation`, fill = Coefficient, shape = `Coefficient type`)) +
-		facet_grid(~Response) +
-		xlab("Estimate from experiment") + # bugfix
-		ylab("Estimate from simulation") +
-		geom_hline(yintercept = 0, color = "grey80", linetype = "11") +
-		geom_vline(xintercept = 0, color = "grey80", linetype = "11") +
-		geom_abline(intercept = 0, slope = 1, color = "grey60", linetype = "dashed") +
-		geom_errorbarh(aes(xmin = `Q2.5 from experiment`, xmax = `Q97.5 from experiment`)) +
-		geom_errorbar(aes(ymin = `Q2.5 from simulation`, ymax = `Q97.5 from simulation`)) +
-		geom_point(size = 2.5) +
-		scale_shape_manual(values = c(22:24)) +
-		scale_fill_manual(values = c("darkgreen","grey20","grey60","white","red", "blue", "purple",
-			"#990000", "#002b80", "#602040", "#ff3333", "#3399ff", "#ac39ac", "#ffb3b3", "#99ccff", "#df9fbf")) +
-		guides(shape = FALSE, fill = guide_legend(override.aes = list(shape = c(22,23,23,23,24,24,24))))
+#compare_data_sim = readRDS("compare_data_sim.Rds")
+#compare.plot = compare_data_sim %>%
+#	ggplot(aes(`Estimate from experiment`, `Estimate from simulation`, fill = Coefficient, shape = `Coefficient type`)) +
+#		facet_grid(~Response) +
+#		xlab("Estimate from experiment") + # bugfix
+#		ylab("Estimate from simulation") +
+#		geom_hline(yintercept = 0, color = "grey80", linetype = "11") +
+#		geom_vline(xintercept = 0, color = "grey80", linetype = "11") +
+#		geom_abline(intercept = 0, slope = 1, color = "grey60", linetype = "dashed") +
+#		geom_errorbarh(aes(xmin = `Q2.5 from experiment`, xmax = `Q97.5 from experiment`)) +
+#		geom_errorbar(aes(ymin = `Q2.5 from simulation`, ymax = `Q97.5 from simulation`)) +
+#		geom_point(size = 2.5) +
+#		scale_shape_manual(values = c(22:24)) +
+#		scale_fill_manual(values = c("darkgreen","grey20","grey60","white","red", "blue", "purple",
+#			"#990000", "#002b80", "#602040", "#ff3333", "#3399ff", "#ac39ac", "#ffb3b3", "#99ccff", "#df9fbf")) +
+#		guides(shape = FALSE, fill = guide_legend(override.aes = list(shape = c(22,23,23,23,24,24,24))))
 
-ggsave("sim_vs_experiment.pdf", compare.plot, device = "pdf", height = 2, width = 8)
+#ggsave("sim_vs_experiment.pdf", compare.plot, device = "pdf", height = 2, width = 8)
 
 
 dailyOD = readRDS("dailyOD.Rds")
@@ -372,116 +372,116 @@ lmdata = alldata %>%
 #	filter((experiment == "kill" & series == 24) | experiment == "odvnt" | experiment == "odvnt_original", (grows_in | concentration <=10)) %>%
 	droplevels()
 
-# Non-linear vs linear model fitting
-brmsdata = alldata %>%
-	filter(OD.blanked>0, NT>0) %>%
-#	filter(OD.blanked>0.05, NT>0) %>%
-	mutate(mOD.blanked = 1000*OD.blanked) %>%
-	mutate(antibiotic2 = gsub("combination", "double", antibiotic)) %>%
-	mutate(strain2 = factor(ifelse(grepl("resistant",strain),"resistant","sensitive"),
-		levels = c("sensitive","resistant"))) %>%
-	mutate(grows_in = map2_lgl(strain, antibiotic2,
-		~ grepl(.y, .x)  | .y=="MH")) %>%
-	select(-antibiotic2) %>%
-	filter((experiment == "kill" & series == 24) | experiment == "odvnt" ) %>%
-#	filter((experiment == "kill" & series == 24) | experiment == "odvnt" | experiment == "odvnt_original", (grows_in | concentration <=10)) %>%
-	droplevels()
+## Non-linear vs linear model fitting
+#brmsdata = alldata %>%
+#	filter(OD.blanked>0, NT>0) %>%
+##	filter(OD.blanked>0.05, NT>0) %>%
+#	mutate(mOD.blanked = 1000*OD.blanked) %>%
+#	mutate(antibiotic2 = gsub("combination", "double", antibiotic)) %>%
+#	mutate(strain2 = factor(ifelse(grepl("resistant",strain),"resistant","sensitive"),
+#		levels = c("sensitive","resistant"))) %>%
+#	mutate(grows_in = map2_lgl(strain, antibiotic2,
+#		~ grepl(.y, .x)  | .y=="MH")) %>%
+#	select(-antibiotic2) %>%
+#	filter((experiment == "kill" & series == 24) | experiment == "odvnt" ) %>%
+##	filter((experiment == "kill" & series == 24) | experiment == "odvnt" | experiment == "odvnt_original", (grows_in | concentration <=10)) %>%
+#	droplevels()
 
-m1 = lm(log10(NT) ~ log10(mOD.blanked) * (antibiotic/concentration)*strain, data = brmsdata)
-m2 = step(m1)
-summary(m2)
+#m1 = lm(log10(NT) ~ log10(mOD.blanked) * (antibiotic/concentration)*strain, data = brmsdata)
+#m2 = step(m1)
+#summary(m2)
 
-seed = 19
-prior1 <- prior(normal(0,.1), class = "b", nlpar = "b1") +
-	prior(normal(0,.1), class = "b", nlpar = "b2") +
-	prior(normal(0,.1), class = "b", nlpar = "b3")
+#seed = 19
+#prior1 <- prior(normal(0,.1), class = "b", nlpar = "b1") +
+#	prior(normal(0,.1), class = "b", nlpar = "b2") +
+#	prior(normal(0,.1), class = "b", nlpar = "b3")
 
-prior2 <- prior(normal(0,.1), class = "b", nlpar = "b1") +
-	prior(normal(0,.1), class = "b", nlpar = "b2")
+#prior2 <- prior(normal(0,.1), class = "b", nlpar = "b1") +
+#	prior(normal(0,.1), class = "b", nlpar = "b2")
 
-fit1 <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked)^b3 + b1, b2 + b3 + b1 ~ strain*antibiotic/concentration, nl = TRUE), data = brmsdata, prior = prior1, chains = 4, cores = 4, seed = 19)
-fit1a <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked)^b3 + b1, b2 + b3 + b1 ~ antibiotic/concentration, nl = TRUE), data = brmsdata, prior = prior1, chains = 4, cores = 4, seed = 19)
-fit1b <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked)^b3 + b1, b2 + b3 + b1 ~ antibiotic, nl = TRUE), data = brmsdata, prior = prior1, chains = 4, cores = 4, seed = 19)
-fit1c <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked)^b3 + b1, b2 + b3 + b1 ~ 1, nl = TRUE), data = brmsdata, prior = prior1, chains = 4, cores = 4, seed = 19)
+#fit1 <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked)^b3 + b1, b2 + b3 + b1 ~ strain*antibiotic/concentration, nl = TRUE), data = brmsdata, prior = prior1, chains = 4, cores = 4, seed = 19)
+#fit1a <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked)^b3 + b1, b2 + b3 + b1 ~ antibiotic/concentration, nl = TRUE), data = brmsdata, prior = prior1, chains = 4, cores = 4, seed = 19)
+#fit1b <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked)^b3 + b1, b2 + b3 + b1 ~ antibiotic, nl = TRUE), data = brmsdata, prior = prior1, chains = 4, cores = 4, seed = 19)
+#fit1c <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked)^b3 + b1, b2 + b3 + b1 ~ 1, nl = TRUE), data = brmsdata, prior = prior1, chains = 4, cores = 4, seed = 19)
 
-fit1d <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked)^b3 + b1, b2+b3 ~ 1, b1 ~ antibiotic/concentration, nl = TRUE, family = gaussian), data = brmsdata, prior = prior1, chains = 4, cores = 4, seed = 19)
-
-
-
-fit2 <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked) + b1, b1 + b2 ~ strain*antibiotic/concentration, nl = TRUE, family = gaussian), data = brmsdata, prior = prior2, chains = 4, cores = 4, seed = 19)
-fit2a <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked) + b1, b1 + b2 ~ antibiotic/concentration, nl = TRUE, family = gaussian), data = brmsdata, prior = prior2, chains = 4, cores = 4, seed = 19)
-fit2b <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked) + b1, b1 + b2 ~ antibiotic, nl = TRUE, family = gaussian), data = brmsdata, prior = prior2, chains = 4, cores = 4, seed = 19)
-fit2c <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked) + b1, b1 + b2 ~ 1, nl = TRUE, family = gaussian), data = brmsdata, prior = prior2, chains = 4, cores = 4, seed = 19)
-fit2d <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked) + b1, b2 ~ 1, b1 ~ antibiotic/concentration, nl = TRUE, family = gaussian), data = brmsdata, prior = prior2, chains = 4, cores = 4, seed = 19)
+#fit1d <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked)^b3 + b1, b2+b3 ~ 1, b1 ~ antibiotic/concentration, nl = TRUE, family = gaussian), data = brmsdata, prior = prior1, chains = 4, cores = 4, seed = 19)
 
 
 
-fit1 = add_criterion(fit1, c("loo","waic"))
-fit1a = add_criterion(fit1a, c("loo","waic"))
-fit1b = add_criterion(fit1b, c("loo","waic"))
-fit1c = add_criterion(fit1c, c("loo","waic"))
-fit1d = add_criterion(fit1d, c("loo","waic"))
-
-fit2 = add_criterion(fit2, c("loo","waic"))
-fit2a = add_criterion(fit2a, c("loo","waic"))
-fit2b = add_criterion(fit2b, c("loo","waic"))
-fit2c = add_criterion(fit2c, c("loo","waic"))
-fit2d = add_criterion(fit2d, c("loo","waic"))
-
-# Compare different fixed effects
-loo_compare(fit1,fit1a,fit1b,fit1c,fit1d)
-loo_compare(fit2,fit2a,fit2b,fit2c,fit2d)
-
-# Compare goodness of fit of linear vs non-linear for best fixed effects
-loo_compare(fit1d, fit2d)
-
-alldata %>%
-	mutate(mOD.blanked = OD.blanked*1000) %>%
-	filter(experiment %in% c("odvnt", "kill")) %>%
-	mutate( fittedml= 10^predict(m2, newdata = .),
-		fitted1 = 10^predict(fit1d, newdata = .)[,1],
-		fitted2 = 10^predict(fit2d, newdata = .)[,1]) %>%
-	filter(NT > 0) %>%
-	ggplot(aes(x=fitted1, y=fitted2)) + geom_point() +
-	facet_grid(~antibiotic) +
-	scale_x_log10() + scale_y_log10() +
-	geom_abline(intercept = 0, slope = 1)
+#fit2 <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked) + b1, b1 + b2 ~ strain*antibiotic/concentration, nl = TRUE, family = gaussian), data = brmsdata, prior = prior2, chains = 4, cores = 4, seed = 19)
+#fit2a <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked) + b1, b1 + b2 ~ antibiotic/concentration, nl = TRUE, family = gaussian), data = brmsdata, prior = prior2, chains = 4, cores = 4, seed = 19)
+#fit2b <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked) + b1, b1 + b2 ~ antibiotic, nl = TRUE, family = gaussian), data = brmsdata, prior = prior2, chains = 4, cores = 4, seed = 19)
+#fit2c <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked) + b1, b1 + b2 ~ 1, nl = TRUE, family = gaussian), data = brmsdata, prior = prior2, chains = 4, cores = 4, seed = 19)
+#fit2d <- brm(bf(log10(NT) ~ b2*log10(mOD.blanked) + b1, b2 ~ 1, b1 ~ antibiotic/concentration, nl = TRUE, family = gaussian), data = brmsdata, prior = prior2, chains = 4, cores = 4, seed = 19)
 
 
 
-## MODEL COMPARISONS
+#fit1 = add_criterion(fit1, c("loo","waic"))
+#fit1a = add_criterion(fit1a, c("loo","waic"))
+#fit1b = add_criterion(fit1b, c("loo","waic"))
+#fit1c = add_criterion(fit1c, c("loo","waic"))
+#fit1d = add_criterion(fit1d, c("loo","waic"))
 
-odp_rev2 = alldata %>%
-	mutate(mOD.blanked = OD.blanked *1000) %>%
-	filter(experiment %in% c("odvnt", "kill")) %>%
-	mutate(fittedml= 10^predict(m2, newdata = .),
-		fitted1 = 10^predict(fit1d, newdata = .)[,1],
-		fitted2 = 10^predict(fit2d, newdata = .)[,1]) %>%
-	filter(NT > 0) %>%
-	ggplot(aes(x = mOD.blanked/1000,
-	y = NT,
-	shape = strain,
-	fill = abconc)) +
-	scale_shape_manual(values = c(21,25,22:24), name = "Strain") +
-#	ylim(0,5e8) +
-	scale_x_log10() +
-	scale_y_log10(labels = trans_format("log10", math_format(10^.x))) +
-	guides(fill = guide_legend(override.aes=list(shape=22, size=4), colour=NA)) +
-	scale_fill_manual(values = c(MHcols, rifcols, nalcols, doubcols), name = "Antibiotic concentration (mg/l)") + 
-	labs(x="Blanked OD", y="Number of bacteria (in 200μl)") + 
-	facet_wrap(~antibiotic, nrow = 4) + 
-	theme(legend.key.size = unit(0.8, 'lines')) +
-	theme(plot.margin = unit(c(0,0.5,0,0), "lines")) +
-	geom_point(size = 2) +
-#	geom_line(aes(x = mOD.blanked/1000, y = fitted1, colour = abconc), inherit.aes=F) +
-	geom_line(aes(x = mOD.blanked/1000, y = fitted2, colour = abconc), inherit.aes=F) +
-	scale_colour_manual(values = c(MHcols, rifcols, nalcols, doubcols), name = "Antibiotic concentration (mg/l)")
+#fit2 = add_criterion(fit2, c("loo","waic"))
+#fit2a = add_criterion(fit2a, c("loo","waic"))
+#fit2b = add_criterion(fit2b, c("loo","waic"))
+#fit2c = add_criterion(fit2c, c("loo","waic"))
+#fit2d = add_criterion(fit2d, c("loo","waic"))
+
+## Compare different fixed effects
+#loo_compare(fit1,fit1a,fit1b,fit1c,fit1d)
+#loo_compare(fit2,fit2a,fit2b,fit2c,fit2d)
+
+## Compare goodness of fit of linear vs non-linear for best fixed effects
+#loo_compare(fit1d, fit2d)
+
+#alldata %>%
+#	mutate(mOD.blanked = OD.blanked*1000) %>%
+#	filter(experiment %in% c("odvnt", "kill")) %>%
+#	mutate( fittedml= 10^predict(m2, newdata = .),
+#		fitted1 = 10^predict(fit1d, newdata = .)[,1],
+#		fitted2 = 10^predict(fit2d, newdata = .)[,1]) %>%
+#	filter(NT > 0) %>%
+#	ggplot(aes(x=fitted1, y=fitted2)) + geom_point() +
+#	facet_grid(~antibiotic) +
+#	scale_x_log10() + scale_y_log10() +
+#	geom_abline(intercept = 0, slope = 1)
 
 
-joinedODp = ggarrange(odp_rev2, killp, ncol = 2, legend.grob = get_legend(odp), legend = "right", labels = "AUTO", font.label = list(face = "plain"), align = "v")
-cairo_pdf("ODvsNT.pdf", width = 6, height = 6)
-joinedODp
-dev.off()
+
+### MODEL COMPARISONS
+
+#odp_rev2 = alldata %>%
+#	mutate(mOD.blanked = OD.blanked *1000) %>%
+#	filter(experiment %in% c("odvnt", "kill")) %>%
+#	mutate(fittedml= 10^predict(m2, newdata = .),
+#		fitted1 = 10^predict(fit1d, newdata = .)[,1],
+#		fitted2 = 10^predict(fit2d, newdata = .)[,1]) %>%
+#	filter(NT > 0) %>%
+#	ggplot(aes(x = mOD.blanked/1000,
+#	y = NT,
+#	shape = strain,
+#	fill = abconc)) +
+#	scale_shape_manual(values = c(21,25,22:24), name = "Strain") +
+##	ylim(0,5e8) +
+#	scale_x_log10() +
+#	scale_y_log10(labels = trans_format("log10", math_format(10^.x))) +
+#	guides(fill = guide_legend(override.aes=list(shape=22, size=4), colour=NA)) +
+#	scale_fill_manual(values = c(MHcols, rifcols, nalcols, doubcols), name = "Antibiotic concentration (mg/l)") + 
+#	labs(x="Blanked OD", y="Number of bacteria (in 200μl)") + 
+#	facet_wrap(~antibiotic, nrow = 4) + 
+#	theme(legend.key.size = unit(0.8, 'lines')) +
+#	theme(plot.margin = unit(c(0,0.5,0,0), "lines")) +
+#	geom_point(size = 2) +
+##	geom_line(aes(x = mOD.blanked/1000, y = fitted1, colour = abconc), inherit.aes=F) +
+#	geom_line(aes(x = mOD.blanked/1000, y = fitted2, colour = abconc), inherit.aes=F) +
+#	scale_colour_manual(values = c(MHcols, rifcols, nalcols, doubcols), name = "Antibiotic concentration (mg/l)")
+
+
+#joinedODp = ggarrange(odp_rev2, killp, ncol = 2, legend.grob = get_legend(odp), legend = "right", labels = "AUTO", font.label = list(face = "plain"), align = "v")
+#cairo_pdf("ODvsNT.pdf", width = 6, height = 6)
+#joinedODp
+#dev.off()
 
 # Reviewer suggestion on p^2
 ## Replicates the first 4 days of the experiment (i.e. wild-types could still grow)
