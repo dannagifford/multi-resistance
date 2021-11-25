@@ -2,6 +2,7 @@
 #install.packages("lubridate")
 #install.packages("growthcurver")
 #install.packages("minpack.lm")
+#install.packages("reshape2")
 
 library(tidyverse)
 require(lubridate)
@@ -27,11 +28,19 @@ return(otime)
 }
 
 readBMG = function(conn){
-		time = read_csv(conn, n_max = 1) %>% t() %>% BMGtime()
-		time = time[4:(length(time)-1)]
-		data = read_csv_drop(conn, skip = 2, col_names = c("Well Row", "Well Col", "Content", time)) %>%
-			select(-ends_with("_1")) %>%
-	 		gather("time", "OD", -`Well Row`, -`Well Col`, -`Content`)
+		data = read_csv_drop(conn, skip = 2, col_names = c("Well Row", "Well Col", "Content")) %>%
+			select(-ends_with("_1")) 
+		n_rows = nrow(data)	
+
+		time_vec = read_csv(conn, n_max = 1) %>% as.vector() %>% t() %>% BMGtime()
+		time_vec = time_vec[4:(length(time_vec)-1)]
+		time_vec = rep(time_vec, times = n_rows)
+		
+		data = data %>% pivot_longer(-c(`Well Row`, `Well Col`, `Content`),
+				names_to = "time", values_to = "OD") %>%
+			mutate(time = time_vec)
+		
+		return(data)
 		}
 
 
@@ -224,11 +233,6 @@ FTcurves = FTsamples.blanked %>%
 	arrange(id) %>%
 	mutate(id = as.character(id))
 
-# For Ernesto:
-FTsamples.blanked %>%
-	select(antibiotic, concentration, strain, state_text = strain2, id, rep, time, blankOD) %>%
-	mutate(N = predict(NTmodel, newdata = .)) %>%
-	write_csv(., "2018-06-08_blanked-growth-curve-data.csv")
 
 FTcurves.mean = FTcurves %>%
 	group_by(antibiotic, concentration, strain, strain2, id) %>%
