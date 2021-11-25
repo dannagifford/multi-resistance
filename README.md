@@ -6,4 +6,5 @@ To perform the full analysis and generate all figures:
 - then run 'model-fitting.R' for statistical models (will take time)
 - then run 'plots.R' for plots
 
-Otherwise you can open the scripts and generate analyses and figures on an individual basis.
+You will likely need to install packages before running the scripts (commented out at the top of each script).
+You can open the scripts and generate analyses and figures on an individual basis.
