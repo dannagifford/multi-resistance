@@ -5,9 +5,11 @@
 #install.packages("egg")
 #install.packages("scales")
 #install.packages("rflan")
+#install.packages("patchwork")
 
 require(tidyverse)
 require(ggpubr)
+require(patchwork)
 require(grid)
 #require(egg)
 require(scales)
@@ -70,13 +72,16 @@ bestcolours = c("grey90","#469067", "#235161","#6f2c3d", "#ef0358")
 bestcolours2 = c("grey40", bestcolours[-1])
 
 popns = readRDS("popns.Rds")
+
+levels(popns$state.simple)[5] = "multi-resistance"
+
 muller = popns %>%
 	filter(volume == 1) %>%
 	ggplot(aes(x = day, fill = state.simple)) +
 		geom_bar(width = 1, stat = "count", color = "black", size = 0.2) +
 		facet_grid(pmutS.text~antibiotic) +
-		scale_fill_manual(values = bestcolours, name = "Detection of") +
-		labs(x = "Time (# transfers)", y = "Number of populations") +
+		scale_fill_manual(values = bestcolours, name = "Resistance type") +
+		labs(x = "Time (# transfers)", y = "Number of populations where each resistance type was detected") +
 		scale_x_continuous("Time (# transfers)", breaks = unique(popns$day), labels = unique(popns$day), sec.axis = sec_axis(~ ., breaks = unique(popns$day), labels = unique(popns$concentration)*10, name = "Antibiotic concentration (mg/l)")) +
 		scale_y_continuous(sec.axis = sec_axis(~ ., breaks = NULL, labels = NULL, name = "Initial mutator frequency")) +
 		theme(legend.key = element_rect(color = "white")) +
@@ -165,12 +170,45 @@ joinedcurves.mean = readRDS("joinedcurves_mean.Rds")
 joined.auc.plot = joinedcurves.mean %>%
 	mutate(pmutS.text = recode_factor(pmutS.text, "none (from fluctuation test)"
 		= "wild-type background\n(from fluctuation test)")) %>%
+	select(id, pmutS.text, title, auc_e_mean, auc_e_sd) %>%
+	left_join(., res_mutations_table %>%
+		select(title, well, rifR, nalR, effluxR, `Total mutations`)) %>%
+	replace_na(list(`Total mutations`=50.1)) %>%
+		mutate(shape_var =
+		ifelse(!is.na(effluxR), "ef",
+		ifelse(grepl("wild", pmutS.text), "ft",
+		ifelse(`Total mutations`==50.1, "nd", "nef")))) %>%
+	 pivot_wider(names_from = concentration, values_from = c("auc_e_mean", "auc_e_sd")) %>%
+	ggplot(aes(x=auc_e_mean_0, y = auc_e_mean_2,
+		size = `Total mutations`, colour = pmutS.text,
+		shape = shape_var)) +
+		geom_point() +
+		scale_shape_manual(values = c(16, 3, 4, 15)) +
+		guides(shape = "none",
+			size = "none",
+			colour = guide_legend(title = "Initial mutator frequency")) +
+		scale_colour_manual(values = 
+			c("grey20","#f6acc7","#ef0358","#82002f")) +
+	labs(x = "Growth in antibiotic-free medium",
+		y = "Growth at 2×MIC of combination") +
+		coord_fixed(ratio = 1, xlim = c(4,10), ylim = c(4,10)) + 
+		geom_abline(slope = 1, intercept = 0, linetype = "33", colour = "grey60")
+
+ #+
+#	geom_text(aes(label=paste(rifR, nalR, effluxR, sep = "\n"), size = 12)
+
+
+
+
+joined.auc.plot.a = joinedcurves.mean %>%
+	mutate(pmutS.text = recode_factor(pmutS.text, "none (from fluctuation test)"
+		= "wild-type background\n(from fluctuation test)")) %>%
 	ggplot(aes(x=pmutS.text, y = auc_e_mean, fill = paste(concentration*10, "mg/l"))) +
 	geom_boxplot() +
 	geom_jitter(aes(linetype = as.factor(concentration*10)), position = position_dodge(width = 0.75), colour = "grey40", size = 0.75) +
 	scale_fill_manual(values = c("white", "grey80"), name = "Antibiotic\noncentration") +
 	labs(x = "Initial mutator frequency", y = "Growth (AUC of OD600)")
-
+#joined.auc.plot = joined.auc.plot.a / joined.auc.plot.b
 
 ggsave("joinedauc.pdf", joined.auc.plot, device = "pdf", height = 3, width = 5)
 
@@ -303,7 +341,7 @@ alldata = alldata %>%
 	mutS = "mutator",
 	rifampicin = "rifampicin resistant",
 	`nalidixic acid`="nalidixic acid resistant",
-	combination = "double resistant")) %>%
+	combination = "multi-resistant")) %>%
 	mutate(antibiotic = recode_factor(antibiotic,
 	MH="MH",
 	rifampicin = "rifampicin",
