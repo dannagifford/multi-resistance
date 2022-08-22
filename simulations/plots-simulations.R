@@ -98,7 +98,7 @@ states = list(St = "no resistance",
 		At = "rifampicin resistance", 
 		Bt = "nalidixic acid resistance", 
 		Mt = "mixed resistance", 
-		Dt = "double resistance")
+		Dt = "multi-resistance")
 
 muller_sim = results %>%
 	select(treatment, day, concentration, p, pmutS.text, rep, time, St, At, Bt, Dt) %>%
@@ -198,11 +198,11 @@ muller.sim.plot = muller_sim %>%
 		scale_x_continuous(name = "Time (# transfers)", breaks = (unique(results$day)-0.5)*spd, labels = unique(results$day), limits = c(0, nsteps-1), expand = expand_scale(mult = 0, add = 0), 
 			sec.axis = sec_axis(~ ., breaks = (unique(results$day)-0.5)*spd, 
 			labels = unique(muller_sim$concentration), name = "Simulated antibiotic concentration (mg/l)")) +
-		scale_y_continuous(name = "Number of simulated populations", 
+		scale_y_continuous(name = "Number of simulated populations where each resistance type was detected", 
 			sec.axis = sec_axis(~ ., breaks = NULL, labels = NULL, name = "Initial mutator frequency")) +
 		geom_vline(xintercept = (1:6)*spd+1, size = 0.2) +
 		theme(axis.text.x.top = element_text(angle = 45, hjust = 0)) +
-		guides(fill = guide_legend(title = "Detection of", override.aes = list(color = "black", size = 0.2)))
+		guides(fill = guide_legend(title = "Resistance type", override.aes = list(color = "black", size = 0.2)))
 
 muller.sim.plot = ggplotGrob(muller.sim.plot)
 muller.sim.plot[["grobs"]][[18]][["children"]][[2]] = nullGrob()
@@ -233,7 +233,7 @@ ggsave("nplot_combo_sim.pdf", n.plot.combo, width = 8, height = 5)
 ggsave("day6_sim.pdf", day6.sim.plot, width = 8, height = 2.5)
 ggsave("expevol.pdf", expevol, width = 8, height = 7.5)
 
-params = read_csv("parameter_95CI.csv") %>%
+params = read_csv("model_parameters.csv") %>%
 	mutate(strain = recode_factor(strain, S="sensitive", A="rifampicin resistant",B="nalidixic acid resistant",D="double resistant"),
 		antibiotic = factor(antibiotic, levels = c("none","rifampicin", "nalidixic acid", "combination"))) %>%
 	mutate(parameter = recode_factor(parameter, r1="ri(1)", r2 = "ri(2)", k1 = "ki(1)", k2 = "ki(2)"))
@@ -241,7 +241,7 @@ params = read_csv("parameter_95CI.csv") %>%
 
 params_plot = params %>%
 		ggplot(aes(x=day, y=mean, fill = strain, shape = strain)) +
-		geom_errorbar(aes(x=day, ymin = lower, ymax = upper, colour = strain), position = position_dodge(width=0.3), width = 0) +
+		geom_errorbar(aes(x=day, ymin = lower_0.025, ymax = upper_0.975, colour = strain), position = position_dodge(width=0.3), width = 0) +
 		geom_line(aes(colour = strain), position = position_dodge(width=0.3)) +
 		geom_point(size = 2, position = position_dodge(width=0.3)) +
 	facet_grid(parameter~antibiotic, scales = "free_y") + 

@@ -4,10 +4,11 @@
 #install.packages("minpack.lm")
 #install.packages("reshape2")
 
-library(tidyverse)
+require(tidyverse)
 require(lubridate)
 require(growthcurver)
 require(minpack.lm)
+require(reshape2)
 
 ### Custom functions #############################################
 read_csv_drop = function(...) read_csv(...) %>%
@@ -28,28 +29,31 @@ return(otime)
 }
 
 readBMG = function(conn){
-		data = read_csv_drop(conn, skip = 2, col_names = c("Well Row", "Well Col", "Content")) %>%
-			select(-ends_with("_1")) 
-		n_rows = nrow(data)	
-
-		time_vec = read_csv(conn, n_max = 1) %>% as.vector() %>% t() %>% BMGtime()
-		time_vec = time_vec[4:(length(time_vec)-1)]
-		time_vec = rep(time_vec, times = n_rows)
-		
-		data = data %>% pivot_longer(-c(`Well Row`, `Well Col`, `Content`),
-				names_to = "time", values_to = "OD") %>%
-			mutate(time = time_vec)
-		
+		data = read_csv_drop(conn) %>%
+			select(`Well Row`,`Well Col`, Content, starts_with("Raw Data"))
+		time = as.vector(unlist(data[1,4:(ncol(data))])) %>% BMGtime()
+		data = data %>%
+			rename_at(4:ncol(data), ~paste0("T",1:length(time)))
+		data = data[-1,] %>% type_convert()
+		data = data %>%
+			gather("T", "OD", -`Well Row`, -`Well Col`, -`Content`) %>%
+			mutate(T = gsub("T","", T) %>% as.numeric(.))
+		data$time = time[data$T]
 		return(data)
 		}
 
 
 ##################################################################
+# The original.labels given to the samples by the project student were {B-K}{2-7}
+# The standard.labels on a 96 well plate are equivalently {B-G}{2-11}
+# The following code translates original.labels into standard.labels
 
 original.labels = as.vector(mapply(paste0, LETTERS[2:11], MoreArgs = list(2:7), SIMPLIFY = T,USE.NAMES = F))
 original.cols = paste(original.labels, collapse = ";")
 standard.labels = as.vector(mapply(paste0, LETTERS[2:7], MoreArgs = list(2:11), SIMPLIFY = T,USE.NAMES = F))
 standard.cols = paste(standard.labels, collapse = ";")
+
+
 
 filesaggregate = list.files(pattern = "*aggregate.*.csv")
 
@@ -85,7 +89,7 @@ filesindividual = list.files(pattern = "*individual.*.csv")
 
 popns = tibble(filesindividual) %>%
 	mutate(data = map(filesindividual, ~read_delim(., delim = ","))) %>%
-	unnest() %>%
+	unnest(data) %>%
 	mutate(antibiotic = ifelse(grepl("none",filesindividual),"none", ifelse(grepl("double", filesindividual), "combination", antibiotic))) %>%
 	select(-filesindividual, -expt) %>%
 	mutate(antibiotic = recode_factor(antibiotic, none = "no antibiotic", rifampicin = "rifampicin", `nalidixic acid` = "nalidixic acid", combination = "combination")) %>%
@@ -96,13 +100,13 @@ popns = tibble(filesindividual) %>%
 	left_join(., states.aggregated %>% select(., volume, antibiotic, pmutS, pmutS.rank, pmutS.text) %>% distinct()) %>%
 	mutate(wells = ifelse(wells == "ALL", original.cols, wells)) %>%
 	mutate(concentration = 2^(day-5)) %>%
-	mutate(complement = grepl("-", wells)) %>%
+	mutate(complement = grepl("-", wells)) %>%  #"-" indicates NO GROWTH in those wells!
 	mutate(wells = gsub("0", NA, wells)) %>%
 	mutate(wells = gsub("-", "", wells)) %>%
 	mutate(wells = map(wells, ~unlist(strsplit(., split = ";")))) %>%
-	mutate(wellsc = map(wells, ~original.labels[!(original.labels %in% .)])) %>%
-	mutate(well = ifelse(complement, wellsc, wells)) %>%
-	select(-wells, -wellsc, -complement) %>%
+	mutate(wellscomplement = map(wells, ~original.labels[!(original.labels %in% .)])) %>%
+	mutate(well = ifelse(complement, wellscomplement, wells)) %>%
+	select(-wells, -wellscomplement, -complement) %>%
 	unnest(well) %>%
 	mutate(value = 1) %>%
 	spread(well, value, fill = 0) %>%
@@ -270,7 +274,7 @@ rows = tibble(`Well Row` = rep(LETTERS[1:8],times = 2),
 	rank = c(NA,3,3,3,2,2,1,NA,NA,3,3,2,2,1,NA,NA)) %>%
 	left_join(.,pm)
 
-col1 = reshape2::melt(list(B = 2:11,C = 2:11,D = 2:10,E = 2:11,F = 2:3,G = 2:10)) %>%
+col1 = reshape2::melt(list(B = 2:11,C = 2:11,D = 2:10,E = 2:11,F = 2:3,G = 2:11)) %>%
 	mutate(volume = 1)
 
 col20 = reshape2::melt(list(B = 2:11,C = 2:5,D = 2:11,E = 2:9,F = 2:7)) %>%
@@ -315,10 +319,16 @@ EVcurves = EVdata %>%
 			as_tibble() %>%
 			type_convert())) %>%
 		unnest(vals) %>%
-	arrange(pmutS)
+		arrange(pmutS) %>%
+		left_join(barcode,
+			by=c("Well Row"="Well Row Evdata", 
+				"Well Col"="Well Col Evdata",
+				"volume"="volume", "pmutS.text"="pmutS.text",
+				"antibiotic"="antibiotic"))
 
 EVcurves.mean = EVcurves %>%
-	group_by(concentration, volume, antibiotic, pmutS, pmutS.text, lineage) %>%
+	ungroup() %>%
+	group_by(concentration, volume, antibiotic, pmutS, pmutS.text, lineage, title) %>%
 	filter(auc_e>0.1) %>% #things smaller didn't grow...
 	summarise_at(.vars = vars(k:auc_e), .funs = c("mean","sd")) %>%
 	mutate(id = lineage)
@@ -393,4 +403,26 @@ dailyOD = tibble(files = dailyODfiles, data = map(files, ~read_csv_drop(paste0("
 			D = "D",
 			E = "E"))
 saveRDS(dailyOD, file = "dailyOD.Rds")
+
+
+##### Selector for genomes to sequence
+#set.seed(19)
+
+## Sample from the double resistant genomes, and reinstate the original.labels which correspond to the labels on the freezer tubes!
+
+#label_translation = tibble(tubeID = original.labels, wellID = standard.labels)
+#genomes_to_sequence = popns %>%
+#	filter(volume==1, day==6, antibiotic=="combination",
+#		pmutS>0, state.simple=="double resistance") %>%
+#	ungroup() %>%
+#	select(pmutS.rank, pmutS.text, wellID) %>%
+#	group_by(pmutS.rank) %>%
+#	sample_n(size = 10) %>%
+#	arrange(pmutS.rank, wellID) %>%
+#	left_join(., label_translation) %>%
+#	select(pmutS.rank, tubeID, pmutS.text, wellID)
+#	
+
+#write_csv(genomes_to_sequence, "2022-03-08_genomes-to-sequence.csv")
+
 
