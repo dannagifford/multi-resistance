@@ -237,11 +237,6 @@ FTcurves = FTsamples.blanked %>%
 	arrange(id) %>%
 	mutate(id = as.character(id))
 
-# For Ernesto:
-FTsamples.blanked %>%
-	select(antibiotic, concentration, strain, state_text = strain2, id, rep, time, blankOD) %>%
-	mutate(N = predict(NTmodel, newdata = .)) %>%
-	write_csv(., "2018-06-08_blanked-growth-curve-data.csv")
 
 FTcurves.mean = FTcurves %>%
 	group_by(antibiotic, concentration, strain, strain2, id) %>%
